@@ -1,0 +1,8 @@
+2004-12-01 SJM
+	Updated language files
+	(New fields in setup dialogue)
+
+2004-09-12  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makevars: New file, from gettext-0.12.1.
+

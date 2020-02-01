@@ -1,0 +1,1821 @@
+# translation of fr.po to
+# This file is distributed under the same license as the oww package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Simon Melhuish <simon@melhuish.info>, 2004, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: fr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-05-27 20:55+0100\n"
+"PO-Revision-Date: 2006-02-05 20:02+0000\n"
+"Last-Translator: Simon Melhuish <simon@melhuish.info>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11\n"
+
+#: ../src/support.c:90 ../src/support.c:114
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Impossible de trouver le fichier image: %s"
+
+#: ../src/interface.c:55
+msgid "One-wire weather"
+msgstr "One-wire météo"
+
+#: ../src/interface.c:66
+msgid "_File"
+msgstr "_Fichier"
+
+#: ../src/interface.c:73
+msgid "_Auxilliary"
+msgstr "_Auxilliaire"
+
+#: ../src/interface.c:76
+msgid "Full sensor readout"
+msgstr "Unité de tous les capteurs"
+
+#: ../src/interface.c:78
+msgid "Map"
+msgstr "Carte"
+
+#: ../src/interface.c:81
+msgid "Go to this station's map URL"
+msgstr "URL de l'emplacement de la station sur une carte"
+
+#: ../src/interface.c:83
+msgid "_Messages"
+msgstr "_Messages"
+
+#: ../src/interface.c:86
+msgid "Warnings and errors logged by Oww"
+msgstr "Messages d'alerte et erreurs logger par Oww"
+
+#: ../src/interface.c:93
+msgid "E_xit"
+msgstr "Quitter (_x)"
+
+#: ../src/interface.c:96
+msgid "Quit the application."
+msgstr "Quitter le programme."
+
+#: ../src/interface.c:98
+msgid "_Edit"
+msgstr "_Editer"
+
+#: ../src/interface.c:105
+msgid "_Setup"
+msgstr "Configuration (_s)"
+
+#: ../src/interface.c:108
+msgid "Logging settings, &c."
+msgstr "Configuration pour les logs, &c."
+
+#: ../src/interface.c:110
+msgid "_Devices"
+msgstr "Capteurs (_d)"
+
+#: ../src/interface.c:113
+msgid "One-wire device settings."
+msgstr "Configuration des capteurs."
+
+#: ../src/interface.c:115
+msgid "_Help"
+msgstr "Aide (_h)"
+
+#: ../src/interface.c:122
+msgid "About"
+msgstr "A propos"
+
+#: ../src/interface.c:125
+msgid "Information about this program."
+msgstr "Information à propos de ce programme."
+
+#: ../src/interface.c:206 ../src/interface.c:207
+msgid "Messages from Oww"
+msgstr "Messages de Oww"
+
+#: ../src/interface.c:228
+msgid "Clear"
+msgstr "Effacer"
+
+#: ../src/interface.c:231
+msgid "Click here to clear all messages"
+msgstr "Cliquer içi pour effacer tous les messages"
+
+#: ../src/interface.c:233 ../src/interface.c:422 ../src/interface.c:1667
+msgid "Close"
+msgstr "Fermer"
+
+#: ../src/interface.c:236
+msgid "Click here to close this window"
+msgstr "Cliquer içi pour fermer cette fenêtre"
+
+#: ../src/interface.c:403
+msgid "Oww Setup"
+msgstr "Configuration de Oww"
+
+#: ../src/interface.c:416 ../src/interface.c:1662
+msgid "Save"
+msgstr "Sauvegarder"
+
+#: ../src/interface.c:420
+msgid "Click here to save your setup"
+msgstr "Cliquer içi pour sauvegarder votre configuration"
+
+#: ../src/interface.c:426
+msgid "Click here to close the setup window"
+msgstr "Cliquer içi pour fermer la fenêtre de configuration"
+
+#: ../src/interface.c:441 ../src/interface.c:693
+msgid "(s)"
+msgstr "(s)"
+
+#: ../src/interface.c:449
+msgid "Local"
+msgstr "Locale"
+
+#: ../src/interface.c:454
+msgid "Read from local 1-wire weather station"
+msgstr "Lecture de la station météo locale"
+
+#: ../src/interface.c:458
+msgid "Oww"
+msgstr "Oww"
+
+#: ../src/interface.c:463
+msgid "Read from remote Oww server"
+msgstr "Lecture sur le serveur distant Oww"
+
+#: ../src/interface.c:467
+msgid "Arne"
+msgstr "Arne"
+
+#: ../src/interface.c:471
+msgid "Read from remote Arne server"
+msgstr "Lecture sur le serveur distant Arne"
+
+#: ../src/interface.c:475 ../src/interface.c:815
+msgid "Dallas"
+msgstr "Dallas"
+
+#: ../src/interface.c:479
+msgid "Read from Dallas"
+msgstr "Lecture sur le serveur distant Dallas"
+
+#: ../src/interface.c:488
+msgid "Remote Oww server host name"
+msgstr "Nom du serveur distant Oww"
+
+#: ../src/interface.c:495
+msgid "Remote Arne server host name"
+msgstr "Nom du serveur distant Arne"
+
+#: ../src/interface.c:509
+msgid "Select Dallas weather station"
+msgstr "Sélectionner la station météo Dallas"
+
+#: ../src/interface.c:511
+msgid "List"
+msgstr "Liste"
+
+#: ../src/interface.c:515
+msgid "Click to update list of Dallas weather stations"
+msgstr "Cliquer içi pour mettre à jour la liste des stations météo Dallas"
+
+#: ../src/interface.c:523
+msgid "Remote Oww server port number"
+msgstr "Numéro du port du serveur distant Oww"
+
+#: ../src/interface.c:531
+msgid "Remote Arne server port number"
+msgstr "Numéro du port du serveur distant Arne"
+
+#: ../src/interface.c:533
+msgid "Update"
+msgstr "Mise à jour"
+
+#: ../src/interface.c:538
+msgid "Click here to update data source parameters"
+msgstr "Cliquer içi pour mettre à jour les paramètres"
+
+#: ../src/interface.c:540 ../src/interface.c:781
+msgid "Interval"
+msgstr "Intervale"
+
+#: ../src/interface.c:553
+msgid "Update interval (in seconds)"
+msgstr "Intervale de mise à jour (en second)"
+
+#: ../src/interface.c:556
+msgid "Browser"
+msgstr "Navigateur web"
+
+#: ../src/interface.c:577
+msgid "Mozilla"
+msgstr "Mozilla"
+
+#: ../src/interface.c:578
+msgid "Netscape"
+msgstr "Netscape"
+
+#: ../src/interface.c:579
+msgid "Konqueror"
+msgstr "Konqueror"
+
+#: ../src/interface.c:580
+msgid "Opera"
+msgstr "Opera"
+
+#: ../src/interface.c:581
+msgid "Galeon"
+msgstr "Galeon"
+
+#: ../src/interface.c:583
+msgid "Data source"
+msgstr "Source de donnée"
+
+#: ../src/interface.c:595
+msgid "Use Trh"
+msgstr "Utiliser Trh"
+
+#: ../src/interface.c:600
+msgid ""
+"Select this option to use the temperature recorded by the first humidity "
+"sensor instead of the WS temperature"
+msgstr ""
+"Sélectionner cette option pour utiliser la température enregistrée par le "
+"premier capteur d'humidité à la place de la sonde de température"
+
+#: ../src/interface.c:602
+msgid "Animate"
+msgstr "Animation"
+
+#: ../src/interface.c:607
+msgid "Animated display on/off"
+msgstr "Animation on/off"
+
+#: ../src/interface.c:609
+msgid "Wind speed"
+msgstr "Vitesse du vent"
+
+#: ../src/interface.c:616
+msgid "Temperature"
+msgstr "Température"
+
+#: ../src/interface.c:623 ../src/auxwin.c:117
+msgid "Rain"
+msgstr "Pluie"
+
+#: ../src/interface.c:630
+msgid "Pressure"
+msgstr "Pression"
+
+#: ../src/interface.c:642
+msgid "°C"
+msgstr "°C"
+
+#: ../src/interface.c:643
+msgid "°F"
+msgstr "°F"
+
+#: ../src/interface.c:650
+msgid "Inches"
+msgstr "Inches"
+
+#: ../src/interface.c:651 ../src/convert.c:95
+msgid "mm"
+msgstr "mm"
+
+#: ../src/interface.c:658
+msgid "mBar"
+msgstr "mBar"
+
+#: ../src/interface.c:659
+msgid "Inch Hg"
+msgstr "Inch Hg"
+
+#: ../src/interface.c:660 ../src/convert.c:104
+msgid "kPa"
+msgstr "kPa"
+
+#: ../src/interface.c:661 ../src/convert.c:107
+msgid "ATM"
+msgstr "ATM"
+
+#: ../src/interface.c:668
+msgid "km/hr"
+msgstr "km/hr"
+
+#: ../src/interface.c:669 ../src/convert.c:83
+msgid "mph"
+msgstr "mph"
+
+#: ../src/interface.c:670 ../src/convert.c:86
+msgid "m/s"
+msgstr "m/s"
+
+#: ../src/interface.c:671 ../src/convert.c:89
+msgid "knots"
+msgstr "knots"
+
+#: ../src/interface.c:673
+msgid "Display"
+msgstr "Affichage"
+
+#: ../src/interface.c:685 ../src/interface.c:1228 ../src/interface.c:1802
+msgid "..."
+msgstr "..."
+
+#: ../src/interface.c:691
+msgid "Click here to browse to a log file or directory location"
+msgstr "Cliquer içi pour choisir un fichier ou un répertoire de log"
+
+#: ../src/interface.c:706
+msgid "Log update interval (in seconds)"
+msgstr "Intervale de mise à jour des logs (en seconde)"
+
+#: ../src/interface.c:714 ../src/interface.c:1034 ../src/setupd.c:471
+msgid "Off"
+msgstr "Arrêter"
+
+#: ../src/interface.c:720 ../src/setupd.c:468
+msgid "Start"
+msgstr "Démarrer"
+
+#: ../src/interface.c:725
+msgid "Click here to start or stop logging"
+msgstr "Cliquer içi pour démarrer ou stopper les logs"
+
+#: ../src/interface.c:727 ../src/interface.c:1255 ../src/interface.c:1269
+#: ../src/parseout.c:843 ../src/parseout.c:860
+msgid "None"
+msgstr "Aucun"
+
+#: ../src/interface.c:732
+msgid "No logging"
+msgstr "Aucun log"
+
+#: ../src/interface.c:737 ../src/interface.c:1050
+msgid "Daily"
+msgstr "Jour"
+
+#: ../src/interface.c:742
+msgid "Logging to a new file each day"
+msgstr "Logger dans un nouveau fichier chaque jour"
+
+#: ../src/interface.c:746
+msgid "Single"
+msgstr "Une seule fois"
+
+#: ../src/interface.c:751
+msgid "Logging to a single file"
+msgstr "Logger dans un seul fichier"
+
+#: ../src/interface.c:755
+msgid "Snap"
+msgstr "Immédiat"
+
+#: ../src/interface.c:760
+msgid "Log times snap to clock intervals"
+msgstr "Différé"
+
+#: ../src/interface.c:767
+msgid "Enter the name of your chosen log file or directory here"
+msgstr "Entrer le nom de votre fichier ou répertoire de log"
+
+#: ../src/interface.c:768
+msgid "/home/someuser/logfile.csv"
+msgstr "/home/utilisateur/logfile.csv"
+
+#: ../src/interface.c:776
+msgid " "
+msgstr " "
+
+#: ../src/interface.c:787
+msgid "Log file"
+msgstr "Fichier de log"
+
+#: ../src/interface.c:799
+msgid "Interval (s)"
+msgstr "Intervale (s)"
+
+#: ../src/interface.c:807
+msgid "http proxy"
+msgstr "http proxy"
+
+#: ../src/interface.c:823
+msgid "Lat. / Long."
+msgstr "Lat. / Long."
+
+#: ../src/interface.c:831
+#, fuzzy
+msgid "Wunderground"
+msgstr "wunderground"
+
+#: ../src/interface.c:839 ../src/interface.c:847 ../src/interface.c:871
+msgid "User / Pass"
+msgstr "Utilisateur / Mot de passe"
+
+#: ../src/interface.c:855
+msgid "hamweather"
+msgstr "hamweather"
+
+#: ../src/interface.c:863
+msgid "CWOP"
+msgstr "CWOP"
+
+#: ../src/interface.c:884
+msgid "Select to enable the http proxy"
+msgstr "Sélectionner pour activer le proxy http"
+
+#: ../src/interface.c:891
+msgid "Select to enable Dallas Semiconductor uploads"
+msgstr "Sélectionner pour activer les mises à jour sur Dallas Semiconducteur"
+
+#: ../src/interface.c:898
+msgid "Select to enable hamweather uploads"
+msgstr "Sélectionner pour activer les mises à jour sur hamweather"
+
+#: ../src/interface.c:905
+msgid "Select to enable CWOP uploads"
+msgstr "Sélectionner pour activer les mises à jour sur CWOP"
+
+#: ../src/interface.c:907
+msgid "Use times"
+msgstr "Temps utilisé"
+
+#: ../src/interface.c:912
+msgid "Upload times snap to clock intervals"
+msgstr "Intervalle de mise à jour"
+
+#: ../src/interface.c:919
+msgid "Enter your call sign / user name for CWOP here"
+msgstr "Entrer içi votre indicatif pour CWOP"
+
+#: ../src/interface.c:926
+msgid "Enter the server name / IP for CWOP uploads"
+msgstr ""
+"Entrer le nom du serveur ou l'adresse IP pour les mises à jour sur CWOP"
+
+#: ../src/interface.c:933
+msgid "Enter your user name for hamweather here"
+msgstr "Entrer içi votre nom d'utilisateur pour hamweather"
+
+#: ../src/interface.c:940
+msgid "Enter your user name for The Weather Underground here"
+msgstr "Entrer içi votre nom d'utilisateur pour The Weather Underground"
+
+#: ../src/interface.c:948
+msgid "Latitude in degrees east (-180.0 to 180.0)"
+msgstr "Latitude en degré Est (-180.0 à 180.0)"
+
+#: ../src/interface.c:957
+msgid "Interval between weather station Web uploads"
+msgstr "Intervale entre les mises à jour de la station météo sur le Web"
+
+#: ../src/interface.c:964
+msgid "Enter the address of your proxy, including the http://at the start"
+msgstr "Entrer l'adresse de votre proxy, sans oublier http:// au début"
+
+#: ../src/interface.c:971
+msgid ""
+"Enter the base URL of the Dallas servlet, e.g. http://198.3.123.122:8080/"
+"servlet/WeatherServlet"
+msgstr ""
+"Entrer l'URL du serveur Dallas, ex http://198.3.123.122:8080/servlet/"
+"WeatherServlet"
+
+#: ../src/interface.c:978 ../src/interface.c:1027
+msgid ""
+"Enter the base URL of the Weather Underground database, e.g. http://www."
+"wunderground.com/weatherstation/updateweatherstation.php"
+msgstr ""
+"Entrer l'URL du serveur Weather Underground, ex http://www.wunderground.com/"
+"weatherstation/updateweatherstation.php"
+
+#: ../src/interface.c:986
+msgid "Enter the port number for CWOP uploads"
+msgstr "Entrer le numéro du port pour les mise à jour sur CWOP"
+
+#: ../src/interface.c:995
+msgid "Longtitude in degrees north (-90.0 to 90.0)"
+msgstr "Longitude in degré Nord (-90.0 à 90.0)"
+
+#: ../src/interface.c:1003
+msgid "Enter your password for The Weather Underground here"
+msgstr "Entrer içi votre mot de passe pour The Weather Underground"
+
+#: ../src/interface.c:1011
+msgid "Enter your password for hamweather here"
+msgstr "Entrer içi votre mot de passe pour hamweather"
+
+#: ../src/interface.c:1019
+msgid "Enter your password for CWOP here"
+msgstr "Entrer içi votre mot de passe pour CWOP"
+
+#: ../src/interface.c:1035 ../src/setupd.c:471
+msgid "On"
+msgstr "Démarrer"
+
+#: ../src/interface.c:1036
+#, fuzzy
+msgid "Fast"
+msgstr "à"
+
+#: ../src/interface.c:1038
+msgid "Upload"
+msgstr "Mise à jour"
+
+#: ../src/interface.c:1055
+msgid "Daily reset at..."
+msgstr "RAZ journalière à ..."
+
+#: ../src/interface.c:1059
+msgid "Weekly"
+msgstr "Hebdomadaire"
+
+#: ../src/interface.c:1064
+msgid "Weekly reset on..."
+msgstr "RAZ hebdomadaire sur ..."
+
+#: ../src/interface.c:1068
+msgid "Monthly"
+msgstr "Mensuelle"
+
+#: ../src/interface.c:1073
+msgid "Monthly reset on..."
+msgstr "RAZ mensuelle sur ..."
+
+#: ../src/interface.c:1077
+msgid "at"
+msgstr "à"
+
+#: ../src/interface.c:1084 ../src/interface.c:1091
+msgid "on"
+msgstr "sur"
+
+#: ../src/interface.c:1098
+msgid "Reset"
+msgstr "RAZ"
+
+#: ../src/interface.c:1103
+msgid "Click here to reset the rain gauge"
+msgstr "Cliquer içi pour remettre à zéro le pluviomètre"
+
+#: ../src/interface.c:1105
+msgid "Manual"
+msgstr "Manuel"
+
+#: ../src/interface.c:1110
+msgid "Manual reset only"
+msgstr "RAZ manuelle seulement"
+
+#: ../src/interface.c:1120
+msgid "Sunday"
+msgstr "Dimanche"
+
+#: ../src/interface.c:1121
+msgid "Monday"
+msgstr "Lundi"
+
+#: ../src/interface.c:1122
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: ../src/interface.c:1123
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#: ../src/interface.c:1124
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: ../src/interface.c:1125
+msgid "Friday"
+msgstr "Vendredi"
+
+#: ../src/interface.c:1126
+msgid "Saturday"
+msgstr "Samedi"
+
+#: ../src/interface.c:1134
+msgid "Date of monthly reset"
+msgstr "Date de la RAZ mensuelle"
+
+#: ../src/interface.c:1144
+msgid "Hour for automatic resets"
+msgstr "Heure de la RAZ automatique"
+
+#: ../src/interface.c:1148
+msgid ":00"
+msgstr ":00"
+
+#: ../src/interface.c:1155
+msgid "Stats"
+msgstr "Statistiques"
+
+#: ../src/interface.c:1167
+msgid "Wind chill formula"
+msgstr "Formule pour l'affaiblissement de la température provoqué par le vent"
+
+#: ../src/interface.c:1175
+msgid "Heat index formula"
+msgstr "Formule Heat index"
+
+#: ../src/interface.c:1188
+msgid "Steadman"
+msgstr "Steadman"
+
+#: ../src/interface.c:1189
+msgid "NWS 1992b"
+msgstr "NWS 1992b"
+
+#: ../src/interface.c:1190
+msgid "New WCT"
+msgstr "New WCT"
+
+#: ../src/interface.c:1197
+msgid "U.S. heat index"
+msgstr "U.S. heat index"
+
+#: ../src/interface.c:1198
+msgid "Canadian humidex"
+msgstr "Canadian humidex"
+
+#: ../src/interface.c:1200
+msgid "Derived values"
+msgstr "Valeurs dérivées"
+
+#: ../src/interface.c:1212 ../src/interface.c:1278
+msgid "Messages"
+msgstr "Messages"
+
+#: ../src/interface.c:1220
+msgid "Log level"
+msgstr "Niveau pour les logs"
+
+#: ../src/interface.c:1233
+msgid "Click here to pick a debug file name"
+msgstr "Cliquer içi pour sélectionner le fichier de debug"
+
+#: ../src/interface.c:1235
+msgid "Debug file"
+msgstr "Fichier de debug"
+
+#: ../src/interface.c:1248
+msgid "Enter the full name of the debug file and hit \"return\"."
+msgstr "Entrer le nom complet du fichier de debug et taper sur \"entrer\"."
+
+#: ../src/interface.c:1256 ../src/interface.c:1270
+msgid "Fatal only"
+msgstr "Seulement les erreurs fatales"
+
+#: ../src/interface.c:1257 ../src/interface.c:1271
+msgid "All errors"
+msgstr "Toutes les erreurs"
+
+#: ../src/interface.c:1258 ../src/interface.c:1272
+msgid "Errors and warnings"
+msgstr "Erreurs et alertes"
+
+#: ../src/interface.c:1259 ../src/interface.c:1273
+msgid "Debug 0"
+msgstr "Debug 0"
+
+#: ../src/interface.c:1260 ../src/interface.c:1274
+msgid "Debug 1"
+msgstr "Debug 1"
+
+#: ../src/interface.c:1261 ../src/interface.c:1275
+msgid "Debug 2"
+msgstr "Debug 2"
+
+#: ../src/interface.c:1262 ../src/interface.c:1276
+msgid "Debug 3"
+msgstr "Debug 3"
+
+#: ../src/interface.c:1283
+msgid "SaveNG"
+msgstr "Sauvegarde NG"
+
+#: ../src/interface.c:1289
+msgid "Click here to save your setup for use by owwnogui"
+msgstr "Cliquer içi pour sauvegarder votre configuration utilisée par owwnogui"
+
+#: ../src/interface.c:1639
+msgid "Devices"
+msgstr "Capteurs"
+
+#: ../src/interface.c:1652
+msgid "Search"
+msgstr "Chercher"
+
+#: ../src/interface.c:1655
+msgid ""
+"Click here to erase your current device settings and search the bus for "
+"connected components"
+msgstr ""
+"Cliquer içi pour supprimer les paramètres des capteurs courants et "
+"rechercher les nouveaux capteurs"
+
+#: ../src/interface.c:1665
+msgid "Click here to save your device settings"
+msgstr "Cliquer içi pour sauvegarder les paramètres des capteurs"
+
+#: ../src/interface.c:1670
+msgid "Click here to close the window"
+msgstr "Cliquer içi pour fermer la fenêtre"
+
+#: ../src/interface.c:1725
+msgid "Choose Cal entry to change from pop-up list"
+msgstr "Choisir dans la liste une correction"
+
+#: ../src/interface.c:1733
+msgid "Enter Cal value here"
+msgstr "Entrer içi la valeur de correction"
+
+#: ../src/interface.c:1745
+msgid "Vanes"
+msgstr "Girouette"
+
+#: ../src/interface.c:1755
+msgid "How many wind vane devices have been detected (out of 8)?"
+msgstr "Combien de girouettes ont été détectées (> 8)?"
+
+#: ../src/interface.c:1757
+msgid "0"
+msgstr "0"
+
+#: ../src/interface.c:1759
+msgid "Offset"
+msgstr "Décalage"
+
+#: ../src/interface.c:1770
+msgid ""
+"Adjust the offset (-8 to +8) until the display lines up with the actual wind "
+"vane direction"
+msgstr ""
+"Ajuster le décalage de la girouette (-8 à +8) pour que le trait sur "
+"l'affichage corresponde à la direction du vent actuelle"
+
+#: ../src/interface.c:1774
+msgid "Reverse"
+msgstr "Inverser"
+
+#: ../src/interface.c:1777
+msgid "Select this option if your wind vane readout is reversed"
+msgstr ""
+"Sélectionner cette option si la lecture de votre girouette est inversée"
+
+#: ../src/interface.c:1779
+msgid "Wipe Vanes"
+msgstr "Supprimer de la liste"
+
+#: ../src/interface.c:1783
+msgid "Wind vane"
+msgstr "Girouette"
+
+#: ../src/interface.c:1799
+msgid "Enter the serial device name here"
+msgstr "Entrer içi le numéro de série du capteur"
+
+#: ../src/interface.c:1800
+msgid "/dev/cua0"
+msgstr "/dev/cua0"
+
+#: ../src/interface.c:1806
+msgid "Click to browse to a serial device"
+msgstr "Cliquer pour explorer les numéros de série des capteurs"
+
+#: ../src/interface.c:1808 ../src/setupd.c:1179
+msgid "Device"
+msgstr "Capteur"
+
+#: ../src/interface.c:1915
+msgid "Information about this program"
+msgstr "Information à propos du programme"
+
+#: ../src/interface.c:1916
+msgid "Program information"
+msgstr "Information du programme"
+
+#: ../src/interface.c:1922
+msgid "Version"
+msgstr "Version"
+
+#: ../src/interface.c:1930
+msgid "Author\n"
+msgstr "Auteur\n"
+
+#: ../src/interface.c:1938
+msgid "Purpose"
+msgstr "But"
+
+#: ../src/interface.c:1946 ../src/auxwin_un.c:41
+msgid "Name"
+msgstr "Nom"
+
+#: ../src/interface.c:1960
+msgid "<span size=\"x-large\" foreground=\"blue\">Oww</span>"
+msgstr "<span size=\"x-large\" foreground=\"blue\">Oww</span>"
+
+#: ../src/interface.c:1972
+msgid "<span foreground=\"red\">One-wire weather</span>"
+msgstr "<span foreground=\"red\">One-wire weather</span>"
+
+#: ../src/interface.c:1984
+msgid "<span foreground=\"brown\" size=\"large\">Dr. Simon J. Melhuish</span>"
+msgstr "<span foreground=\"brown\" size=\"large\">Dr. Simon J. Melhuish</span>"
+
+#: ../src/interface.c:1996
+msgid "0.0.1"
+msgstr "0.0.1"
+
+#: ../src/interface.c:2007
+msgid "http://oww.sourceforge.net/"
+msgstr "http://oww.sourceforge.net/"
+
+#: ../src/interface.c:2017
+#, fuzzy
+msgid ""
+"<b>Developers</b>\n"
+"Maxim / Dallas \t\tPD\n"
+"Steinar Midtskogen \tlightning, &amp;c\n"
+"Matthew Harrell \t\tcwop\n"
+"and others...\n"
+"<b>Translators</b>\n"
+"Steinar Midtskogen \tnb_NO\n"
+"f5kbd \t\t\tfr\n"
+"Mikael Martinsson \tsv\n"
+"Petr\t\t\t\tcz"
+msgstr ""
+"<b>Developers</b>\n"
+"Maxim / Dallas \t\tPD\n"
+"Steinar Midtskogen \tlightning, &amp;c\n"
+"Matthew Harrell \t\tcwop\n"
+"and others...\n"
+"<b>Translators</b>\n"
+"Steinar Midtskogen \tnb_NO\n"
+"f5kbd \t\t\tfr\n"
+"Mikael Martinsson \tsv\n"
+"Petr\t\t\t\tcz"
+
+#: ../src/interface.c:2023
+#, fuzzy
+msgid ""
+"Helped\n"
+"by\n"
+msgstr ""
+"Helped\n"
+"by\n"
+
+#: ../src/interface.c:2078
+msgid "Oww auxilliary window - full sensor readout"
+msgstr "Fenêtre des auxilliaires - tous les capteurs"
+
+#: ../src/interface.c:2079
+msgid "Oww - Auxilliary"
+msgstr "Oww - Auxilliaire"
+
+#: ../src/ad26.c:181 ../src/ad26.c:303
+msgid "1-s timeout reading voltage"
+msgstr "Timeout de 1s sur la lecture en tension"
+
+#: ../src/ad26.c:343
+#, c-format
+msgid "Too many retries reading %s current. Giving up."
+msgstr "Trop de tentative de lecture sur %s. Abandon."
+
+#: ../src/ad26.c:355
+#, c-format
+msgid "ad26_current_reading didn't write correctly, reading %s"
+msgstr "ad26_current_reading ne peut pas écrire correctement sur %s"
+
+#: ../src/ad26.c:425 ../src/ad26.c:583
+#, c-format
+msgid "Access failed, reading %s"
+msgstr "Accès refusé sur %s"
+
+#: ../src/ad26.c:434
+#, c-format
+msgid "ad26_current_reading failed, reading %s"
+msgstr "Ad26_current_reading erreur de lecture sur %s"
+
+#: ../src/ad26.c:464
+#, c-format
+msgid "Too many retries reading %s. Giving up."
+msgstr "Trop de tentative de lecture sur %s. Abandon."
+
+#: ../src/ad26.c:476
+#, c-format
+msgid "Volt_AD didn't write correctly, reading %s"
+msgstr "Volt_AD ne peut pas écrire correctement sur %s"
+
+#: ../src/ad26.c:592
+#, c-format
+msgid "Volt_AD failed, reading %s"
+msgstr "Volt_AD erreur sur %s"
+
+#: ../src/ad26.c:621
+msgid "1-s timeout converting temperature"
+msgstr "Timeout de 1s pour la conversion de température"
+
+#. EOF
+#: ../src/applctn.c:262
+#, c-format
+msgid "Exiting interactive mode.\n"
+msgstr "Sortie du mode interactif.\n"
+
+#: ../src/applctn.c:645
+#, c-format
+msgid "Changing to daemon mode\n"
+msgstr "Changement en mode daemon\n"
+
+#: ../src/applctn.c:648
+#, c-format
+msgid "daemon failed\n"
+msgstr "erreur daemon\n"
+
+#: ../src/applctn.c:675
+#, c-format
+msgid ""
+"Interactive mode conflicts with daemon mode.\n"
+"Exiting.\n"
+msgstr ""
+"Mode interactif en conflit avec le mode daemon.\n"
+"Fin.\n"
+
+#: ../src/applctn.c:685
+msgid "daemon mode for owwnogui only"
+msgstr "mode daemon pour owwnogui seulement"
+
+#: ../src/arne.c:402
+msgid "CRC error reading from WServer"
+msgstr "Erreur de CRC sur la lecture de WServer"
+
+#: ../src/arne.c:403
+#, c-format
+msgid "check = %d, vane_bearing = %d, vane_mode = %d, sum = %d"
+msgstr "check = %d, vane_bearing = %d, vane_mode = %d, sum = %d"
+
+#: ../src/arne.c:444 ../src/oww_trx.c:622
+#, c-format
+msgid "Bad socket: %d"
+msgstr "Mauvais socket: %d"
+
+#: ../src/auxwin.c:65
+msgid "Wind Speed"
+msgstr "Vitesse du vent"
+
+#: ../src/auxwin.c:73
+msgid "Wind Gust"
+msgstr "Rafale"
+
+#: ../src/auxwin.c:80
+msgid "Wind Dir."
+msgstr "Direction du vent"
+
+#: ../src/auxwin.c:89
+msgid "Wind Chill"
+msgstr "Facteur d'abaissement de la température provoqué par le vent"
+
+#: ../src/auxwin.c:100
+msgid "Heat Index"
+msgstr "Heat Index"
+
+#: ../src/auxwin.c:122
+msgid "Rain Rate"
+msgstr "Pluviométrie"
+
+#: ../src/auxwin.c:125
+msgid "mm/hour"
+msgstr "mm/heure"
+
+#: ../src/auxwin.c:125
+msgid "\"/hour"
+msgstr "\"/heure"
+
+#: ../src/auxwin.c:146
+msgid "RH "
+msgstr "RH "
+
+#: ../src/auxwin.c:150
+msgid "T rh "
+msgstr "T rh "
+
+#: ../src/auxwin.c:156
+msgid "T dew "
+msgstr "T de rosée "
+
+#: ../src/auxwin.c:172
+msgid "Barom "
+msgstr "Baromètre"
+
+#: ../src/auxwin.c:180
+msgid "T b "
+msgstr "T b "
+
+#: ../src/auxwin.c:192
+msgid "GPC "
+msgstr "GPC "
+
+#: ../src/auxwin.c:204
+msgid "Solar "
+msgstr "Ensoleillement"
+
+#: ../src/auxwin.c:216
+msgid "V adc "
+msgstr ""
+
+#: ../src/auxwin.c:222
+msgid "I adc "
+msgstr ""
+
+#: ../src/auxwin.c:228
+#, fuzzy
+msgid "T adc "
+msgstr "T de rosée "
+
+#: ../src/auxwin_un.c:48
+msgid "Value"
+msgstr "Valeur"
+
+#: ../src/auxwin_un.c:56
+msgid "Unit"
+msgstr "Unité"
+
+#: ../src/client.c:126
+#, c-format
+msgid "Unable to resolve host name \"%s\""
+msgstr "Impossible de résoudre le nom de domaine \"%s\""
+
+#: ../src/client.c:148
+#, c-format
+msgid "Unable to open socket for communication with \"%s\""
+msgstr "Impossible d'ouvrir le socket de communication avec \"%s\""
+
+#: ../src/client.c:158
+#, c-format
+msgid "Unable to connect to \"%s\""
+msgstr "Impossible de se connecter avec \"%s\""
+
+#: ../src/convert.c:80
+msgid "km/h"
+msgstr "km/h"
+
+#: ../src/convert.c:98
+msgid "mB"
+msgstr "mB"
+
+#: ../src/convert.c:101
+msgid "\"Hg"
+msgstr "\"Hg"
+
+#: ../src/convert.c:110
+msgid "Bad unit type"
+msgstr "Mauvaise unité"
+
+#: ../src/convert.c:183 ../src/convert.c:189
+msgid "inches"
+msgstr "inches"
+
+#: ../src/cwop.c:247 ../src/cwop.c:279
+msgid "Cwop: Remote host error"
+msgstr "Cwop : Erreur serveur distant"
+
+#: ../src/cwop.c:349
+#, c-format
+msgid "Cwop: Host name error: %s"
+msgstr "Cwop : Erreur du nom de domaine: %s"
+
+#: ../src/cwop.c:363
+#, c-format
+msgid "Cwop: Cannot create tcp socket - %s"
+msgstr "Cwop: Impossible de créer le socket tcp - %s"
+
+#: ../src/cwop.c:382
+#, c-format
+msgid "Cwop: Cannot connect to server %s - %s"
+msgstr "Cwop: Impossible de se connecter au serveur %s - %s"
+
+#: ../src/devices.c:560
+msgid "Thermometer slope"
+msgstr "Tendance du thermomètre"
+
+#: ../src/devices.c:563
+msgid "Thermometer offset ("
+msgstr "Correction du thermomètre ("
+
+#: ../src/devices.c:570
+msgid "Anemometer slope"
+msgstr "Tendance de l'anémomètre"
+
+#: ../src/devices.c:574
+msgid "Rain gauge slope (\"/tip)"
+msgstr "Tendance du pluviomètre (\"/tip)"
+
+#: ../src/devices.c:581
+msgid "Trh slope"
+msgstr "Tendance de Trh"
+
+#: ../src/devices.c:584
+msgid "Trh offset ("
+msgstr "Correction Trh ("
+
+#: ../src/devices.c:587
+msgid "Hygrometer slope"
+msgstr "Tendance de l'hygromètre"
+
+#: ../src/devices.c:590
+msgid "Hygrometer offset (%RH)"
+msgstr "Correction de l'hygromètre (%RH)"
+
+#: ../src/devices.c:600
+msgid "Barometer slope (mBar / X)"
+msgstr "Tendance du baromètre (mBar / X)"
+
+#: ../src/devices.c:603
+msgid "Barometer offset (mBar)"
+msgstr "Correction du baromètre (mBar)"
+
+#: ../src/devices.c:606
+msgid "Tb slope"
+msgstr "Tendance de Tb"
+
+#: ../src/devices.c:609
+msgid "Tb offset ("
+msgstr "Correction de Tb ("
+
+#: ../src/devices.c:616
+msgid "GPC slope"
+msgstr "Tendance GPC"
+
+#: ../src/devices.c:623
+msgid "Solar slope"
+msgstr "Tendance de l'ensoleillement"
+
+#: ../src/devices.c:626
+msgid "Solar offset"
+msgstr "Correction de l'ensoleillement"
+
+#: ../src/devices.c:630
+msgid "LCD type"
+msgstr "Type de LCD"
+
+#. Check for special cases
+#: ../src/devices.c:1181 ../src/interactive.c:78 ../src/interactive.c:125
+#: ../src/setupd.c:887 ../src/setupd.c:953 ../src/setupd.c:971
+msgid "--None--"
+msgstr "--Aucun--"
+
+#: ../src/devices.c:1274
+msgid "Coupler"
+msgstr "Coupleur"
+
+#: ../src/devices.c:1277
+msgid "Thermometer"
+msgstr "Termomètre"
+
+#: ../src/devices.c:1280
+msgid "Switch"
+msgstr "Switch"
+
+#: ../src/devices.c:1283
+msgid "Counter"
+msgstr "Compteur"
+
+#: ../src/devices.c:1286
+msgid "ROM ID"
+msgstr "ROM ID"
+
+#: ../src/devices.c:1289
+msgid "A to D"
+msgstr "A/D"
+
+#: ../src/devices.c:1292
+msgid "Smart Bat' Mon'"
+msgstr "Smart Bat' Mon'"
+
+#: ../src/devices.c:1295
+msgid "8-bit IO"
+msgstr "8-bit IO"
+
+#: ../src/devices.c:1298
+#, fuzzy
+msgid "Hygrochron"
+msgstr "Thermochron"
+
+#: ../src/devices.c:1305
+msgid "MultiKey"
+msgstr "MultiKey"
+
+#: ../src/devices.c:1318
+msgid "Memory"
+msgstr "Mémoire"
+
+#: ../src/devices.c:1321
+msgid "DS2405 Switch"
+msgstr "DS2405 Switch"
+
+#: ../src/devices.c:1324
+msgid "Mem/Clk"
+msgstr "Mem/Clk"
+
+#: ../src/devices.c:1327
+msgid "EEPROM"
+msgstr "EEPROM"
+
+#: ../src/devices.c:1330
+msgid "SHA"
+msgstr "SHA"
+
+#: ../src/devices.c:1333
+msgid "Monetary"
+msgstr "Monétaire"
+
+#: ../src/devices.c:1336
+msgid "DS2436"
+msgstr "DS2436"
+
+#: ../src/devices.c:1339
+msgid "DS2432"
+msgstr "DS2432"
+
+#: ../src/devices.c:1342
+msgid "DS2437"
+msgstr "DS2437"
+
+#: ../src/devices.c:1345
+msgid "Thermochron"
+msgstr "Thermochron"
+
+#: ../src/devices.c:1348
+msgid "DS1822"
+msgstr "DS1822"
+
+#: ../src/devices.c:1351
+msgid "DS18B20"
+msgstr "DS18B20"
+
+#: ../src/devices.c:1354
+msgid "Serial"
+msgstr "Série"
+
+#: ../src/devices.c:1357
+msgid "Multi"
+msgstr "Multi"
+
+#: ../src/devices.c:1360
+msgid "Time"
+msgstr "Temps"
+
+#: ../src/file.c:87
+#, c-format
+msgid "%s not found."
+msgstr "%s non trouvé."
+
+#: ../src/file.c:93
+#, c-format
+msgid "Failed to create %s"
+msgstr "Impossible de créer %s"
+
+#. stat failed
+#: ../src/file.c:104
+#, c-format
+msgid "Unable to get directory information: %s"
+msgstr "Impossible d'avoir les informations sur le répertoire: %s"
+
+#. dir_name is something other than a directory
+#: ../src/file.c:113
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s n'est pas un répertoire"
+
+#. Directory does not give us write permission
+#. File does not give us write permission
+#: ../src/file.c:121 ../src/file.c:183
+#, c-format
+msgid "No write permission in %s"
+msgstr "Ecriture interdite sur %s"
+
+#: ../src/file.c:141
+#, c-format
+msgid "File %s not found"
+msgstr "Fichier %s non trouvé"
+
+#: ../src/file.c:149
+#, c-format
+msgid "Failed to create file %s"
+msgstr "Impossible de créer le fichier %s"
+
+#. stat failed
+#: ../src/file.c:166
+#, c-format
+msgid "Unable to get file information: %s"
+msgstr "Impossible d'avoir les informations sur le fichier: %s"
+
+#. file_name is something other than a directory
+#: ../src/file.c:175
+#, c-format
+msgid "%s is not a normal file"
+msgstr "%s n'est pas un fichier normal"
+
+#. werr(WERR_DEBUG1, "Finished building list");
+#: ../src/interactive.c:167
+#, c-format
+msgid "Select device for assignment: "
+msgstr "Sélectionner un capteur pour le définir: "
+
+#: ../src/interactive.c:172 ../src/interactive.c:230
+#, c-format
+msgid "%d is outside of the valid range\n"
+msgstr "%d est en dehors de la plage valide\n"
+
+#. printf(_("You selected device %d: %s %s\n"), search_entry+1, temp_string,
+#. (devices_search_list[search_entry].alloc < 0) ?
+#. "" : devices_list[devices_search_list[search_entry].alloc].menu_entry
+#. ) ;
+#: ../src/interactive.c:184
+#, c-format
+msgid "Choose assignment from:\n"
+msgstr "Choisir le type dans:\n"
+
+#: ../src/interactive.c:191
+#, c-format
+msgid "Assignment unchanged\n"
+msgstr "Type inchangé\n"
+
+#. werr(WERR_DEBUG1, "Finished building list");
+#: ../src/interactive.c:225
+#, c-format
+msgid "Select device for cal setting: "
+msgstr "Sélectionner un capteur pour configurer sa correction: "
+
+#: ../src/interactive.c:251
+#, c-format
+msgid "Choose cal entry from:\n"
+msgstr "Choisir dans la liste une correction:\n"
+
+#: ../src/interactive.c:263
+#, c-format
+msgid "No change\n"
+msgstr "Aucun changement\n"
+
+#. else left pointing at null
+#. printf("line=\"%s\", delim=\"%s\"\n", line, delim);
+#: ../src/interactive.c:307
+msgid "assign"
+msgstr "assigner"
+
+#: ../src/interactive.c:312
+msgid "cal"
+msgstr "cal"
+
+#: ../src/interactive.c:317
+msgid "daemon"
+msgstr "daemon"
+
+#: ../src/interactive.c:321
+#, c-format
+msgid "Already running as a daemon\n"
+msgstr "Toujours le lancer en daemon\n"
+
+#: ../src/interactive.c:325
+#, c-format
+msgid "Run owwnogui to use daemon mode\n"
+msgstr "Lancer owwnogui en mode daemon\n"
+
+#: ../src/interactive.c:329
+msgid "quit"
+msgstr "quitter"
+
+#: ../src/interactive.c:334
+msgid "search"
+msgstr "chercher"
+
+#: ../src/interactive.c:337
+#, c-format
+msgid "Searching...\n"
+msgstr "Recherche...\n"
+
+#: ../src/interactive.c:340 ../src/interactive.c:360 ../src/interactive.c:394
+msgid "setup"
+msgstr "configuration"
+
+#: ../src/interactive.c:343 ../src/interactive.c:349 ../src/interactive.c:355
+#: ../src/interactive.c:389
+#, c-format
+msgid "Done\n"
+msgstr "Terminé\n"
+
+#: ../src/interactive.c:346 ../src/interactive.c:370 ../src/interactive.c:396
+msgid "devices"
+msgstr "capteurs"
+
+#: ../src/interactive.c:352
+msgid "reset"
+msgstr "RAZ"
+
+#: ../src/interactive.c:358
+msgid "save"
+msgstr "sauvegarder"
+
+#: ../src/interactive.c:363
+#, c-format
+msgid "Saved setup\n"
+msgstr "Configuration sauvegardée\n"
+
+#: ../src/interactive.c:365
+msgid "setupng"
+msgstr "configuration NG"
+
+#: ../src/interactive.c:368
+#, c-format
+msgid "Saved setupNG\n"
+msgstr "Configuration NG sauvegardée\n"
+
+#: ../src/interactive.c:373
+#, c-format
+msgid "Saved devices\n"
+msgstr "Capteurs sauvegardés\n"
+
+#: ../src/interactive.c:375
+msgid "stats"
+msgstr "Statistiques"
+
+#: ../src/interactive.c:378
+#, c-format
+msgid "Saved stats\n"
+msgstr "Statistiques sauvegardées\n"
+
+#: ../src/interactive.c:382
+#, c-format
+msgid "Unrecognized save option\n"
+msgstr "Option de sauvegarde inconnue\n"
+
+#: ../src/interactive.c:386
+msgid "wipe"
+msgstr "nettoyer"
+
+#: ../src/interactive.c:399
+#, c-format
+msgid ""
+"Available commands:\n"
+"\tassign\n"
+"\tcal\n"
+"\tdaemon\n"
+"\tdevices [devices line]\n"
+"\tquit\n"
+"\treset\n"
+"\tsave [setup | setupng | stats | devices]\n"
+"\tsearch\n"
+"\tsetup [setup line]\n"
+"\twipe\n"
+"\t? devices\n"
+"\t? setup\n"
+msgstr ""
+"Commandes possibles:\n"
+"\tassign\n"
+"\tcal\n"
+"\tdaemon\n"
+"\tdevices [devices line]\n"
+"\tquit\n"
+"\treset\n"
+"\tsave [setup | setupng | stats | devices]\n"
+"\tsearch\n"
+"\tsetup [setup line]\n"
+"\twipe\n"
+"\t? devices\n"
+"\t? setup\n"
+
+#: ../src/interactive.c:415
+#, c-format
+msgid "Unrecognized command: \"%s\"\n"
+msgstr "Commande inconnue: \"%s\"\n"
+
+#: ../src/log.c:124
+#, c-format
+msgid "add_log_entry(\"%s\", \"%s\") - could not open file"
+msgstr "add_log_entry(\"%s\", \"%s\") - Impossible d'ouvrir le fichier"
+
+#: ../src/log.c:132
+#, c-format
+msgid "Error writing to \"%s\""
+msgstr "Erreur d'écriture sur \"%s\""
+
+#: ../src/log.c:255
+msgid "postlog command line did not parse correctly"
+msgstr "la ligne de commande postlog est incorrecte"
+
+#: ../src/log.c:264
+msgid "Failed to run postlog command"
+msgstr "Erreur d'exécution de la commande postlog"
+
+#: ../src/log.c:274
+msgid "Trying to write no log!"
+msgstr "Désacivation de l'écriture des logs !"
+
+#: ../src/log.c:397
+msgid "postupdate did not parse correctly"
+msgstr "la ligne de commande postupdate est incorrecte"
+
+#: ../src/log.c:406
+msgid "Failed to run postupdate command"
+msgstr "Erreur d'exécution de la commande postupdate"
+
+#: ../src/log.c:438
+msgid "Generation of log entry failed"
+msgstr "Erreur lors de la génération des logs"
+
+#: ../src/log.c:441
+msgid "Zero-length log line"
+msgstr "Ligne de log de taille nulle"
+
+#: ../src/log.c:446
+msgid "Unable to update log. log_start_log_event failed"
+msgstr "Impossible de mettre à jour des logs. erreur log_start_log_event"
+
+#: ../src/mainwin.c:760
+msgid "BP"
+msgstr "BP"
+
+#: ../src/mainwin.c:794
+#, c-format
+msgid "(%s/hr)"
+msgstr "(%s/hr)"
+
+#: ../src/mypopt.c:16
+#, c-format
+msgid ""
+"Usage: %s [options]\n"
+"\n"
+msgstr ""
+"Utilisation: %s [options]\n"
+"\n"
+
+#: ../src/mypopt.c:18
+#, c-format
+msgid "Options:\n"
+msgstr "Options:\n"
+
+#: ../src/mypopt.c:67
+#, c-format
+msgid "\"-%c\" takes %d parameters\n"
+msgstr "\"-%c\" prend %d paramètres\n"
+
+#: ../src/oww_trx.c:404
+msgid "The remote data source is not using Oww protocol!"
+msgstr "La source distantes n'utilise pas le protocole Oww !"
+
+#: ../src/parseout.c:1071
+#, c-format
+msgid "Silly suffix (%d) in parser string"
+msgstr "Suffixe (%d) dans le traitement de chaine"
+
+#: ../src/parseout.c:1089
+#, c-format
+msgid "Suffix (%d) greater than maximum allowed (%d) for tag \"%s\""
+msgstr "Suffixe (%d) > au maximum admi (%d) pour le tag \"%s\""
+
+#. Ran out of tags to try
+#: ../src/parseout.c:1124
+#, c-format
+msgid "Unknown tag: \"%s\""
+msgstr "Tag inconnu: \"%s\""
+
+#: ../src/parseout.c:1192
+#, c-format
+msgid "Unmatched $ symbol in \"%s\""
+msgstr "$ symbole introuvable dans \"%s\""
+
+#: ../src/progstate.c:286
+msgid "Saving default setup"
+msgstr "Sauvegarde configuration par défaut"
+
+#: ../src/progstate.c:361
+#, c-format
+msgid "Unable to connect to Oww server \"%s:%d\""
+msgstr "Impossible de se connecter au serveur Oww \"%s:%d\""
+
+#: ../src/progstate.c:365 ../src/progstate.c:388
+#, c-format
+msgid "Will try again in %us"
+msgstr "Prochaine tentative dans %us"
+
+#: ../src/progstate.c:384
+#, c-format
+msgid "Unable to connect to Arne server \"%s:%d\""
+msgstr "Impossible de se connecter au serveur Arne \"%s:%d\""
+
+#: ../src/progstate.c:398
+msgid "Unexpected datasource type"
+msgstr "Type de donnée inattendu"
+
+#: ../src/progstate.c:448
+msgid "Remote host error"
+msgstr "Erreur serveur distant"
+
+#. Server is about o die
+#. Close the current connexion
+#: ../src/progstate.c:503
+msgid "Remote server dying"
+msgstr "Aucune réponse du serveur distant"
+
+#: ../src/progstate.c:528
+msgid "Remote host connexion failed - trying again"
+msgstr "Erreur de connexion sur le serveur distant - Autre tentative"
+
+#: ../src/progstate.c:539
+msgid "Remote host closed connexion"
+msgstr "Connexion serveur distant fermée"
+
+#: ../src/progstate.c:541
+#, c-format
+msgid "Reconnecting in %us"
+msgstr "Reconnexion dans %us"
+
+#: ../src/progstate.c:556
+msgid "Remote data source timed out - reconnecting"
+msgstr "Timeout du serveur distant - reconnexion"
+
+#: ../src/progstate.c:604
+msgid "Check connexions and setup"
+msgstr "Recherche des connexions et configuration"
+
+#: ../src/progstate.c:634
+msgid "Problem with link or weather station"
+msgstr "Problème avec la liaison ou la station météo"
+
+#: ../src/progstate.c:641
+#, c-format
+msgid "RETRY:Will restart in %u seconds"
+msgstr "RETRY: Redémarrage dans %u secondes"
+
+#. Not the expected reply
+#: ../src/sendwx.c:541
+#, c-format
+msgid "URL fetch failed: %s"
+msgstr "erreur de recherche de l'URL: %s"
+
+#: ../src/sendwx.c:960
+msgid "Dallas upload failed"
+msgstr "erreur de mise à jour Dallas"
+
+#: ../src/sendwx.c:979
+msgid "WUnd upload failed"
+msgstr "erreur de mise à jour WUnd"
+
+#: ../src/sendwx.c:998
+msgid "ham upload failed"
+msgstr "erreur de mise à jour ham"
+
+#: ../src/sendwx.c:1028
+#, fuzzy
+msgid "WUnd upload (fast) failed"
+msgstr "erreur de mise à jour WUnd"
+
+#: ../src/sendwx.c:1057
+msgid "Dallas list fetch failed"
+msgstr "erreur de recherche de la liste Dallas"
+
+#: ../src/sendwx.c:1104
+msgid "Dallas data fetch failed"
+msgstr "erreur de recherche des données Dallas"
+
+#: ../src/server.c:364
+#, c-format
+msgid "Unable to claim TCP port %d. Perhaps another task claimed it already?"
+msgstr ""
+"Impossible de réserver le port TCP %d. Peut être utilisée par une autre "
+"tache?"
+
+#: ../src/server.c:394
+#, c-format
+msgid "Unable to claim LOCAL port %s. Perhaps another task claimed it already?"
+msgstr ""
+"Impossible de réserver le port LOCAL %s. Peut être utilisée par une autre "
+"tache?"
+
+#: ../src/setup.c:579
+msgid "stats write failed"
+msgstr "erreur d'écriture des statistiques"
+
+#: ../src/setup.c:589
+msgid "No stats file found - Using defaults"
+msgstr "Aucun fichier de statistique trouvé - Utilisation de celui par défaut"
+
+#: ../src/setup.c:605
+msgid "Setup write failed"
+msgstr "Erreur d'écriture de la configuration"
+
+#: ../src/setup.c:624
+msgid "No setup file found - Using defaults"
+msgstr ""
+"Aucun fichier de configuration trouvé - Utilisation de celui par défaut"
+
+#: ../src/setup.c:635
+msgid "Could not save device list."
+msgstr "Ne peut pas sauvegarder la liste des capteurs"
+
+#: ../src/setup.c:650
+msgid "No devices file found. You must use the devices dialogue."
+msgstr ""
+"Aucun fichier de capteurs trouvé. Vous devez utiliser le menu capteurs."
+
+#: ../src/setupd.c:468
+msgid "Stop"
+msgstr "Arrêter"
+
+#: ../src/setupd.c:624 ../src/setupd.c:632
+msgid "Choose debug file"
+msgstr "Choisir le fichier de debug"
+
+#: ../src/setupd.c:657
+msgid "Choose log directory"
+msgstr "Choisir le répertoire pour les logs"
+
+#: ../src/setupd.c:1170
+msgid "ID"
+msgstr "ID"
+
+#: ../src/setupd.c:1422
+msgid "Choose serial device"
+msgstr "Choisir un périphérique série"
+
+#: ../src/setupp.c:329
+#, c-format
+msgid "Error reading setup / devices file - unknown tag: \"%s\""
+msgstr ""
+"Erreur de lecture dans les fichiers de configuration / capteur - tag "
+"inconnu: \"%s\""
+
+#: ../src/setupp.c:611
+#, c-format
+msgid "Error when saving setup to %s"
+msgstr "Erreur lors de la sauvegarde de la configuration dans %s"
+
+#: ../src/setupp.c:630
+#, c-format
+msgid "Error when loading setup from %s"
+msgstr "Erreur lors de la lecture de la configuration venant de %s"
+
+#: ../src/tai8570.c:153
+#, c-format
+msgid "Setting %s slope to default for sea level"
+msgstr ""
+"Sélectionner %s comme tendance par défaut pour avoir le niveau de la mer"
+
+#: ../src/tai8570.c:184
+#, c-format
+msgid "%s is not a TAI8570 write device"
+msgstr "%s n'est pas un TAI8570 (écriture)"
+
+#: ../src/tai8570.c:189
+#, c-format
+msgid "%s is not a TAI8570 read device"
+msgstr "%s n'est pas un TAI8570 (lecture)"
+
+#: ../src/url_get_curl.c:347
+msgid "Oww was not compiled with libghttp."
+msgstr "Oww n'a pas été compilé avec libghttp."
+
+#: ../src/weather.c:2214
+#, c-format
+msgid "Checking weather station: \"%s\" not found"
+msgstr "Recherche de la station météo: \"%s\" non trouvé"
+
+#: ../src/weather.c:2220
+msgid "Checking weather station: wind vane not found"
+msgstr "Recherche de la station météo: anémomètre et girouette non trouvés"
+
+#: ../src/weather.c:2701
+msgid "Could not access Vane Switch"
+msgstr "Aucun accès à la girouette"
+
+#: ../src/werr_linux.c:297
+#, c-format
+msgid "Warning from %s [%s]"
+msgstr "Alerte de %s [%s]"
+
+#~ msgid "Select to enable Wunderground uploads"
+#~ msgstr "Sélectionner pour activer les mises à jour sur Wunderground"
+
+#~ msgid "C)"
+#~ msgstr "C)"
+
+#~ msgid ""
+#~ "Dr. Simon J. Melhuish\n"
+#~ "(some parts from Dallas Semiconductor)"
+#~ msgstr ""
+#~ "Dr. Simon J. Melhuish\n"
+#~ "(quelques parties de Dallas Semiconducteur)\n"
+#~ "Traduction en français du radio club F5KBD"
+
+#~ msgid "? setup"
+#~ msgstr "? setup"
+
+#~ msgid "? devices"
+#~ msgstr "? devices"

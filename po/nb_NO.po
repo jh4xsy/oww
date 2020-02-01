@@ -1,0 +1,1852 @@
+# translation of nb_NO.po to Norwegian bokmål
+# translation of oww.po to Norwegian bokmål
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Steinar Midtskogen <steinar@latinitas.org>, 2004, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nb_NO\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-05-27 20:55+0100\n"
+"PO-Revision-Date: 2005-05-24 22:14+0200\n"
+"Last-Translator: Steinar Midtskogen <steinar@latinitas.org>\n"
+"Language-Team: Norwegian bokmål\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: ../src/support.c:90 ../src/support.c:114
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Kunne ikke finne bildefil: %s"
+
+#: ../src/interface.c:55
+msgid "One-wire weather"
+msgstr "One-wire vær"
+
+#: ../src/interface.c:66
+msgid "_File"
+msgstr "_Fil"
+
+#: ../src/interface.c:73
+msgid "_Auxilliary"
+msgstr "_Ekstra"
+
+#: ../src/interface.c:76
+msgid "Full sensor readout"
+msgstr "Fullstendig sensoravlesing"
+
+#: ../src/interface.c:78
+msgid "Map"
+msgstr "Kart"
+
+#: ../src/interface.c:81
+msgid "Go to this station's map URL"
+msgstr "Gå til denne stasjonens kart-URL"
+
+#: ../src/interface.c:83
+msgid "_Messages"
+msgstr "_Meldinger"
+
+#: ../src/interface.c:86
+msgid "Warnings and errors logged by Oww"
+msgstr "Advarsler og feilmeldinger loggført av Oww"
+
+#: ../src/interface.c:93
+msgid "E_xit"
+msgstr "_Avslutt"
+
+#: ../src/interface.c:96
+msgid "Quit the application."
+msgstr "Avslutt programmet."
+
+#: ../src/interface.c:98
+msgid "_Edit"
+msgstr "_Endre"
+
+#: ../src/interface.c:105
+msgid "_Setup"
+msgstr "_Innstillinger"
+
+#: ../src/interface.c:108
+msgid "Logging settings, &c."
+msgstr "Logginnstillinger osv."
+
+#: ../src/interface.c:110
+msgid "_Devices"
+msgstr "_Enheter"
+
+#: ../src/interface.c:113
+msgid "One-wire device settings."
+msgstr "One-wire enhetsinnstillinger"
+
+#: ../src/interface.c:115
+msgid "_Help"
+msgstr "_Hjelp"
+
+#: ../src/interface.c:122
+msgid "About"
+msgstr "Om"
+
+#: ../src/interface.c:125
+msgid "Information about this program."
+msgstr "Informasjon om dette programmet."
+
+#: ../src/interface.c:206 ../src/interface.c:207
+msgid "Messages from Oww"
+msgstr "Meldinger fra Oww"
+
+#: ../src/interface.c:228
+msgid "Clear"
+msgstr "Visk ut"
+
+#: ../src/interface.c:231
+msgid "Click here to clear all messages"
+msgstr "Klikk her for å viske ut alle meldingene"
+
+#: ../src/interface.c:233 ../src/interface.c:422 ../src/interface.c:1667
+msgid "Close"
+msgstr "Lukk"
+
+#: ../src/interface.c:236
+msgid "Click here to close this window"
+msgstr "Klikk her for å stenge dette vinduet"
+
+#: ../src/interface.c:403
+msgid "Oww Setup"
+msgstr "Oww-innstillinger"
+
+#: ../src/interface.c:416 ../src/interface.c:1662
+msgid "Save"
+msgstr "Lagre"
+
+#: ../src/interface.c:420
+msgid "Click here to save your setup"
+msgstr "Klikk her for å lagre innstillingene dine"
+
+#: ../src/interface.c:426
+msgid "Click here to close the setup window"
+msgstr "Klikk her for å lukke innstillingsvinduet"
+
+#: ../src/interface.c:441 ../src/interface.c:693
+msgid "(s)"
+msgstr "(s)"
+
+#: ../src/interface.c:449
+msgid "Local"
+msgstr "Lokal"
+
+#: ../src/interface.c:454
+msgid "Read from local 1-wire weather station"
+msgstr "Leste fra lokal 1-wire-værstasjon"
+
+#: ../src/interface.c:458
+msgid "Oww"
+msgstr "Oww"
+
+#: ../src/interface.c:463
+msgid "Read from remote Oww server"
+msgstr "Leste fra fjern Oww-tjener"
+
+#: ../src/interface.c:467
+msgid "Arne"
+msgstr "Arne"
+
+#: ../src/interface.c:471
+msgid "Read from remote Arne server"
+msgstr "Leste fra fjern Arne-tjener"
+
+#: ../src/interface.c:475 ../src/interface.c:815
+msgid "Dallas"
+msgstr "Dallas"
+
+#: ../src/interface.c:479
+msgid "Read from Dallas"
+msgstr "Leste fra Dallas"
+
+#: ../src/interface.c:488
+msgid "Remote Oww server host name"
+msgstr "Navnet på fjern Oww-tjeneren"
+
+#: ../src/interface.c:495
+msgid "Remote Arne server host name"
+msgstr "Navnet på fjern Arne-tjener"
+
+#: ../src/interface.c:509
+msgid "Select Dallas weather station"
+msgstr "Velg Dallas-værstasjon"
+
+#: ../src/interface.c:511
+msgid "List"
+msgstr "Liste"
+
+#: ../src/interface.c:515
+msgid "Click to update list of Dallas weather stations"
+msgstr "Klikk her for å oppdatere lista av Dallas-værstasjoner"
+
+#: ../src/interface.c:523
+msgid "Remote Oww server port number"
+msgstr "Portnummeret på fjern Oww-tjeneren"
+
+#: ../src/interface.c:531
+msgid "Remote Arne server port number"
+msgstr "Portnummeret til fjern Arne-tjener"
+
+#: ../src/interface.c:533
+msgid "Update"
+msgstr "Oppdater"
+
+#: ../src/interface.c:538
+msgid "Click here to update data source parameters"
+msgstr "Klikk her for å oppdatere kildeparametre"
+
+#: ../src/interface.c:540 ../src/interface.c:781
+msgid "Interval"
+msgstr "Intervall"
+
+#: ../src/interface.c:553
+msgid "Update interval (in seconds)"
+msgstr "Oppdateringsintervall (i sekund)"
+
+#: ../src/interface.c:556
+msgid "Browser"
+msgstr "Nettleser"
+
+#: ../src/interface.c:577
+msgid "Mozilla"
+msgstr "Mozilla"
+
+#: ../src/interface.c:578
+msgid "Netscape"
+msgstr "Netscape"
+
+#: ../src/interface.c:579
+msgid "Konqueror"
+msgstr "Konqueror"
+
+#: ../src/interface.c:580
+msgid "Opera"
+msgstr "Opera"
+
+#: ../src/interface.c:581
+msgid "Galeon"
+msgstr "Galeon"
+
+#: ../src/interface.c:583
+msgid "Data source"
+msgstr "Datakilde"
+
+#: ../src/interface.c:595
+msgid "Use Trh"
+msgstr "Bruk Trf"
+
+#: ../src/interface.c:600
+msgid ""
+"Select this option to use the temperature recorded by the first humidity "
+"sensor instead of the WS temperature"
+msgstr ""
+"Velg dette for å bruke temperaturen fra den første fuktighetssensoren i "
+"stedet for værstasjonstemperaturen"
+
+#: ../src/interface.c:602
+msgid "Animate"
+msgstr "Animer"
+
+#: ../src/interface.c:607
+msgid "Animated display on/off"
+msgstr "Animert display på/av"
+
+#: ../src/interface.c:609
+msgid "Wind speed"
+msgstr "Vindhastighet"
+
+#: ../src/interface.c:616
+msgid "Temperature"
+msgstr "Temperatur"
+
+#: ../src/interface.c:623 ../src/auxwin.c:117
+msgid "Rain"
+msgstr "Nedbør"
+
+#: ../src/interface.c:630
+msgid "Pressure"
+msgstr "Trykk"
+
+#: ../src/interface.c:642
+msgid "°C"
+msgstr "°C"
+
+#: ../src/interface.c:643
+msgid "°F"
+msgstr "°F"
+
+#: ../src/interface.c:650
+msgid "Inches"
+msgstr "Tommer"
+
+#: ../src/interface.c:651 ../src/convert.c:95
+msgid "mm"
+msgstr "mm"
+
+#: ../src/interface.c:658
+msgid "mBar"
+msgstr "mBar"
+
+#: ../src/interface.c:659
+msgid "Inch Hg"
+msgstr "Tommer Hg"
+
+#: ../src/interface.c:660 ../src/convert.c:104
+msgid "kPa"
+msgstr "kPa"
+
+#: ../src/interface.c:661 ../src/convert.c:107
+msgid "ATM"
+msgstr "ATM"
+
+#: ../src/interface.c:668
+msgid "km/hr"
+msgstr "km/t"
+
+#: ../src/interface.c:669 ../src/convert.c:83
+msgid "mph"
+msgstr "miles/t"
+
+#: ../src/interface.c:670 ../src/convert.c:86
+msgid "m/s"
+msgstr "m/s"
+
+#: ../src/interface.c:671 ../src/convert.c:89
+msgid "knots"
+msgstr "knop"
+
+#: ../src/interface.c:673
+msgid "Display"
+msgstr "Vis"
+
+#: ../src/interface.c:685 ../src/interface.c:1228 ../src/interface.c:1802
+msgid "..."
+msgstr "..."
+
+#: ../src/interface.c:691
+msgid "Click here to browse to a log file or directory location"
+msgstr "Klikk her for å finne ei loggfil eller en katalog"
+
+#: ../src/interface.c:706
+msgid "Log update interval (in seconds)"
+msgstr "Loggføringsinterval (i sekund)"
+
+#: ../src/interface.c:714 ../src/interface.c:1034 ../src/setupd.c:471
+msgid "Off"
+msgstr "Av"
+
+#: ../src/interface.c:720 ../src/setupd.c:468
+msgid "Start"
+msgstr "Start"
+
+#: ../src/interface.c:725
+msgid "Click here to start or stop logging"
+msgstr "Klikk her for å starte eller stoppe loggføring"
+
+#: ../src/interface.c:727 ../src/interface.c:1255 ../src/interface.c:1269
+#: ../src/parseout.c:843 ../src/parseout.c:860
+msgid "None"
+msgstr "Ingen"
+
+#: ../src/interface.c:732
+msgid "No logging"
+msgstr "Logging av"
+
+#: ../src/interface.c:737 ../src/interface.c:1050
+msgid "Daily"
+msgstr "Daglig"
+
+#: ../src/interface.c:742
+msgid "Logging to a new file each day"
+msgstr "Logging til ei ny fil hver dag"
+
+#: ../src/interface.c:746
+msgid "Single"
+msgstr "Enkel"
+
+#: ../src/interface.c:751
+msgid "Logging to a single file"
+msgstr "Logging til ei enkelt fil"
+
+#: ../src/interface.c:755
+msgid "Snap"
+msgstr "Tidspunkt"
+
+#: ../src/interface.c:760
+msgid "Log times snap to clock intervals"
+msgstr "Loggtidspunkt låses til klokkeintervall"
+
+#: ../src/interface.c:767
+msgid "Enter the name of your chosen log file or directory here"
+msgstr "Skriv inn navnen på loggfila di eller katalogen her"
+
+#: ../src/interface.c:768
+msgid "/home/someuser/logfile.csv"
+msgstr "/home/someuser/logfile.csv"
+
+#: ../src/interface.c:776
+msgid " "
+msgstr "."
+
+#: ../src/interface.c:787
+msgid "Log file"
+msgstr "Loggfil"
+
+#: ../src/interface.c:799
+msgid "Interval (s)"
+msgstr "Intervall (s)"
+
+#: ../src/interface.c:807
+msgid "http proxy"
+msgstr "http-proxy"
+
+#: ../src/interface.c:823
+msgid "Lat. / Long."
+msgstr "Bredde / lengde"
+
+#: ../src/interface.c:831
+#, fuzzy
+msgid "Wunderground"
+msgstr "wunderground"
+
+#: ../src/interface.c:839 ../src/interface.c:847 ../src/interface.c:871
+msgid "User / Pass"
+msgstr "Bruker / passord"
+
+#: ../src/interface.c:855
+msgid "hamweather"
+msgstr "hamweather"
+
+#: ../src/interface.c:863
+msgid "CWOP"
+msgstr "CWOP"
+
+#: ../src/interface.c:884
+msgid "Select to enable the http proxy"
+msgstr "Velg for å aktivere http-proxy"
+
+#: ../src/interface.c:891
+msgid "Select to enable Dallas Semiconductor uploads"
+msgstr "Velge for å aktivere Dallas Semiconductor-opplasting"
+
+#: ../src/interface.c:898
+msgid "Select to enable hamweather uploads"
+msgstr "Velg for å akrivere hamweather-opplasting"
+
+#: ../src/interface.c:905
+msgid "Select to enable CWOP uploads"
+msgstr "Velg for å aktivere CWOP-opplasting"
+
+#: ../src/interface.c:907
+msgid "Use times"
+msgstr "Bruk tidspunkt"
+
+#: ../src/interface.c:912
+msgid "Upload times snap to clock intervals"
+msgstr "Opplastingstidspunkt låses til klokkeintervall"
+
+#: ../src/interface.c:919
+msgid "Enter your call sign / user name for CWOP here"
+msgstr "Skriv inn kallenavnet / brukernavnet ditt for CWOP her"
+
+#: ../src/interface.c:926
+msgid "Enter the server name / IP for CWOP uploads"
+msgstr "Skriv inn tjenernavn / IP for CWOP-opplasting"
+
+#: ../src/interface.c:933
+msgid "Enter your user name for hamweather here"
+msgstr "Skriv inn brukernavnet ditt for hamweather her"
+
+#: ../src/interface.c:940
+msgid "Enter your user name for The Weather Underground here"
+msgstr "Skriv inn brukernavnet ditt for The Weather Underground her"
+
+#: ../src/interface.c:948
+msgid "Latitude in degrees east (-180.0 to 180.0)"
+msgstr "Lengdegrader øst (-180,0 til 180,0)"
+
+#: ../src/interface.c:957
+msgid "Interval between weather station Web uploads"
+msgstr "Intervall mellom opplastinger fra væstasjon til web"
+
+#: ../src/interface.c:964
+msgid "Enter the address of your proxy, including the http://at the start"
+msgstr "Skriv inn adressa på proxyen din inludert http:// på begynnelsen"
+
+#: ../src/interface.c:971
+msgid ""
+"Enter the base URL of the Dallas servlet, e.g. http://198.3.123.122:8080/"
+"servlet/WeatherServlet"
+msgstr ""
+"Skriv inn base-URL til Dallas-servlet, f. eks. http://198.3.123.122:8080/"
+"servlet/WeatherServlet"
+
+#: ../src/interface.c:978 ../src/interface.c:1027
+msgid ""
+"Enter the base URL of the Weather Underground database, e.g. http://www."
+"wunderground.com/weatherstation/updateweatherstation.php"
+msgstr ""
+"Skriv in base-URL til Weather Underground-databasen, f.eks. http://www."
+"wunderground.com/weatherstation/updateweatherstation.php"
+
+#: ../src/interface.c:986
+msgid "Enter the port number for CWOP uploads"
+msgstr "Skriv inn portnummer for CWOP-opplasting"
+
+#: ../src/interface.c:995
+msgid "Longtitude in degrees north (-90.0 to 90.0)"
+msgstr "Breddegrader nord (-90,0 til 90,0)"
+
+#: ../src/interface.c:1003
+msgid "Enter your password for The Weather Underground here"
+msgstr "Skriv inn passordet ditt for The Weather Underground her"
+
+#: ../src/interface.c:1011
+msgid "Enter your password for hamweather here"
+msgstr "Skriv inn passordet ditt for hamweather her"
+
+#: ../src/interface.c:1019
+msgid "Enter your password for CWOP here"
+msgstr "Skriv inn passordet ditt for CWOP her"
+
+#: ../src/interface.c:1035 ../src/setupd.c:471
+msgid "On"
+msgstr "På"
+
+#: ../src/interface.c:1036
+#, fuzzy
+msgid "Fast"
+msgstr "ved"
+
+#: ../src/interface.c:1038
+msgid "Upload"
+msgstr "Last opp"
+
+#: ../src/interface.c:1055
+msgid "Daily reset at..."
+msgstr "Daglig resett ved"
+
+#: ../src/interface.c:1059
+msgid "Weekly"
+msgstr "Ukentlig"
+
+#: ../src/interface.c:1064
+msgid "Weekly reset on..."
+msgstr "Ukentlig resett på"
+
+#: ../src/interface.c:1068
+msgid "Monthly"
+msgstr "Månedlig"
+
+#: ../src/interface.c:1073
+msgid "Monthly reset on..."
+msgstr "Månedlig resett på"
+
+#: ../src/interface.c:1077
+msgid "at"
+msgstr "ved"
+
+#: ../src/interface.c:1084 ../src/interface.c:1091
+msgid "on"
+msgstr "på"
+
+#: ../src/interface.c:1098
+msgid "Reset"
+msgstr "Resett"
+
+#: ../src/interface.c:1103
+msgid "Click here to reset the rain gauge"
+msgstr "Klikk her for å resette nedbørsmåleren"
+
+#: ../src/interface.c:1105
+msgid "Manual"
+msgstr "Manuell"
+
+#: ../src/interface.c:1110
+msgid "Manual reset only"
+msgstr "Manuell resett bare"
+
+#: ../src/interface.c:1120
+msgid "Sunday"
+msgstr "Søndag"
+
+#: ../src/interface.c:1121
+msgid "Monday"
+msgstr "Mandag"
+
+#: ../src/interface.c:1122
+msgid "Tuesday"
+msgstr "Tirsdag"
+
+#: ../src/interface.c:1123
+msgid "Wednesday"
+msgstr "Onsdag"
+
+#: ../src/interface.c:1124
+msgid "Thursday"
+msgstr "Torsdag"
+
+#: ../src/interface.c:1125
+msgid "Friday"
+msgstr "Fredag"
+
+#: ../src/interface.c:1126
+msgid "Saturday"
+msgstr "Lørdag"
+
+#: ../src/interface.c:1134
+msgid "Date of monthly reset"
+msgstr "Dato for månedlig resett"
+
+#: ../src/interface.c:1144
+msgid "Hour for automatic resets"
+msgstr "Time for automatisk resett"
+
+#: ../src/interface.c:1148
+msgid ":00"
+msgstr ":00"
+
+#: ../src/interface.c:1155
+msgid "Stats"
+msgstr "Statistikk"
+
+#: ../src/interface.c:1167
+msgid "Wind chill formula"
+msgstr "Formel for vindavkjøling"
+
+#: ../src/interface.c:1175
+msgid "Heat index formula"
+msgstr "Formel for varmeindeks"
+
+#: ../src/interface.c:1188
+msgid "Steadman"
+msgstr "Steadman"
+
+#: ../src/interface.c:1189
+msgid "NWS 1992b"
+msgstr "NWS 1992b"
+
+#: ../src/interface.c:1190
+msgid "New WCT"
+msgstr "Ny WCT"
+
+#: ../src/interface.c:1197
+msgid "U.S. heat index"
+msgstr "Amerikansk varmeindeks"
+
+#: ../src/interface.c:1198
+msgid "Canadian humidex"
+msgstr "Kanadisk varmeindeks"
+
+#: ../src/interface.c:1200
+msgid "Derived values"
+msgstr "Utleda verdier"
+
+#: ../src/interface.c:1212 ../src/interface.c:1278
+msgid "Messages"
+msgstr "Meldinger"
+
+#: ../src/interface.c:1220
+msgid "Log level"
+msgstr "Loggnivå"
+
+#: ../src/interface.c:1233
+msgid "Click here to pick a debug file name"
+msgstr "Klikk her for å velge et filnavn for debugging"
+
+#: ../src/interface.c:1235
+msgid "Debug file"
+msgstr "Debuggingsfil"
+
+#: ../src/interface.c:1248
+msgid "Enter the full name of the debug file and hit \"return\"."
+msgstr "Skriv inn det hele navnet til debuggingsfila og trykk linjeskift."
+
+#: ../src/interface.c:1256 ../src/interface.c:1270
+msgid "Fatal only"
+msgstr "Bare fatale"
+
+#: ../src/interface.c:1257 ../src/interface.c:1271
+msgid "All errors"
+msgstr "Alle feil"
+
+#: ../src/interface.c:1258 ../src/interface.c:1272
+msgid "Errors and warnings"
+msgstr "Feil og advarsler"
+
+#: ../src/interface.c:1259 ../src/interface.c:1273
+msgid "Debug 0"
+msgstr "Debugging 0"
+
+#: ../src/interface.c:1260 ../src/interface.c:1274
+msgid "Debug 1"
+msgstr "Debugging 1"
+
+#: ../src/interface.c:1261 ../src/interface.c:1275
+msgid "Debug 2"
+msgstr "Debugging 2"
+
+#: ../src/interface.c:1262 ../src/interface.c:1276
+msgid "Debug 3"
+msgstr "Debugging 3"
+
+#: ../src/interface.c:1283
+msgid "SaveNG"
+msgstr "Lagre (NG)"
+
+#: ../src/interface.c:1289
+msgid "Click here to save your setup for use by owwnogui"
+msgstr "Klikk her for å lagre innstillingene som brukes av owwnogui"
+
+#: ../src/interface.c:1639
+msgid "Devices"
+msgstr "Enheter"
+
+#: ../src/interface.c:1652
+msgid "Search"
+msgstr "Søk"
+
+#: ../src/interface.c:1655
+msgid ""
+"Click here to erase your current device settings and search the bus for "
+"connected components"
+msgstr ""
+"Klikk her for å slette de nåværende enhetsinnstillingene og søk på bussen "
+"for tilkopla komponenter"
+
+#: ../src/interface.c:1665
+msgid "Click here to save your device settings"
+msgstr "Klikk her for å lagre enhetsinnstillingene dine"
+
+#: ../src/interface.c:1670
+msgid "Click here to close the window"
+msgstr "Klikk her for å lukke vinduet"
+
+#: ../src/interface.c:1725
+msgid "Choose Cal entry to change from pop-up list"
+msgstr "Velg kalibreringsverdi som skal endres fra lista"
+
+#: ../src/interface.c:1733
+msgid "Enter Cal value here"
+msgstr "Skriv inn kalibreringsverdien her"
+
+#: ../src/interface.c:1745
+msgid "Vanes"
+msgstr "Fløyer"
+
+#: ../src/interface.c:1755
+msgid "How many wind vane devices have been detected (out of 8)?"
+msgstr "Hvor mange vindfløyer har blitt funnet (av 8)?"
+
+#: ../src/interface.c:1757
+msgid "0"
+msgstr "0"
+
+#: ../src/interface.c:1759
+msgid "Offset"
+msgstr "Avvik"
+
+#: ../src/interface.c:1770
+msgid ""
+"Adjust the offset (-8 to +8) until the display lines up with the actual wind "
+"vane direction"
+msgstr ""
+"Juster avviket (-8 til +8) til displayet passer med den faktiske retningen "
+"på vindfløya"
+
+#: ../src/interface.c:1774
+msgid "Reverse"
+msgstr "Speilvend"
+
+#: ../src/interface.c:1777
+msgid "Select this option if your wind vane readout is reversed"
+msgstr "Velg dette om vindfløya di er speilvendt"
+
+#: ../src/interface.c:1779
+msgid "Wipe Vanes"
+msgstr "Slett fløyer"
+
+#: ../src/interface.c:1783
+msgid "Wind vane"
+msgstr "Vindfløy"
+
+#: ../src/interface.c:1799
+msgid "Enter the serial device name here"
+msgstr "Skriv inn navnet på seriellinngangen her"
+
+#: ../src/interface.c:1800
+msgid "/dev/cua0"
+msgstr "/dev/cua0"
+
+#: ../src/interface.c:1806
+msgid "Click to browse to a serial device"
+msgstr "Klikk for å leite etter navnet på seriellinngangen"
+
+#: ../src/interface.c:1808 ../src/setupd.c:1179
+msgid "Device"
+msgstr "Enhet"
+
+#: ../src/interface.c:1915
+msgid "Information about this program"
+msgstr "Informasjon om dette programmet"
+
+#: ../src/interface.c:1916
+msgid "Program information"
+msgstr "Programinformasjon"
+
+#: ../src/interface.c:1922
+msgid "Version"
+msgstr "Versjon"
+
+#: ../src/interface.c:1930
+msgid "Author\n"
+msgstr "Forfatter\n"
+
+#: ../src/interface.c:1938
+msgid "Purpose"
+msgstr "Formål"
+
+#: ../src/interface.c:1946 ../src/auxwin_un.c:41
+msgid "Name"
+msgstr "Navn"
+
+#: ../src/interface.c:1960
+msgid "<span size=\"x-large\" foreground=\"blue\">Oww</span>"
+msgstr ""
+
+#: ../src/interface.c:1972
+msgid "<span foreground=\"red\">One-wire weather</span>"
+msgstr ""
+
+#: ../src/interface.c:1984
+msgid "<span foreground=\"brown\" size=\"large\">Dr. Simon J. Melhuish</span>"
+msgstr ""
+
+#: ../src/interface.c:1996
+msgid "0.0.1"
+msgstr "0.0.1"
+
+#: ../src/interface.c:2007
+msgid "http://oww.sourceforge.net/"
+msgstr "http://oww.sourceforge.net/"
+
+#: ../src/interface.c:2017
+msgid ""
+"<b>Developers</b>\n"
+"Maxim / Dallas \t\tPD\n"
+"Steinar Midtskogen \tlightning, &amp;c\n"
+"Matthew Harrell \t\tcwop\n"
+"and others...\n"
+"<b>Translators</b>\n"
+"Steinar Midtskogen \tnb_NO\n"
+"f5kbd \t\t\tfr\n"
+"Mikael Martinsson \tsv\n"
+"Petr\t\t\t\tcz"
+msgstr ""
+
+#: ../src/interface.c:2023
+msgid ""
+"Helped\n"
+"by\n"
+msgstr ""
+
+#: ../src/interface.c:2078
+msgid "Oww auxilliary window - full sensor readout"
+msgstr "Oww-ekstravindu - fullstendig sensoravlesning"
+
+#: ../src/interface.c:2079
+msgid "Oww - Auxilliary"
+msgstr "Oww - ekstra"
+
+#: ../src/ad26.c:181 ../src/ad26.c:303
+msgid "1-s timeout reading voltage"
+msgstr "Ettsekunds tidsavbrudd for spenningsavlesing"
+
+#: ../src/ad26.c:343
+#, c-format
+msgid "Too many retries reading %s current. Giving up."
+msgstr "For mange forsøk på å lese spenningen på %s.  Gir opp."
+
+#: ../src/ad26.c:355
+#, c-format
+msgid "ad26_current_reading didn't write correctly, reading %s"
+msgstr "leser %s, ad26_current_reading ville ikke skrive skikkelig"
+
+#: ../src/ad26.c:425 ../src/ad26.c:583
+#, c-format
+msgid "Access failed, reading %s"
+msgstr "Leser %s, ingen tilgang"
+
+#: ../src/ad26.c:434
+#, c-format
+msgid "ad26_current_reading failed, reading %s"
+msgstr "Leser %s, ad26_current_reading lyktes ikke"
+
+#: ../src/ad26.c:464
+#, c-format
+msgid "Too many retries reading %s. Giving up."
+msgstr "For mange forsøk på å lese %s. Gir opp."
+
+#: ../src/ad26.c:476
+#, c-format
+msgid "Volt_AD didn't write correctly, reading %s"
+msgstr "Leser %s, Volt_AD ville ikke skrive skikkelig"
+
+#: ../src/ad26.c:592
+#, c-format
+msgid "Volt_AD failed, reading %s"
+msgstr "Leser %s, Volt_AD lyktes ikke"
+
+#: ../src/ad26.c:621
+msgid "1-s timeout converting temperature"
+msgstr "Ettsekunds tidsavbrudd for temperaturkonvertering"
+
+#. EOF
+#: ../src/applctn.c:262
+#, c-format
+msgid "Exiting interactive mode.\n"
+msgstr "Går ut av interaktiv modus.\n"
+
+#: ../src/applctn.c:645
+#, c-format
+msgid "Changing to daemon mode\n"
+msgstr "Bytter til daemon-modus\n"
+
+#: ../src/applctn.c:648
+#, c-format
+msgid "daemon failed\n"
+msgstr "daemon lyktes ikke\n"
+
+#: ../src/applctn.c:675
+#, c-format
+msgid ""
+"Interactive mode conflicts with daemon mode.\n"
+"Exiting.\n"
+msgstr ""
+"Interaktiv modus strider mot daemon-modus.\n"
+"Avslutter.\n"
+
+#: ../src/applctn.c:685
+msgid "daemon mode for owwnogui only"
+msgstr "daemon-modus bare for owwnogui"
+
+#: ../src/arne.c:402
+msgid "CRC error reading from WServer"
+msgstr "CRC-feil under lesing fra WServer"
+
+#: ../src/arne.c:403
+#, c-format
+msgid "check = %d, vane_bearing = %d, vane_mode = %d, sum = %d"
+msgstr "check= %d, vane_bearing = %d, vane_mode = %d, sum = %d"
+
+#: ../src/arne.c:444 ../src/oww_trx.c:622
+#, c-format
+msgid "Bad socket: %d"
+msgstr "Feil socket: %d"
+
+#: ../src/auxwin.c:65
+msgid "Wind Speed"
+msgstr "Vindhastighet"
+
+#: ../src/auxwin.c:73
+msgid "Wind Gust"
+msgstr "Vindkast"
+
+#: ../src/auxwin.c:80
+msgid "Wind Dir."
+msgstr "Vindretning"
+
+#: ../src/auxwin.c:89
+msgid "Wind Chill"
+msgstr "Vindavkjøling"
+
+#: ../src/auxwin.c:100
+msgid "Heat Index"
+msgstr "Varmeindeks"
+
+#: ../src/auxwin.c:122
+msgid "Rain Rate"
+msgstr "Nedbørsrate"
+
+#: ../src/auxwin.c:125
+msgid "mm/hour"
+msgstr "mm/time"
+
+#: ../src/auxwin.c:125
+msgid "\"/hour"
+msgstr "\"/time"
+
+#: ../src/auxwin.c:146
+msgid "RH "
+msgstr "RF "
+
+#: ../src/auxwin.c:150
+msgid "T rh "
+msgstr "T rf "
+
+#: ../src/auxwin.c:156
+msgid "T dew "
+msgstr "T dogg "
+
+#: ../src/auxwin.c:172
+msgid "Barom "
+msgstr "Barom "
+
+#: ../src/auxwin.c:180
+msgid "T b "
+msgstr "T b "
+
+#: ../src/auxwin.c:192
+msgid "GPC "
+msgstr "GPC "
+
+#: ../src/auxwin.c:204
+msgid "Solar "
+msgstr "Sol "
+
+#: ../src/auxwin.c:216
+msgid "V adc "
+msgstr ""
+
+#: ../src/auxwin.c:222
+msgid "I adc "
+msgstr ""
+
+#: ../src/auxwin.c:228
+#, fuzzy
+msgid "T adc "
+msgstr "T dogg "
+
+#: ../src/auxwin_un.c:48
+msgid "Value"
+msgstr "Verdi"
+
+#: ../src/auxwin_un.c:56
+msgid "Unit"
+msgstr "Enhet"
+
+#: ../src/client.c:126
+#, c-format
+msgid "Unable to resolve host name \"%s\""
+msgstr "Kunne ikke finne vertsnavnet \"%s\""
+
+#: ../src/client.c:148
+#, c-format
+msgid "Unable to open socket for communication with \"%s\""
+msgstr "Kunne ikke åpne socket for å kommunisere med \"%s\""
+
+#: ../src/client.c:158
+#, c-format
+msgid "Unable to connect to \"%s\""
+msgstr "Kunne ikke kople til \"%s\""
+
+#: ../src/convert.c:80
+msgid "km/h"
+msgstr "km/t"
+
+#: ../src/convert.c:98
+msgid "mB"
+msgstr "hPa"
+
+#: ../src/convert.c:101
+msgid "\"Hg"
+msgstr "\"Hg"
+
+#: ../src/convert.c:110
+msgid "Bad unit type"
+msgstr "Ugyldig enhet"
+
+#: ../src/convert.c:183 ../src/convert.c:189
+msgid "inches"
+msgstr "tommer"
+
+#: ../src/cwop.c:247 ../src/cwop.c:279
+msgid "Cwop: Remote host error"
+msgstr "Cwop: Feil mot fjerntjener"
+
+#: ../src/cwop.c:349
+#, c-format
+msgid "Cwop: Host name error: %s"
+msgstr "Cwop: Feil vertsnavn: %s"
+
+#: ../src/cwop.c:363
+#, c-format
+msgid "Cwop: Cannot create tcp socket - %s"
+msgstr "Cwop: Kunne ikke lage tcp-socket - %s"
+
+#: ../src/cwop.c:382
+#, c-format
+msgid "Cwop: Cannot connect to server %s - %s"
+msgstr "Cwop: Kunne ikke kople til server %s . %s"
+
+#: ../src/devices.c:560
+msgid "Thermometer slope"
+msgstr "Termometerstigning"
+
+#: ../src/devices.c:563
+msgid "Thermometer offset ("
+msgstr "Termometeravvik ("
+
+#: ../src/devices.c:570
+msgid "Anemometer slope"
+msgstr "Vindmålerstigning"
+
+#: ../src/devices.c:574
+msgid "Rain gauge slope (\"/tip)"
+msgstr "Nedbørsmålerstigning (\"/vipp)"
+
+#: ../src/devices.c:581
+msgid "Trh slope"
+msgstr "Trv-stigning"
+
+#: ../src/devices.c:584
+msgid "Trh offset ("
+msgstr "Trv-avvik"
+
+#: ../src/devices.c:587
+msgid "Hygrometer slope"
+msgstr "Hygrometerstigning"
+
+#: ../src/devices.c:590
+msgid "Hygrometer offset (%RH)"
+msgstr "Hygrometeravvik (%rf)"
+
+#: ../src/devices.c:600
+msgid "Barometer slope (mBar / X)"
+msgstr "Barometerstigning (hPa / X)"
+
+#: ../src/devices.c:603
+msgid "Barometer offset (mBar)"
+msgstr "Barometeravvik (hPa)"
+
+#: ../src/devices.c:606
+msgid "Tb slope"
+msgstr "Tb-stigning"
+
+#: ../src/devices.c:609
+msgid "Tb offset ("
+msgstr "Tb-avvik ("
+
+#: ../src/devices.c:616
+msgid "GPC slope"
+msgstr "GPC-stigning"
+
+#: ../src/devices.c:623
+msgid "Solar slope"
+msgstr "Solsensorstigning"
+
+#: ../src/devices.c:626
+msgid "Solar offset"
+msgstr "Solsensoravvik"
+
+#: ../src/devices.c:630
+msgid "LCD type"
+msgstr "LCD-type"
+
+#. Check for special cases
+#: ../src/devices.c:1181 ../src/interactive.c:78 ../src/interactive.c:125
+#: ../src/setupd.c:887 ../src/setupd.c:953 ../src/setupd.c:971
+msgid "--None--"
+msgstr "--Ingen--"
+
+#: ../src/devices.c:1274
+msgid "Coupler"
+msgstr "Skjøte"
+
+#: ../src/devices.c:1277
+msgid "Thermometer"
+msgstr "Termometer"
+
+#: ../src/devices.c:1280
+msgid "Switch"
+msgstr "Switch"
+
+#: ../src/devices.c:1283
+msgid "Counter"
+msgstr "Teller"
+
+#: ../src/devices.c:1286
+msgid "ROM ID"
+msgstr "ROM-ID"
+
+#: ../src/devices.c:1289
+msgid "A to D"
+msgstr "A til D"
+
+#: ../src/devices.c:1292
+msgid "Smart Bat' Mon'"
+msgstr "Smart Bat' Mon'"
+
+#: ../src/devices.c:1295
+msgid "8-bit IO"
+msgstr "8-bit IO"
+
+#: ../src/devices.c:1298
+#, fuzzy
+msgid "Hygrochron"
+msgstr "Termokron"
+
+#: ../src/devices.c:1305
+msgid "MultiKey"
+msgstr "MultiKey"
+
+#: ../src/devices.c:1318
+msgid "Memory"
+msgstr "Minne"
+
+#: ../src/devices.c:1321
+msgid "DS2405 Switch"
+msgstr "DS2405 Switch"
+
+#: ../src/devices.c:1324
+msgid "Mem/Clk"
+msgstr "Mem/Clk"
+
+#: ../src/devices.c:1327
+msgid "EEPROM"
+msgstr "EEPROM"
+
+#: ../src/devices.c:1330
+msgid "SHA"
+msgstr "SHA"
+
+#: ../src/devices.c:1333
+msgid "Monetary"
+msgstr "Monetært"
+
+#: ../src/devices.c:1336
+msgid "DS2436"
+msgstr "DS2436"
+
+#: ../src/devices.c:1339
+msgid "DS2432"
+msgstr "DS2432"
+
+#: ../src/devices.c:1342
+msgid "DS2437"
+msgstr "DS2437"
+
+#: ../src/devices.c:1345
+msgid "Thermochron"
+msgstr "Termokron"
+
+#: ../src/devices.c:1348
+msgid "DS1822"
+msgstr "DS1822"
+
+#: ../src/devices.c:1351
+msgid "DS18B20"
+msgstr "DS18B20"
+
+#: ../src/devices.c:1354
+msgid "Serial"
+msgstr "Seriell"
+
+#: ../src/devices.c:1357
+msgid "Multi"
+msgstr "Multi"
+
+#: ../src/devices.c:1360
+msgid "Time"
+msgstr "Tid"
+
+#: ../src/file.c:87
+#, c-format
+msgid "%s not found."
+msgstr "%s ikke funnet."
+
+#: ../src/file.c:93
+#, c-format
+msgid "Failed to create %s"
+msgstr "Kunne ikke opprette %s"
+
+#. stat failed
+#: ../src/file.c:104
+#, c-format
+msgid "Unable to get directory information: %s"
+msgstr "Kunne ikke få katalogeninformasjon: %s"
+
+#. dir_name is something other than a directory
+#: ../src/file.c:113
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s er ikke en katalog"
+
+#. Directory does not give us write permission
+#. File does not give us write permission
+#: ../src/file.c:121 ../src/file.c:183
+#, c-format
+msgid "No write permission in %s"
+msgstr "Ikke skrivetilgang i %s"
+
+#: ../src/file.c:141
+#, c-format
+msgid "File %s not found"
+msgstr "Kunne ikke finne %s"
+
+#: ../src/file.c:149
+#, c-format
+msgid "Failed to create file %s"
+msgstr "Kunne ikke opprette fila %s"
+
+#. stat failed
+#: ../src/file.c:166
+#, c-format
+msgid "Unable to get file information: %s"
+msgstr "Kunne ikke få filinformasjon: %s"
+
+#. file_name is something other than a directory
+#: ../src/file.c:175
+#, c-format
+msgid "%s is not a normal file"
+msgstr "%s er ikke ei vanlig fil"
+
+#. werr(WERR_DEBUG1, "Finished building list");
+#: ../src/interactive.c:167
+#, c-format
+msgid "Select device for assignment: "
+msgstr "Velg tilordningsenhet:"
+
+#: ../src/interactive.c:172 ../src/interactive.c:230
+#, c-format
+msgid "%d is outside of the valid range\n"
+msgstr "%d er ikke i det gyldige området\n"
+
+#. printf(_("You selected device %d: %s %s\n"), search_entry+1, temp_string,
+#. (devices_search_list[search_entry].alloc < 0) ?
+#. "" : devices_list[devices_search_list[search_entry].alloc].menu_entry
+#. ) ;
+#: ../src/interactive.c:184
+#, c-format
+msgid "Choose assignment from:\n"
+msgstr "Velg tilordning fra:\n"
+
+#: ../src/interactive.c:191
+#, c-format
+msgid "Assignment unchanged\n"
+msgstr "Tilordning uendra\n"
+
+#. werr(WERR_DEBUG1, "Finished building list");
+#: ../src/interactive.c:225
+#, c-format
+msgid "Select device for cal setting: "
+msgstr "Velg enhet for kalibreringverdi:"
+
+#: ../src/interactive.c:251
+#, c-format
+msgid "Choose cal entry from:\n"
+msgstr "Velg kalibreringsverdi fra:\n"
+
+#: ../src/interactive.c:263
+#, c-format
+msgid "No change\n"
+msgstr "Ingen endringer\n"
+
+#. else left pointing at null
+#. printf("line=\"%s\", delim=\"%s\"\n", line, delim);
+#: ../src/interactive.c:307
+msgid "assign"
+msgstr "tilordne"
+
+#: ../src/interactive.c:312
+msgid "cal"
+msgstr "kalibering"
+
+#: ../src/interactive.c:317
+msgid "daemon"
+msgstr "demon"
+
+#: ../src/interactive.c:321
+#, c-format
+msgid "Already running as a daemon\n"
+msgstr "Kjører alt som demon\n"
+
+#: ../src/interactive.c:325
+#, c-format
+msgid "Run owwnogui to use daemon mode\n"
+msgstr "Kjør owwnogui for å bruke demon-modus\n"
+
+#: ../src/interactive.c:329
+msgid "quit"
+msgstr "avslutt"
+
+#: ../src/interactive.c:334
+msgid "search"
+msgstr "søk"
+
+#: ../src/interactive.c:337
+#, c-format
+msgid "Searching...\n"
+msgstr "Søker...\n"
+
+#: ../src/interactive.c:340 ../src/interactive.c:360 ../src/interactive.c:394
+msgid "setup"
+msgstr "innstillinger"
+
+#: ../src/interactive.c:343 ../src/interactive.c:349 ../src/interactive.c:355
+#: ../src/interactive.c:389
+#, c-format
+msgid "Done\n"
+msgstr "Ferdig\n"
+
+#: ../src/interactive.c:346 ../src/interactive.c:370 ../src/interactive.c:396
+msgid "devices"
+msgstr "enheter"
+
+#: ../src/interactive.c:352
+msgid "reset"
+msgstr "resett"
+
+#: ../src/interactive.c:358
+msgid "save"
+msgstr "lagre"
+
+#: ../src/interactive.c:363
+#, c-format
+msgid "Saved setup\n"
+msgstr "Lagra innstillinger\n"
+
+#: ../src/interactive.c:365
+msgid "setupng"
+msgstr "innstillingerng"
+
+#: ../src/interactive.c:368
+#, c-format
+msgid "Saved setupNG\n"
+msgstr "Lagra innstillinger (NG)\n"
+
+#: ../src/interactive.c:373
+#, c-format
+msgid "Saved devices\n"
+msgstr "Lagra enheter\n"
+
+#: ../src/interactive.c:375
+msgid "stats"
+msgstr "statistikk"
+
+#: ../src/interactive.c:378
+#, c-format
+msgid "Saved stats\n"
+msgstr "Lagra statistikk\n"
+
+#: ../src/interactive.c:382
+#, c-format
+msgid "Unrecognized save option\n"
+msgstr "Ukjent lagringsopsjon\n"
+
+#: ../src/interactive.c:386
+msgid "wipe"
+msgstr "visk ut"
+
+#: ../src/interactive.c:399
+#, c-format
+msgid ""
+"Available commands:\n"
+"\tassign\n"
+"\tcal\n"
+"\tdaemon\n"
+"\tdevices [devices line]\n"
+"\tquit\n"
+"\treset\n"
+"\tsave [setup | setupng | stats | devices]\n"
+"\tsearch\n"
+"\tsetup [setup line]\n"
+"\twipe\n"
+"\t? devices\n"
+"\t? setup\n"
+msgstr ""
+"Tilgjengelige kommandoer:\n"
+"\tassign\n"
+"\tcal\n"
+"\tdaemon\n"
+"\tdevices [devices line]\n"
+"\tquit\n"
+"\treset\n"
+"tsave [setup | setupng | stats | devices]\n"
+"\tsearch\n"
+"\tsetup [setup line]\n"
+"\twipe\n"
+"\t? devices\n"
+"\t? setup\n"
+
+#: ../src/interactive.c:415
+#, c-format
+msgid "Unrecognized command: \"%s\"\n"
+msgstr "Ukjent kommando: \"%s\"\n"
+
+#: ../src/log.c:124
+#, c-format
+msgid "add_log_entry(\"%s\", \"%s\") - could not open file"
+msgstr "add_log_entry(\"%s\", \"%s\") - kunne ikke åpne fila"
+
+#: ../src/log.c:132
+#, c-format
+msgid "Error writing to \"%s\""
+msgstr "Feil under skriving til \"%s\""
+
+#: ../src/log.c:255
+msgid "postlog command line did not parse correctly"
+msgstr "postlog-kommando kunne ikke leses skikkelig"
+
+#: ../src/log.c:264
+msgid "Failed to run postlog command"
+msgstr "Kunne ikke kjøre postlog-kommando"
+
+#: ../src/log.c:274
+msgid "Trying to write no log!"
+msgstr "Prøver å skrive til ingen logg!"
+
+#: ../src/log.c:397
+msgid "postupdate did not parse correctly"
+msgstr "postupdate kunne ikke leses skikkelig"
+
+#: ../src/log.c:406
+msgid "Failed to run postupdate command"
+msgstr "Kunne ikke kjøre postupdate-kommando"
+
+#: ../src/log.c:438
+msgid "Generation of log entry failed"
+msgstr "Kunne ikke føye til i loggen"
+
+#: ../src/log.c:441
+msgid "Zero-length log line"
+msgstr "Tom logglinje"
+
+#: ../src/log.c:446
+msgid "Unable to update log. log_start_log_event failed"
+msgstr "Kunne ikke oppdatere loggen. log_start_log_event  feila"
+
+#: ../src/mainwin.c:760
+msgid "BP"
+msgstr "BP"
+
+#: ../src/mainwin.c:794
+#, c-format
+msgid "(%s/hr)"
+msgstr "(%s/time)"
+
+#: ../src/mypopt.c:16
+#, c-format
+msgid ""
+"Usage: %s [options]\n"
+"\n"
+msgstr ""
+"Virkemåte: %s [opsjoner]\n"
+"\n"
+
+#: ../src/mypopt.c:18
+#, c-format
+msgid "Options:\n"
+msgstr "Opsjoner:\n"
+
+#: ../src/mypopt.c:67
+#, c-format
+msgid "\"-%c\" takes %d parameters\n"
+msgstr "\"-%c\" trenger %d parametre\n"
+
+#: ../src/oww_trx.c:404
+msgid "The remote data source is not using Oww protocol!"
+msgstr "Fjernkilden bruker ikke Oww-protokollen!"
+
+#: ../src/parseout.c:1071
+#, c-format
+msgid "Silly suffix (%d) in parser string"
+msgstr "Teit suffiks (%d) i lesestrengen"
+
+#: ../src/parseout.c:1089
+#, c-format
+msgid "Suffix (%d) greater than maximum allowed (%d) for tag \"%s\""
+msgstr ""
+"Suffikset (%d) er større enn det største tillatte (%d) for merket \"%s\""
+
+#. Ran out of tags to try
+#: ../src/parseout.c:1124
+#, c-format
+msgid "Unknown tag: \"%s\""
+msgstr "Ukjent merke: \"%s\""
+
+#: ../src/parseout.c:1192
+#, c-format
+msgid "Unmatched $ symbol in \"%s\""
+msgstr "Ikke noe korresponderende $-symbol i \"%s\""
+
+#: ../src/progstate.c:286
+msgid "Saving default setup"
+msgstr "Lagrer standardinnstillinger"
+
+#: ../src/progstate.c:361
+#, c-format
+msgid "Unable to connect to Oww server \"%s:%d\""
+msgstr "Kunne ikke kople til Oww-tjener \"%s:%d\""
+
+#: ../src/progstate.c:365 ../src/progstate.c:388
+#, c-format
+msgid "Will try again in %us"
+msgstr "Vil prøve igjen om %us"
+
+#: ../src/progstate.c:384
+#, c-format
+msgid "Unable to connect to Arne server \"%s:%d\""
+msgstr "Kunne ikke kople til Arne-tjener \"%s:%d\""
+
+#: ../src/progstate.c:398
+msgid "Unexpected datasource type"
+msgstr "Uventa datakildetype"
+
+#: ../src/progstate.c:448
+msgid "Remote host error"
+msgstr "Feil mot fjerntjener"
+
+#. Server is about o die
+#. Close the current connexion
+#: ../src/progstate.c:503
+msgid "Remote server dying"
+msgstr "Fjerntjener dør"
+
+#: ../src/progstate.c:528
+msgid "Remote host connexion failed - trying again"
+msgstr "Tilkopling til tjener feila - prøver igjen"
+
+#: ../src/progstate.c:539
+msgid "Remote host closed connexion"
+msgstr "Fjerntjener kopla ned"
+
+#: ../src/progstate.c:541
+#, c-format
+msgid "Reconnecting in %us"
+msgstr "Kopler til igjen om %us"
+
+#: ../src/progstate.c:556
+msgid "Remote data source timed out - reconnecting"
+msgstr "Tidsavbrudd for datakilden i den andre ensen - kopler opp igjen"
+
+#: ../src/progstate.c:604
+msgid "Check connexions and setup"
+msgstr "Undersøk oppkoplinger og innstillinger"
+
+#: ../src/progstate.c:634
+msgid "Problem with link or weather station"
+msgstr "Et problem med forbindelsen eller værstasjonen"
+
+#: ../src/progstate.c:641
+#, c-format
+msgid "RETRY:Will restart in %u seconds"
+msgstr "NYTT FORSØK: Vil starte igjen om %u sekund"
+
+#. Not the expected reply
+#: ../src/sendwx.c:541
+#, c-format
+msgid "URL fetch failed: %s"
+msgstr "Kunne ikke laste ned URL: %s"
+
+#: ../src/sendwx.c:960
+msgid "Dallas upload failed"
+msgstr "Dallas-opplasting feila"
+
+#: ../src/sendwx.c:979
+msgid "WUnd upload failed"
+msgstr "WUnd-opplasting feila"
+
+#: ../src/sendwx.c:998
+msgid "ham upload failed"
+msgstr "ham-opplasting feila"
+
+#: ../src/sendwx.c:1028
+#, fuzzy
+msgid "WUnd upload (fast) failed"
+msgstr "WUnd-opplasting feila"
+
+#: ../src/sendwx.c:1057
+msgid "Dallas list fetch failed"
+msgstr "Kunne ikke laste ned Dallas-liste"
+
+#: ../src/sendwx.c:1104
+msgid "Dallas data fetch failed"
+msgstr "Kunne ikke laste ned Dallas-data"
+
+#: ../src/server.c:364
+#, c-format
+msgid "Unable to claim TCP port %d. Perhaps another task claimed it already?"
+msgstr ""
+"Kunne ikke gjøre krav på TCP-port %d: Kanskje en annen prosess alt bruker "
+"den?"
+
+#: ../src/server.c:394
+#, c-format
+msgid "Unable to claim LOCAL port %s. Perhaps another task claimed it already?"
+msgstr ""
+"Kunne ikke gjøre krav på LOKAL port %s. Kanskje en annen prosess alt bruker "
+"den?"
+
+#: ../src/setup.c:579
+msgid "stats write failed"
+msgstr "kunne ikke skrive statistikk"
+
+#: ../src/setup.c:589
+msgid "No stats file found - Using defaults"
+msgstr "Kunne ikke finne noen statistikkfil - Bruker standardstatistikk"
+
+#: ../src/setup.c:605
+msgid "Setup write failed"
+msgstr "Kunne ikke lagre innstillinger"
+
+#: ../src/setup.c:624
+msgid "No setup file found - Using defaults"
+msgstr "Kunne ikke finne noen innstillingsfil - Bruker standardinnstillinger"
+
+#: ../src/setup.c:635
+msgid "Could not save device list."
+msgstr "Kunne ikke lagre enhetsfil."
+
+#: ../src/setup.c:650
+msgid "No devices file found. You must use the devices dialogue."
+msgstr "Kunne ikke fille noen enhetsfil. Du må bruke enhetsvinduet."
+
+#: ../src/setupd.c:468
+msgid "Stop"
+msgstr "Stopp"
+
+#: ../src/setupd.c:624 ../src/setupd.c:632
+msgid "Choose debug file"
+msgstr "Velg debuggingsfil"
+
+#: ../src/setupd.c:657
+msgid "Choose log directory"
+msgstr "Velg loggkatalog"
+
+#: ../src/setupd.c:1170
+msgid "ID"
+msgstr "ID"
+
+#: ../src/setupd.c:1422
+msgid "Choose serial device"
+msgstr "Velg seriellinngang"
+
+#: ../src/setupp.c:329
+#, c-format
+msgid "Error reading setup / devices file - unknown tag: \"%s\""
+msgstr "Feil under lesing av innstillinger / enheter - ukjent merke: \"%s\""
+
+#: ../src/setupp.c:611
+#, c-format
+msgid "Error when saving setup to %s"
+msgstr "Feil under lagring av innstillinger til %s"
+
+#: ../src/setupp.c:630
+#, c-format
+msgid "Error when loading setup from %s"
+msgstr "Feil under lesing av innstillinger fra %s"
+
+#: ../src/tai8570.c:153
+#, c-format
+msgid "Setting %s slope to default for sea level"
+msgstr "Setter %s-stigning til standard for havnivå"
+
+#: ../src/tai8570.c:184
+#, c-format
+msgid "%s is not a TAI8570 write device"
+msgstr "%s er ikke en TAI8570 skriveenhet"
+
+#: ../src/tai8570.c:189
+#, c-format
+msgid "%s is not a TAI8570 read device"
+msgstr "%s er ikke en TAI8570 leseenhet"
+
+#: ../src/url_get_curl.c:347
+msgid "Oww was not compiled with libghttp."
+msgstr "Oww har ikke blitt kompilert med libghttp."
+
+#: ../src/weather.c:2214
+#, c-format
+msgid "Checking weather station: \"%s\" not found"
+msgstr "Undersøker værstasjon: \"%s\" ikke funnet"
+
+#: ../src/weather.c:2220
+msgid "Checking weather station: wind vane not found"
+msgstr "Undersøker værstasjon: vindfløy ikke funnet"
+
+#: ../src/weather.c:2701
+msgid "Could not access Vane Switch"
+msgstr "Fikk ikke tilgang til fløybryter"
+
+#: ../src/werr_linux.c:297
+#, c-format
+msgid "Warning from %s [%s]"
+msgstr "Advarsel fra %s [%s]"
+
+#~ msgid "Select to enable Wunderground uploads"
+#~ msgstr "Veld for å aktivere Wunderground-opplasting"
+
+#~ msgid "C)"
+#~ msgstr "C)"
+
+#~ msgid ""
+#~ "Dr. Simon J. Melhuish\n"
+#~ "(some parts from Dallas Semiconductor)"
+#~ msgstr ""
+#~ "Dr. Simon J. Melhuish\n"
+#~ "(noen deler fra Dallas Semiconductor)"
+
+#~ msgid "? setup"
+#~ msgstr "? innstillinger"
+
+#~ msgid "? devices"
+#~ msgstr "? enheter"
+
+#~ msgid "setup "
+#~ msgstr "innstillinger"
+
+#~ msgid "devices "
+#~ msgstr "enheter "
+
+#~ msgid "This sets the station latitude"
+#~ msgstr "Dette setter stasjonens breddegrad"
+
+#~ msgid "This sets the station longitude"
+#~ msgstr "Dette setter stasjonens lengdegrad"
+
+#~ msgid "Select the level of error reporting"
+#~ msgstr "Velg nivået for feilmelding"
+
+#~ msgid "Select the level of error logging (to the debug file)"
+#~ msgstr "Velg nivået for feillogging (til debuggingsfila)"
+
+#~ msgid "C"
+#~ msgstr "C"
+
+#~ msgid "Display temperature in Celcius"
+#~ msgstr "Vis temperatur i grader celsius"
+
+#~ msgid "Display wind speed in kilometres per hour"
+#~ msgstr "Vis vindhastighet i kilometer i timen"
+
+#~ msgid "Display rain in mm"
+#~ msgstr "Vis nedbør i mm"
+
+#~ msgid "Display barometric pressure in inches of mercury"
+#~ msgstr "Vis barometerstand i tommer kvikksølv"
+
+#~ msgid "Display barometric pressure in milli Bar"
+#~ msgstr "Vis barometerstand i hektopascal"
+
+#~ msgid "Display wind speed in miles per hour"
+#~ msgstr "Vis vindhastighet i engelske mil i timen"
+
+#~ msgid "F"
+#~ msgstr "F"
+
+#~ msgid "Display temperature in Fahrenheit"
+#~ msgstr "Vis temperatur i grader fahrenheit"
+
+#~ msgid "Display rain in inches"
+#~ msgstr "Vis nedbør i tommer"
+
+#~ msgid "http://melhuish.info/simon/"
+#~ msgstr "http://melhuish.info/simon/"

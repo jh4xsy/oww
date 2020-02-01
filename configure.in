@@ -1,0 +1,336 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT([One-Wire Weather - Oww],[0.86.5],[simon@melhuish.info],[oww])
+AC_CONFIG_SRCDIR(src/weather.c)
+AM_INIT_AUTOMAKE
+
+AM_CONFIG_HEADER(config.h)
+
+AC_ISC_POSIX
+dnl CFLAGS=""
+AC_SUBST(CFLAGS)
+AC_PROG_CC
+AM_PROG_CC_C_O
+AC_HEADER_STDC
+AM_PROG_LIBTOOL
+dnl Checks for programs.
+
+
+dnl Checks for libraries.
+GHTTP_LIB=
+AC_CHECK_FUNC(connect,,[
+  AC_CHECK_LIB(socket,connect,
+	GHTTP_LIB="-lsocket $GHTTP_LIB",,$GHTTP_LIB)])
+AC_CHECK_FUNC(gethostbyname,,[
+	  AC_CHECK_LIB(nsl,gethostbyname,
+	GHTTP_LIB="-lnsl $GHTTP_LIB",,$GHTTP_LIB)])
+AC_CHECK_FUNC(inet_aton,,[
+	  AC_CHECK_LIB(resolv,inet_aton)])
+dnl AC_CHECK_LIB(ghttp, ghttp_request_new,[
+dnl   GHTTP_LIB="-lghttp $GHTTP_LIB"
+dnl   AC_DEFINE(HAVE_LIBGHTTP,1,Do we have libghttp?)],GHTTP_LIB="", $GHTTP_LIB)
+dnl AC_SUBST(GHTTP_LIB)
+
+dnl CHECK_LIBGHTTP
+dnl if test "$ghttp_have_lib" = "yes" -a "$ghttp_have_h" = "yes"
+dnl then
+dnl 	have_ghttp=yes
+dnl else
+dnl 	have_ghttp=no
+dnl fi
+
+LIBCURL_CHECK_CONFIG(yes,,have_curl=yes, have_curl=no)
+
+dnl Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS(errno.h sys/types.h sys/wait.h sys/errno.h fcntl.h sys/ioctl.h sys/time.h unistd.h locale.h syslog.h sys/un.h sys/select.h sys/filio.h machine/endian.h limits.h stdint.h)
+
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_HEADER_TIME
+AC_STRUCT_TM
+AC_CHECK_TYPES([ulong,ushort,uchar,int32_t,uint32_t,int64_t])
+
+
+dnl Checks for library functions.
+AC_FUNC_STRFTIME
+AC_FUNC_VPRINTF
+AC_CHECK_FUNCS(strchr memcpy gettimeofday mkdir select strdup strerror daemon vsnprintf snprintf finitef fork strtof)
+dnl AC_CHECK_LIB(usb,usb_init,,AC_MSG_ERROR(libusb must be installed))
+
+dnl ******
+dnl libusb
+dnl ******
+dnl - Originally from libgphoto
+
+usb_msg="no (N.B. required for DS9490. Available from http://sourceforge.net/projects/libusb/)"
+try_usb=true
+AC_ARG_WITH(usb, [  --without-usb           Don't compile in USB support],
+	if test x$withval = xno; then
+		try_usb=false
+	fi
+)
+if $try_usb; then
+	AC_PATH_PROG(LIBUSB_CONFIG,libusb-config)
+	if test -n "${LIBUSB_CONFIG}"; then
+		CPPFLAGS_save="$CPPFLAGS"
+		CPPFLAGS="$CPPFLAGS `$LIBUSB_CONFIG --cflags`"
+		AC_CHECK_HEADER(usb.h,[
+			LDFLAGS_orig="$LDFLAGS"
+			LDFLAGS="$LDFLAGS_orig `$LIBUSB_CONFIG --libs`"
+			AC_CHECK_LIB(usb,usb_init,[
+				usb_msg="yes, from `$LIBUSB_CONFIG --prefix`"
+				USB_OBJ="musbllnk.o libusbds2490.o musblnet.o musblses.o musbltran.o"
+				USB_LIBS="`$LIBUSB_CONFIG --libs`"
+				USB_CFLAGS="`$LIBUSB_CONFIG --cflags`"
+                        	LIBUSB_VER="`$LIBUSB_CONFIG --version`"],[
+				usb_msg="no (available libusb version too old)"])
+			AC_CHECK_FUNCS(usb_interrupt_read)
+			LDFLAGS="$LDFLAGS_orig"])
+		CPPFLAGS="$CPPFLAGS_save"
+	fi
+
+	# This 'test' call uses non-standard syntax and will fail on most
+	# systems, but it's just informational so any warning can be ignored.
+	if test "$LIBUSB_VER" \< "0.1.5"; then
+		AC_MSG_WARN([
+*** You need at least version 0.1.5 of the libusb library for USB support
+*** http://sourceforge.net/projects/libusb/
+*** If you cannot find the appropriate version, try CVS
+	])
+	fi
+fi
+case "$usb_msg" in
+	yes*) AC_DEFINE(HAVE_USB,1,[Whether you have USB support enabled])
+	*     ;;
+esac
+dnl AM_CONDITIONAL(ENABLEUSB, test "x$try_usb" = "true")
+
+AC_SUBST(USB_CFLAGS)
+AC_SUBST(USB_LIBS)
+AC_SUBST(USB_OBJ)
+
+dnl Checks for Additional stuff
+dnl Do we want to disable the serial port locking?
+AC_ARG_ENABLE(seriallock,
+[ --disable-seriallock turns off serial port locking],
+seriallock=$enableval, seriallock=yes)
+if test x$seriallock = xyes; then
+dnl AC_MSG_WARN(serial port will be locked)
+AC_DEFINE(ENABLE_SERIALLOCK, 1)
+else
+AC_MSG_WARN(serial port locking disabled)
+fi
+
+dnl Do we buld the interactive CLI?
+AC_ARG_ENABLE(interactive,
+[ --disable-interactive disables the interactive CLI],
+interactive=$enableval, interactive=yes)
+if test x$interactive = xyes; then
+dnl AC_MSG_WARN(interactive CLI will be build)
+AC_DEFINE(ENABLE_INTERACTIVE, 1)
+else
+AC_MSG_WARN(interactive CLI will not be build)
+fi
+
+AC_ARG_ENABLE(gui, , build_gui=no, build_gui=yes)
+AM_CONDITIONAL(DISABLEGUI, test "x$build_gui" = "xno")
+
+if test "$build_gui" = yes ;  then
+  AC_MSG_WARN(building gui)
+  PKG_CHECK_MODULES(GTK, gtk+-2.0 >= 2.4.0 gdk-2.0 gdk-pixbuf-2.0 gmodule-export-2.0,,exit)
+  AC_SUBST(GTK_LIBS)
+  AC_SUBST(GTK_CFLAGS)
+else
+	AC_MSG_WARN(skipping GTK gui)
+fi
+
+dnl How many times do we retry T on failure?
+AC_ARG_ENABLE(temptries,
+[ --enable-temptries=N sets N retries on 85C failure],
+temptries=$enableval, temptries=3)
+AC_DEFINE_UNQUOTED(max_T_errors, $temptries)
+
+dnl Max No. thermometers?
+AC_ARG_ENABLE(maxtemp,
+[ --enable-maxtemp=N sets N max thermometers],
+maxtemp=$enableval, maxtemp=8)
+AC_DEFINE_UNQUOTED(MAXTEMPS, $maxtemp, Number of thermometers to allow)
+
+dnl Max No. soil thermometers?
+AC_ARG_ENABLE(maxsoiltemp,
+[ --enable-maxsoiltemp=N sets N max soil thermometers],
+maxsoiltemp=$enableval, maxsoiltemp=2)
+AC_DEFINE_UNQUOTED(MAXSOILTEMPS, $maxsoiltemp, Number of soil thermometers to allow)
+
+dnl Max No. indoor thermometers?
+AC_ARG_ENABLE(maxindoortemp,
+[ --enable-maxindoortemp=N sets N max indoor thermometers],
+maxindoortemp=$enableval, maxindoortemp=2)
+AC_DEFINE_UNQUOTED(MAXINDOORTEMPS, $maxindoortemp, Number of thermometers to allow)
+
+dnl Max No. hygrometers?
+AC_ARG_ENABLE(maxhum,
+[ --enable-maxhum=N sets N max hygrometers (RH sensors)],
+maxhum=$enableval, maxhum=8)
+AC_DEFINE_UNQUOTED(MAXHUMS, $maxhum, Number of hygrometers to allow)
+
+dnl Max No. barometers?
+AC_ARG_ENABLE(maxbar,
+[ --enable-maxbar=N sets N max barometers],
+maxbar=$enableval, maxbar=8)
+AC_DEFINE_UNQUOTED(MAXBAROM, $maxbar, Number of barometers to allow)
+
+dnl Max No. GPCs?
+AC_ARG_ENABLE(maxgpc,
+[ --enable-maxgpc=N sets N max GPCs],
+maxgpc=$enableval, maxgpc=8)
+AC_DEFINE_UNQUOTED(MAXGPC, $maxgpc, Number of general purpose counters to allow)
+
+dnl Max No. solar sensors?
+AC_ARG_ENABLE(maxsol,
+[ --enable-maxsol=N sets N max solar sensors],
+maxsol=$enableval, maxsol=4)
+AC_DEFINE_UNQUOTED(MAXSOL, $maxsol, Number of solar sensors to allow)
+
+dnl Max No. uv sensors?
+AC_ARG_ENABLE(maxuv,
+[ --enable-maxuv=N sets N max uv sensors],
+maxuv=$enableval, maxuv=4)
+AC_DEFINE_UNQUOTED(MAXUV, $maxuv, Number of UV sensors to allow)
+
+dnl Max No. ADCs?
+AC_ARG_ENABLE(maxadc,
+[ --enable-maxadc=N sets N max ADC sensors],
+maxadc=$enableval, maxadc=4)
+AC_DEFINE_UNQUOTED(MAXADC, $maxadc, Number of ADC sensors to allow)
+
+dnl Max No. thermocouples?
+AC_ARG_ENABLE(maxtc,
+[ --enable-maxtc=N sets N max thermocouples],
+maxtc=$enableval, maxtc=4)
+AC_DEFINE_UNQUOTED(MAXTC, $maxtc, Number of thermocouples to allow)
+
+dnl Max No. moisture boards?
+AC_ARG_ENABLE(maxmoist,
+[ --enable-maxmoist=N sets N max moisture boards],
+maxmoist=$enableval, maxmoist=2)
+AC_DEFINE_UNQUOTED(MAXMOIST, $maxmoist, Number of moisture boards to allow)
+
+dnl Max No. branches?
+AC_ARG_ENABLE(maxbranch,
+[ --enable-maxbranch=N sets N max branches],
+maxbranch=$enableval, maxbranch=9)
+AC_DEFINE_UNQUOTED(MAXBRANCHES, $maxbranch, Number of branches to allow)
+
+
+GETTEXT_PACKAGE=oww
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Package name for gettext])
+
+ALL_LINGUAS="fr nb_NO sv cz"
+AM_GNU_GETTEXT_VERSION(0.12.1)
+AM_GNU_GETTEXT([external])
+AC_PROG_INTLTOOL(,no-xml)
+
+dnl Set PACKAGE_LOCALE_DIR in config.h.
+
+if test "x${prefix}" = "xNONE"; then
+  AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${ac_default_prefix}/${DATADIRNAME}/locale")
+else
+  AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${prefix}/${DATADIRNAME}/locale")
+fi
+
+
+dnl Set PACKAGE SOURCE DIR in config.h.
+packagesrcdir=`cd $srcdir && pwd`
+
+dnl Set PACKAGE PREFIX
+
+if test "x${prefix}" = "xNONE"; then
+  packageprefix=${ac_default_prefix}
+else
+  packageprefix=${prefix}
+fi
+
+dnl Set PACKAGE DATA & DOC DIR
+packagedatadir=share/${PACKAGE}
+packagedocdir=doc/${PACKAGE}
+
+owwsysconfdir=$sysconfdir/$PACKAGE
+AC_SUBST(owwsysconfdir)
+
+dnl Set PACKAGE DIRS in config.h.
+packagepixmapsdir=${packagedatadir}/pixmaps
+packagehelpdir=${packagedatadir}/help
+packagemenudir=${packagedatadir}
+
+dnl Subst PACKAGE_DATA_DIR.
+NO_PREFIX_PACKAGE_DATA_DIR="${packagedatadir}"
+AC_SUBST(NO_PREFIX_PACKAGE_DATA_DIR)
+PACKAGE_DATA_DIR="${packageprefix}/${packagedatadir}"
+AC_SUBST(PACKAGE_DATA_DIR)
+
+dnl Subst PACKAGE_DOC_DIR.
+NO_PREFIX_PACKAGE_DOC_DIR="${packagedocdir}"
+AC_SUBST(NO_PREFIX_PACKAGE_DOC_DIR)
+PACKAGE_DOC_DIR="${packageprefix}/${packagedocdir}"
+AC_SUBST(PACKAGE_DOC_DIR)
+
+dnl Subst PACKAGE_PIXMAPS_DIR.
+NO_PREFIX_PACKAGE_PIXMAPS_DIR="${packagepixmapsdir}"
+AC_SUBST(NO_PREFIX_PACKAGE_PIXMAPS_DIR)
+PACKAGE_PIXMAPS_DIR="${packageprefix}/${packagepixmapsdir}"
+AC_SUBST(PACKAGE_PIXMAPS_DIR)
+
+dnl Subst PACKAGE_HELP_DIR.
+NO_PREFIX_PACKAGE_HELP_DIR="${packagehelpdir}"
+AC_SUBST(NO_PREFIX_PACKAGE_HELP_DIR)
+PACKAGE_HELP_DIR="${packageprefix}/${packagehelpdir}"
+AC_SUBST(PACKAGE_HELP_DIR)
+
+dnl Subst PACKAGE_MENU_DIR.
+NO_PREFIX_PACKAGE_MENU_DIR="${packagemenudir}"
+AC_SUBST(NO_PREFIX_PACKAGE_MENU_DIR)
+PACKAGE_MENU_DIR="${packageprefix}/${packagemenudir}"
+AC_SUBST(PACKAGE_MENU_DIR)
+
+AC_DEFINE_UNQUOTED(PACKAGE_DATA_DIR, "${packageprefix}/${packagedatadir}")
+AC_DEFINE_UNQUOTED(PACKAGE_DOC_DIR, "${packageprefix}/${packagedocdir}")
+AC_DEFINE_UNQUOTED(PACKAGE_PIXMAPS_DIR, "${packageprefix}/${packagepixmapsdir}")
+AC_DEFINE_UNQUOTED(PACKAGE_HELP_DIR, "${packageprefix}/${packagehelpdir}")
+AC_DEFINE_UNQUOTED(PACKAGE_MENU_DIR, "${packageprefix}/${packagemenudir}")
+AC_DEFINE_UNQUOTED(PACKAGE_SOURCE_DIR, "${packagesrcdir}")
+
+dnl AC_DEFINE_UNQUOTED( SYSCONFDIR, ["$sysconfdir"], [System configuration directory] )
+
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+pixmaps/Makefile
+po/Makefile.in
+oww.spec
+])
+
+cat<<EOF
+
+------------------------------
+Oww version $VERSION by Simon Melhuish (simon@melhuish.info)
+
+	build_gui = $build_gui
+	interactive = $interactive
+	seriallock = $seriallock 
+	USB support = $usb_msg
+	http support = $have_curl
+        Max. Devices:
+          $maxtemp T, $maxindoortemp indoor T, $maxsoiltemp soil T,
+          $maxhum RH, $maxbar BP, 
+          $maxgpc GPC, $maxsol solar, $maxuv UV,
+          $maxadc ADC, $maxtc thermocouples, $maxbranch branches,
+          $maxmoist moisture boards
+
+------------------------------
+
+EOF

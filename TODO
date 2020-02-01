@@ -1,0 +1,8 @@
+Catch glitches in TAI8570 readings
+
+Add support for DS2408-connected LCDs
+
+Poll wind sensor interleaved between other updates
+
+Create devices dynamically at startup, providing for easier expansion.
+

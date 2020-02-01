@@ -1,0 +1,296 @@
+2007-05-26
+	Changes for rapid wunderground
+
+2007-05-12
+	Added dailyrain (statistic, parser output, wunderground upload)
+
+2007-02-25
+	ASTRING type setup lines (e.g. parser strings) may now include C-style escape sequences, such as \xXX, &c.
+
+2007-02-11  <>
+	weather_shutdown() call is put off until an appropriate time when there is a change of data source - this fixes a crash due to the usb handle being cleared whilst we're waiting for a tempconv. 
+
+2007-02-11  <>
+	Fix for Owwl TX on 64-bit architecture 
+
+2007-01-28 Simon Melhuish <simon@melhuish.info>
+	Bump version number to reflect addition of new sensor class (ADCs with DS2760) 
+
+2007-01-28 Simon Melhuish <simon@melhuish.info>
+	Working ADC (DS2760) sensors 
+
+2007-01-13 Simon Melhuish <simon@melhuish.info>
+	Wund and Dallas trx sets locale to POSIX
+	Cwop tx sets locale to POSIX
+	Rain from remote server integrated for upload
+
+2007-01-06 Simon Melhuish <simon@melhuish.info>
+	FreeBSD fix 
+
+2007-01-06 Simon Melhuish <simon@melhuish.info>
+	Check for usb_interrupt_read 
+	Change NLS support 
+
+2006-12-27 Simon Melhuish <simon@melhuish.info>
+	Added facility for adjusting DS2490 timing parameters. 
+	These are ds2490slew, ds2490write and ds2490samp. 
+
+2006-12-22 Simon Melhuish <simon@melhuish.info>
+	Using usb_interrupt_read if available, for EP1 
+
+2006-12-22 Simon Melhuish <simon@melhuish.info>
+	Looking for pixmaps in PACKAGE_PIXMAP_DIR 
+
+2006-07-22 Simon Melhuish <simon@melhuish.info>
+	Fixed realloc() problem 
+
+2006-05-29 Simon Melhuish <simon@melhuish.info>
+	Close socket on client connexion failure. 
+
+2006-05-28 Simon Melhuish <simon@melhuish.info>
+	Initial spec template added (this version derived from krpm output) 
+
+2006-05-28 Simon Melhuish <simon@melhuish.info>
+	configure assigns $sysconfdir/oww to owwsysconfdir 
+	Added specs file 
+
+2006-05-28 Simon Melhuish <simon@melhuish.info>
+	Ignore extraneous blanks in setup files 
+
+2006-05-28 Simon Melhuish <simon@melhuish.info>
+	server_shutdown() 
+	Removes Unix sockets on exit 
+
+2006-05-28 Simon Melhuish <simon@melhuish.info>
+	Setup files moved to OWWCONFDIR 
+
+2006-04-01 Simon Melhuish <simon@melhuish.info>
+	CWOP - Fix for eastings/northings less than 1 deg west/south 
+
+2006-01-22 Simon Melhuish <simon@melhuish.info>
+	Enabled curl time-outs 
+
+2006-01-22 Simon Melhuish <simon@melhuish.info>
+	Changed fields in SETUP_PACKET to int to resolve OpenSlug problem. 
+	ENABLEPULSE_PRGE stet 
+	ENABLEPULSE_SPUE stet 
+
+2006-01-22 Simon Melhuish <simon@melhuish.info>
+	Hygrochron with stopped clock no longer fatal (but it still won't try to read it) 
+
+2005-10-28 Simon Melhuish <simon@melhuish.info>
+	Changed from ghttp to libcurl 
+
+2005-09-07 Simon Melhuish <simon@melhuish.info>
+	Minor fixes for 0.81.7 release 
+
+2005-09-04 Simon Melhuish <simon@melhuish.info>
+	Updates for libusb fixes 
+
+2005-08-08 Simon Melhuish <simon@melhuish.info>
+	More fixes for 64-bit 
+
+2005-08-07 Simon Melhuish <simon@melhuish.info>
+	Fix to setup_load_sensor - missing val values 
+
+2005-08-06 Simon Melhuish <simon@melhuish.info>
+	Fix for owwl and 64-bit 
+
+2005-07-31 Simon Melhuish <simon@melhuish.info>
+	msDelay() - corrected timing 
+	Old version was pretty random! 
+
+2005-07-09 Simon Melhuish <simon@melhuish.info>
+	Removed family code 0x37 blocks 
+
+2005-07-05 Simon Melhuish <simon@melhuish.info>
+	hygrochron working, and tidied up 
+
+2005-07-05 Simon Melhuish <simon@melhuish.info>
+	Fix to bad bug in msDelay() 
+
+2005-06-29 Simon Melhuish <simon@melhuish.info>
+	Working hygrochron functions 
+
+2005-06-26 Simon Melhuish <simon@melhuish.info>
+	Initial integration of hygrochron into Oww
+	Doesn't seem to work yet
+
+2005-06-16 Simon Melhuish <simon@melhuish.info>
+	Added hygrochron files 
+
+2005-06-12 Simon Melhuish <simon@melhuish.info>
+	Fixed werr write level widget 
+	Added credits to proginfo 
+	Added some markup to proginfo 
+
+2005-06-11 Simon Melhuish <simon@melhuish.info>
+	Fixed bug in parser 
+
+2005-06-11 Simon Melhuish <simon@melhuish.info>
+	Fixed logic of DS2480Detect 
+
+2005-06-10 Simon Melhuish <simon@melhuish.info>
+	Fixed order of BP unit strings 
+
+2005-06-10 Simon Melhuish <simon@melhuish.info>
+	Fixed bug with stale solar after data source change 
+	devices_remote_solar now cleared by devices_clear_remote() 
+
+2005-06-08 Simon Melhuish <simon@melhuish.info>
+	Setupd device availability (rain and useTrh) updates after incoming remote data, or on device allocation 
+
+2005-06-05 Simon Melhuish <simon@melhuish.info>
+	Replaced DS2480Detect with wrapper to DS2480DetectOnce, so that it calls it a second time if the first try fails. 
+
+2005-06-04 Simon Melhuish <simon@melhuish.info>
+	Increased ReadCOM() select() time to 50ms, to allow for latency of USB<->serial devices 
+
+
+2005-05-28
+
+Changes to Dallas code for FreeBSD.
+
+Translation updates.
+
+
+2005-05-01
+
+Fixed bug with handling of http upload errors
+(caused occassional crash on Unix version)
+
+Bug fixes for USB (clears problem with vane ADC readings).
+
+Fixed bug with wind gust unit conversion on client connections.
+
+GPC fix from Steinar
+
+2004-11-28 Simon Melhuish <simon@melhuish.info>
+	Rain reset fix 
+	 
+
+2004-11-28 Simon Melhuish <simon@melhuish.info>
+	wsgust routines do not change to wsdead state on error (was causing abort) 
+
+2004-11-28 Simon Melhuish <simon@melhuish.info>
+	wsgust errors ignored 
+	state_get_name() added 
+	state names now const char * 
+
+2004-11-28 Simon Melhuish <simon@melhuish.info>
+	owwnogui reports correct setup file 
+	Now also reports devices file 
+	 
+
+2004-11-27 Simon Melhuish <simon@melhuish.info>
+	General-purpose callbacks for devices dialogue. 
+
+2004-11-27 Simon Melhuish <simon@melhuish.info>
+	Setup dialogue converted to use general-purpose callbacks. 
+	Old cruft removed 
+
+2004-11-27 Simon Melhuish <simon@melhuish.info>
+	Added Mozilla / Firefox option 
+
+2004-09-11  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* configure.in (AC_OUTPUT): Add intl/Makefile.
+
+2004-09-11  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Remove intl.
+
+2004-09-11  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* configure.in (AC_OUTPUT): Add m4/Makefile.
+
+2004-09-05  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Remove intl.
+	(ACLOCAL_AMFLAGS): New variable.
+	(EXTRA_DIST): Add config.rpath.
+	* configure.in (AC_OUTPUT): Add m4/Makefile.
+	(AM_GNU_GETTEXT_VERSION): Bump to 0.12.1.
+
+2004-08-28 Simon Melhuish <simon@melhuish.info>
+	LCD - reduced warning level for set_cmc() error 
+	Errors now cause display to clear on next update 
+	Changed gpc "changes" to "events" 
+	Separate funtion for sub-updates 
+	Separate counters 
+	Delta calculated just on normal updates, 
+	events from sub-updates 
+
+2004-08-22 Simon Melhuish <simon@melhuish.info>
+	Introduced thermometer.c (.h) with state information 
+	Extension for powered thermometers, and multiple simultaneous conversion 
+
+2004-08-16 Simon Melhuish <simon@melhuish.info>
+	applctn_startup_finished() now called irrespective of data source - so daemon mode will always run 
+
+2004-08-15 Simon Melhuish <simon@melhuish.info>
+	Changed setupd unit selection to options menus 
+	Added some new units: m/s, knots, kPa 
+
+2004-08-11 Simon Melhuish <simon@melhuish.info>
+	Fix for logging from remote oww
+	Changed default interval to 10s
+
+2004-08-09 Simon Melhuish <simon@melhuish.info>
+	Using block writes 
+
+2004-08-07 Simon Melhuish <simon@melhuish.info>
+	Added LCD device support 
+
+2004-08-07 Simon Melhuish <simon@melhuish.info>
+	Demoted 1-wire reset error to WERR_DEBUG0 
+
+2004-08-07 Simon Melhuish <simon@melhuish.info>
+	ReadWindDirection_ADC tried again on error 
+	Used Steinar's GPC (ignore wrap) code 
+
+2004-07-25 Simon Melhuish <simon@melhuish.info>
+	Fixed werr_report_owerr() - merged from RISC OS version
+
+2004-07-11 Simon Melhuish <simon@melhuish.info>
+	Added werr_report_owerr() 
+
+2004-07-11 Simon Melhuish <simon@melhuish.info>
+	Solar values now fixed (0) precision 
+	Added solar units (w/m^2) 
+
+2004-07-11 Simon Melhuish <simon@melhuish.info>
+	Solar display uses setup_smax 
+
+2004-07-08 Simon Melhuish <simon@melhuish.info>
+Replaced code derived from Dalsemi v.2 OWPD (mlan)
+with code derived from Dalsemi v.3 OWPD (ownet).
+DS2438 may now be set as a Thermometer.
+Numbers of devices (max values) may be set at build time
+(see ./configure --help)
+
+2004-06-27 Simon Melhuish <simon@melhuish.info>
+Fixed gust readings 
+
+2004-05-23
+
+Fixed setup dialogue problem with toggle buttons.
+(Initial setup settings were double-toggling)
+
+
+2004-05-12
+
+Merged in barometer updates from Gtk1.2 branch.
+Better error checking, sanity checks.
+WS restart reloads device allocations from devices file.
+
+
+2004-04-04	0.80.1
+
+Downgraded local gettext to 0.11.5 to fix mkinstalldirs problem.
+
+
+2004-03-28	0.80.0
+
+Switched to Gtk+ 2.
+Minor fix to parseout.c (MAXBAROM)

@@ -1,0 +1,1827 @@
+# translation of cz.po to
+# translation of oww_CZ_01.po to
+# translation of oww_cz.po to
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Simon Melhuish <simon@melhuish.info>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: cz\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-05-27 20:55+0100\n"
+"PO-Revision-Date: 2006-02-05 18:42+0000\n"
+"Last-Translator: Simon Melhuish <simon@melhuish.info>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11\n"
+
+#: ../src/support.c:90 ../src/support.c:114
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Nemohu najít soubor pixmap: %s"
+
+#: ../src/interface.c:55
+msgid "One-wire weather"
+msgstr "One-wire weather"
+
+#: ../src/interface.c:66
+msgid "_File"
+msgstr "_Soubor"
+
+#: ../src/interface.c:73
+msgid "_Auxilliary"
+msgstr "_Záložní"
+
+#: ../src/interface.c:76
+msgid "Full sensor readout"
+msgstr "Úplná aktuální hodnota senzoru"
+
+#: ../src/interface.c:78
+msgid "Map"
+msgstr "Mapa"
+
+#: ../src/interface.c:81
+msgid "Go to this station's map URL"
+msgstr "Jdi na URL mapu této stanice"
+
+#: ../src/interface.c:83
+msgid "_Messages"
+msgstr "_Zprávy"
+
+#: ../src/interface.c:86
+msgid "Warnings and errors logged by Oww"
+msgstr "Oww zaznamenal varování a chyby"
+
+#: ../src/interface.c:93
+msgid "E_xit"
+msgstr "K_onec"
+
+#: ../src/interface.c:96
+msgid "Quit the application."
+msgstr "Ukončit aplikaci"
+
+#: ../src/interface.c:98
+msgid "_Edit"
+msgstr "_Opravit"
+
+#: ../src/interface.c:105
+msgid "_Setup"
+msgstr "_Nastavit"
+
+#: ../src/interface.c:108
+msgid "Logging settings, &c."
+msgstr "Nastavit logování, &c."
+
+#: ../src/interface.c:110
+msgid "_Devices"
+msgstr "_Zařízení"
+
+#: ../src/interface.c:113
+msgid "One-wire device settings."
+msgstr "Nastavit One-wire zařízení."
+
+#: ../src/interface.c:115
+msgid "_Help"
+msgstr "_Nápověda"
+
+#: ../src/interface.c:122
+msgid "About"
+msgstr "O programu"
+
+#: ../src/interface.c:125
+msgid "Information about this program."
+msgstr "Informace o tomto programu"
+
+#: ../src/interface.c:206 ../src/interface.c:207
+msgid "Messages from Oww"
+msgstr "Oww hlášení"
+
+#: ../src/interface.c:228
+msgid "Clear"
+msgstr "Vymazat"
+
+#: ../src/interface.c:231
+msgid "Click here to clear all messages"
+msgstr "Klikni pro vymazání všech zpráv"
+
+#: ../src/interface.c:233 ../src/interface.c:422 ../src/interface.c:1667
+msgid "Close"
+msgstr "Zavřít"
+
+#: ../src/interface.c:236
+msgid "Click here to close this window"
+msgstr "Kliknutím zavři toto okno"
+
+#: ../src/interface.c:403
+msgid "Oww Setup"
+msgstr "Nastavení Oww"
+
+#: ../src/interface.c:416 ../src/interface.c:1662
+msgid "Save"
+msgstr "Uložit"
+
+#: ../src/interface.c:420
+msgid "Click here to save your setup"
+msgstr "Kliknutím ulož aktuální nastavení"
+
+#: ../src/interface.c:426
+msgid "Click here to close the setup window"
+msgstr "Kliknutím zavři okno nastavení"
+
+#: ../src/interface.c:441 ../src/interface.c:693
+msgid "(s)"
+msgstr "(s)"
+
+#: ../src/interface.c:449
+msgid "Local"
+msgstr "Lokální"
+
+#: ../src/interface.c:454
+msgid "Read from local 1-wire weather station"
+msgstr "Čti z místní Oww stanice "
+
+#: ../src/interface.c:458
+msgid "Oww"
+msgstr "Oww"
+
+#: ../src/interface.c:463
+msgid "Read from remote Oww server"
+msgstr "Čti ze vzdáleného Oww serveru"
+
+#: ../src/interface.c:467
+msgid "Arne"
+msgstr "Arne"
+
+#: ../src/interface.c:471
+msgid "Read from remote Arne server"
+msgstr "Čti ze vzdáleného Arne serveru"
+
+#: ../src/interface.c:475 ../src/interface.c:815
+msgid "Dallas"
+msgstr "Dallas"
+
+#: ../src/interface.c:479
+msgid "Read from Dallas"
+msgstr "Čti z Dallasu"
+
+#: ../src/interface.c:488
+msgid "Remote Oww server host name"
+msgstr "Host name vzdáleného Oww serveru"
+
+#: ../src/interface.c:495
+msgid "Remote Arne server host name"
+msgstr "Host name vzdáleného Arne serveru"
+
+#: ../src/interface.c:509
+msgid "Select Dallas weather station"
+msgstr "Vyber Dallas meteo stanici"
+
+#: ../src/interface.c:511
+msgid "List"
+msgstr "Seznam"
+
+#: ../src/interface.c:515
+msgid "Click to update list of Dallas weather stations"
+msgstr "Klikni pro aktualizaci seznamu meteo stanic Dallas"
+
+#: ../src/interface.c:523
+msgid "Remote Oww server port number"
+msgstr "Číslo portu vzdáleného Oww serveru"
+
+#: ../src/interface.c:531
+msgid "Remote Arne server port number"
+msgstr "Číslo portu vzdáleného Arne serveru"
+
+#: ../src/interface.c:533
+msgid "Update"
+msgstr "Aktualizace"
+
+#: ../src/interface.c:538
+msgid "Click here to update data source parameters"
+msgstr "Klikni pro aktualizaci parametru zdroje dat"
+
+#: ../src/interface.c:540 ../src/interface.c:781
+msgid "Interval"
+msgstr "Interval"
+
+#: ../src/interface.c:553
+msgid "Update interval (in seconds)"
+msgstr "Aktualizuj interval (ve vteřinách)"
+
+#: ../src/interface.c:556
+msgid "Browser"
+msgstr "Prohlížeč"
+
+#: ../src/interface.c:577
+msgid "Mozilla"
+msgstr "Mozilla"
+
+#: ../src/interface.c:578
+msgid "Netscape"
+msgstr "Netscape"
+
+#: ../src/interface.c:579
+msgid "Konqueror"
+msgstr "Konqueror"
+
+#: ../src/interface.c:580
+msgid "Opera"
+msgstr "Opera"
+
+#: ../src/interface.c:581
+msgid "Galeon"
+msgstr "Galeon"
+
+#: ../src/interface.c:583
+msgid "Data source"
+msgstr "Zdroj dat"
+
+# User chooses whether to display T read from the first thermometer, or T read from the first hygrometer
+#: ../src/interface.c:595
+msgid "Use Trh"
+msgstr "Čti z prvního hygrometru"
+
+#: ../src/interface.c:600
+msgid ""
+"Select this option to use the temperature recorded by the first humidity "
+"sensor instead of the WS temperature"
+msgstr ""
+"Použij teploty zaznamenané prvním senzorem vlhkosti místo teplot "
+"zaznamenaných WS teplotním senzorem"
+
+#: ../src/interface.c:602
+msgid "Animate"
+msgstr "Animace"
+
+#: ../src/interface.c:607
+msgid "Animated display on/off"
+msgstr "Animovaný displej zap/vyp"
+
+#: ../src/interface.c:609
+msgid "Wind speed"
+msgstr "Rychlost větru"
+
+#: ../src/interface.c:616
+msgid "Temperature"
+msgstr "Teplota"
+
+#: ../src/interface.c:623 ../src/auxwin.c:117
+msgid "Rain"
+msgstr "Srážky"
+
+#: ../src/interface.c:630
+msgid "Pressure"
+msgstr "Tlak"
+
+#: ../src/interface.c:642
+#, fuzzy
+msgid "°C"
+msgstr "Â°C"
+
+#: ../src/interface.c:643
+#, fuzzy
+msgid "°F"
+msgstr "Â°F"
+
+#: ../src/interface.c:650
+msgid "Inches"
+msgstr "Palce"
+
+#: ../src/interface.c:651 ../src/convert.c:95
+msgid "mm"
+msgstr "mm"
+
+#: ../src/interface.c:658
+msgid "mBar"
+msgstr "mBar"
+
+#: ../src/interface.c:659
+msgid "Inch Hg"
+msgstr "Palec rtuťového sloupce"
+
+#: ../src/interface.c:660 ../src/convert.c:104
+msgid "kPa"
+msgstr "kPa"
+
+#: ../src/interface.c:661 ../src/convert.c:107
+msgid "ATM"
+msgstr "ATM"
+
+#: ../src/interface.c:668
+msgid "km/hr"
+msgstr "km/h"
+
+#: ../src/interface.c:669 ../src/convert.c:83
+msgid "mph"
+msgstr "míle/hod"
+
+#: ../src/interface.c:670 ../src/convert.c:86
+msgid "m/s"
+msgstr "m/s"
+
+#: ../src/interface.c:671 ../src/convert.c:89
+msgid "knots"
+msgstr "uzly"
+
+#: ../src/interface.c:673
+msgid "Display"
+msgstr "Displej"
+
+#: ../src/interface.c:685 ../src/interface.c:1228 ../src/interface.c:1802
+msgid "..."
+msgstr "..."
+
+#: ../src/interface.c:691
+msgid "Click here to browse to a log file or directory location"
+msgstr "Klikni pro zobrazení logovacího souboru nebo umístění adresáře"
+
+#: ../src/interface.c:706
+msgid "Log update interval (in seconds)"
+msgstr "Frekvence logování (v sekundách)"
+
+#: ../src/interface.c:714 ../src/interface.c:1034 ../src/setupd.c:471
+msgid "Off"
+msgstr "Vypnout"
+
+#: ../src/interface.c:720 ../src/setupd.c:468
+msgid "Start"
+msgstr "Start"
+
+#: ../src/interface.c:725
+msgid "Click here to start or stop logging"
+msgstr "Kiknutím zapni/vypni logování"
+
+#: ../src/interface.c:727 ../src/interface.c:1255 ../src/interface.c:1269
+#: ../src/parseout.c:843 ../src/parseout.c:860
+msgid "None"
+msgstr "Žádný"
+
+#: ../src/interface.c:732
+msgid "No logging"
+msgstr "Neloguje se"
+
+#: ../src/interface.c:737 ../src/interface.c:1050
+msgid "Daily"
+msgstr "Denně"
+
+#: ../src/interface.c:742
+msgid "Logging to a new file each day"
+msgstr "Loguj každý den do nového souboru"
+
+#: ../src/interface.c:746
+msgid "Single"
+msgstr "Jeden"
+
+#: ../src/interface.c:751
+msgid "Logging to a single file"
+msgstr "Loguj do jednoho souboru"
+
+# Should log updates occur at multiples of the interval, by the clock time (e.g. 10:00:00, 10:05:00, 10:10:00), instead of just running from the start time (e.g. 10:01:32, 10:06:32, 10:11:32)?
+#: ../src/interface.c:755
+msgid "Snap"
+msgstr "Celé násobky času"
+
+# Should log updates occur at multiples of the interval, by the clock time (e.g. 10:00:00, 10:05:00, 10:10:00), instead of just running from the start time (e.g. 10:01:32, 10:06:32, 10:11:32)?
+#: ../src/interface.c:760
+msgid "Log times snap to clock intervals"
+msgstr ""
+"Log je zapsán vždy, když čas dosáhne celého násobku zadaného intervalu "
+"logování"
+
+#: ../src/interface.c:767
+msgid "Enter the name of your chosen log file or directory here"
+msgstr "Zadej jméno logovacího souboru (adresáře)"
+
+#: ../src/interface.c:768
+msgid "/home/someuser/logfile.csv"
+msgstr "/home/someuser/logfile.csv"
+
+#: ../src/interface.c:776
+msgid " "
+msgstr " "
+
+#: ../src/interface.c:787
+msgid "Log file"
+msgstr "Logovací soubor"
+
+#: ../src/interface.c:799
+msgid "Interval (s)"
+msgstr "Interval (s)"
+
+#: ../src/interface.c:807
+msgid "http proxy"
+msgstr "http proxy"
+
+#: ../src/interface.c:823
+msgid "Lat. / Long."
+msgstr "Zeměpisná šířka/délka"
+
+#: ../src/interface.c:831
+#, fuzzy
+msgid "Wunderground"
+msgstr "wunderground"
+
+#: ../src/interface.c:839 ../src/interface.c:847 ../src/interface.c:871
+msgid "User / Pass"
+msgstr "Uživatelské jméno / heslo"
+
+#: ../src/interface.c:855
+msgid "hamweather"
+msgstr "hamweather"
+
+#: ../src/interface.c:863
+msgid "CWOP"
+msgstr "CWOP"
+
+#: ../src/interface.c:884
+msgid "Select to enable the http proxy"
+msgstr "Umožni http proxy"
+
+#: ../src/interface.c:891
+msgid "Select to enable Dallas Semiconductor uploads"
+msgstr "Umožni Dallas Semiconductor uploady"
+
+#: ../src/interface.c:898
+msgid "Select to enable hamweather uploads"
+msgstr "Umožni hamweather uploady"
+
+#: ../src/interface.c:905
+msgid "Select to enable CWOP uploads"
+msgstr "Umožni CWOP uploady"
+
+# Should sensor updates occur at multiples of the interval, by the clock time (e.g. 10:00:00, 10:05:00, 10:10:00), instead of just running from the start time (e.g. 10:01:32, 10:06:32, 10:11:32)?
+#: ../src/interface.c:907
+msgid "Use times"
+msgstr "Použij násobky"
+
+# Should sensor updates occur at multiples of the interval, by the clock time (e.g. 10:00:00, 10:05:00, 10:10:00), instead of just running from the start time (e.g. 10:01:32, 10:06:32, 10:11:32)?
+#: ../src/interface.c:912
+msgid "Upload times snap to clock intervals"
+msgstr "Proveď upload vždy, když čas dosáhne celého násobku zadaného intervalu"
+
+#: ../src/interface.c:919
+msgid "Enter your call sign / user name for CWOP here"
+msgstr "Zadej svou volací značku/uživatelské jméno pro CWOP"
+
+#: ../src/interface.c:926
+msgid "Enter the server name / IP for CWOP uploads"
+msgstr "Zadej jméno / IP serveru pro CWOP uploady"
+
+#: ../src/interface.c:933
+msgid "Enter your user name for hamweather here"
+msgstr "Zadej své uživatelské jméno pro \"hamweather\""
+
+#: ../src/interface.c:940
+msgid "Enter your user name for The Weather Underground here"
+msgstr "Zadej své uživatelské jméno pro \"The Weather Underground\""
+
+#: ../src/interface.c:948
+msgid "Latitude in degrees east (-180.0 to 180.0)"
+msgstr "Zeměpisná šířka ve stupních (-180.0 až 180.0)"
+
+#: ../src/interface.c:957
+msgid "Interval between weather station Web uploads"
+msgstr "Interval pro weather station Web uploady"
+
+#: ../src/interface.c:964
+msgid "Enter the address of your proxy, including the http://at the start"
+msgstr "Zadej proxy adresu (včetně http:// na začátku adresy)"
+
+#: ../src/interface.c:971
+msgid ""
+"Enter the base URL of the Dallas servlet, e.g. http://198.3.123.122:8080/"
+"servlet/WeatherServlet"
+msgstr ""
+"Zadej základní URL Dallas servlet adresu (např.: http://198.3.123.122:8080/) "
+"servlet/WeatherServlet"
+
+#: ../src/interface.c:978 ../src/interface.c:1027
+msgid ""
+"Enter the base URL of the Weather Underground database, e.g. http://www."
+"wunderground.com/weatherstation/updateweatherstation.php"
+msgstr ""
+"Zadej základní URL adresu databáze Weather Underground, např.: http://www."
+"wunderground.com/weatherstation/updateweatherstation.php"
+
+#: ../src/interface.c:986
+msgid "Enter the port number for CWOP uploads"
+msgstr "Zadej číslo portu pro CWOP uploady"
+
+#: ../src/interface.c:995
+msgid "Longtitude in degrees north (-90.0 to 90.0)"
+msgstr "Zěmipisná délka ve stupních (-90.0 až 90.0)"
+
+#: ../src/interface.c:1003
+msgid "Enter your password for The Weather Underground here"
+msgstr "Zadej své heslo pro \"The Weather Underground\""
+
+#: ../src/interface.c:1011
+msgid "Enter your password for hamweather here"
+msgstr "Zadej své heslo pro \"hamweather\""
+
+#: ../src/interface.c:1019
+msgid "Enter your password for CWOP here"
+msgstr "Zadej své CWOP heslo"
+
+#: ../src/interface.c:1035 ../src/setupd.c:471
+msgid "On"
+msgstr "Zapnuto"
+
+#: ../src/interface.c:1036
+#, fuzzy
+msgid "Fast"
+msgstr "v"
+
+#: ../src/interface.c:1038
+msgid "Upload"
+msgstr "Upload"
+
+#: ../src/interface.c:1055
+msgid "Daily reset at..."
+msgstr "Resetuj denně v ..."
+
+#: ../src/interface.c:1059
+msgid "Weekly"
+msgstr "Týdně"
+
+#: ../src/interface.c:1064
+msgid "Weekly reset on..."
+msgstr "Resetuj týdně v ..."
+
+#: ../src/interface.c:1068
+msgid "Monthly"
+msgstr "Měsíčně"
+
+#: ../src/interface.c:1073
+msgid "Monthly reset on..."
+msgstr "Resetuj měsíčně v ..."
+
+#: ../src/interface.c:1077
+msgid "at"
+msgstr "v"
+
+#: ../src/interface.c:1084 ../src/interface.c:1091
+msgid "on"
+msgstr "v"
+
+#: ../src/interface.c:1098
+msgid "Reset"
+msgstr "Reset"
+
+#: ../src/interface.c:1103
+msgid "Click here to reset the rain gauge"
+msgstr "Resetuj měřič srážek"
+
+#: ../src/interface.c:1105
+msgid "Manual"
+msgstr "Manualní"
+
+#: ../src/interface.c:1110
+msgid "Manual reset only"
+msgstr "Pouze manuální reset"
+
+#: ../src/interface.c:1120
+msgid "Sunday"
+msgstr "Neděle"
+
+#: ../src/interface.c:1121
+msgid "Monday"
+msgstr "Pondělí"
+
+#: ../src/interface.c:1122
+msgid "Tuesday"
+msgstr "Úterý"
+
+#: ../src/interface.c:1123
+msgid "Wednesday"
+msgstr "Středa"
+
+#: ../src/interface.c:1124
+msgid "Thursday"
+msgstr "Čtvrtek"
+
+#: ../src/interface.c:1125
+msgid "Friday"
+msgstr "Pátek"
+
+#: ../src/interface.c:1126
+msgid "Saturday"
+msgstr "Sobota"
+
+#: ../src/interface.c:1134
+msgid "Date of monthly reset"
+msgstr "Datum měsíčního resetu"
+
+#: ../src/interface.c:1144
+msgid "Hour for automatic resets"
+msgstr "Hodina automatického resetu"
+
+#: ../src/interface.c:1148
+msgid ":00"
+msgstr ":00"
+
+#: ../src/interface.c:1155
+msgid "Stats"
+msgstr "Statistiky"
+
+#: ../src/interface.c:1167
+msgid "Wind chill formula"
+msgstr "Vzorec ochlazení větrem"
+
+#: ../src/interface.c:1175
+msgid "Heat index formula"
+msgstr "Vzorec teplotního indexu"
+
+#: ../src/interface.c:1188
+msgid "Steadman"
+msgstr "Steadman"
+
+#: ../src/interface.c:1189
+msgid "NWS 1992b"
+msgstr "NWS 1992b"
+
+#: ../src/interface.c:1190
+msgid "New WCT"
+msgstr "New WCT"
+
+#: ../src/interface.c:1197
+msgid "U.S. heat index"
+msgstr "U.S. heat index"
+
+#: ../src/interface.c:1198
+msgid "Canadian humidex"
+msgstr "Canadian humidex"
+
+#: ../src/interface.c:1200
+msgid "Derived values"
+msgstr "Odvozené hodnoty"
+
+#: ../src/interface.c:1212 ../src/interface.c:1278
+msgid "Messages"
+msgstr "Hlášení"
+
+#: ../src/interface.c:1220
+msgid "Log level"
+msgstr "Úroveň logování"
+
+#: ../src/interface.c:1233
+msgid "Click here to pick a debug file name"
+msgstr "Vyber jméno debug souboru"
+
+#: ../src/interface.c:1235
+msgid "Debug file"
+msgstr "Debug soubor"
+
+#: ../src/interface.c:1248
+msgid "Enter the full name of the debug file and hit \"return\"."
+msgstr "Zadej celé jméno debug souboru a stiskni \"enter\""
+
+#: ../src/interface.c:1256 ../src/interface.c:1270
+msgid "Fatal only"
+msgstr "Pouze fatální"
+
+#: ../src/interface.c:1257 ../src/interface.c:1271
+msgid "All errors"
+msgstr "Všechny chyby"
+
+#: ../src/interface.c:1258 ../src/interface.c:1272
+msgid "Errors and warnings"
+msgstr "Chyby a varování"
+
+#: ../src/interface.c:1259 ../src/interface.c:1273
+msgid "Debug 0"
+msgstr "Debug 0"
+
+#: ../src/interface.c:1260 ../src/interface.c:1274
+msgid "Debug 1"
+msgstr "Debug 1"
+
+#: ../src/interface.c:1261 ../src/interface.c:1275
+msgid "Debug 2"
+msgstr "Debug 2"
+
+#: ../src/interface.c:1262 ../src/interface.c:1276
+msgid "Debug 3"
+msgstr "Debug 3"
+
+#: ../src/interface.c:1283
+msgid "SaveNG"
+msgstr "UložNG"
+
+#: ../src/interface.c:1289
+msgid "Click here to save your setup for use by owwnogui"
+msgstr "Ulož nastavení pro použití v owwnogui"
+
+#: ../src/interface.c:1639
+msgid "Devices"
+msgstr "Zařízení"
+
+#: ../src/interface.c:1652
+msgid "Search"
+msgstr "Hledej"
+
+#: ../src/interface.c:1655
+msgid ""
+"Click here to erase your current device settings and search the bus for "
+"connected components"
+msgstr "Vymaž aktuální nastavení a najdi zařízení připojená na 1-wire sbirnici"
+
+#: ../src/interface.c:1665
+msgid "Click here to save your device settings"
+msgstr "Ulož nastavení"
+
+#: ../src/interface.c:1670
+msgid "Click here to close the window"
+msgstr "Zavři okno"
+
+#: ../src/interface.c:1725
+msgid "Choose Cal entry to change from pop-up list"
+msgstr "Vyber Cal z pop-up listu"
+
+#: ../src/interface.c:1733
+msgid "Enter Cal value here"
+msgstr "Zadej Cal hodnotu"
+
+#: ../src/interface.c:1745
+msgid "Vanes"
+msgstr "Ukazatele směru větru"
+
+#: ../src/interface.c:1755
+msgid "How many wind vane devices have been detected (out of 8)?"
+msgstr "Kolik ukazatelů směru větru bylo detekováno (z osmi)? "
+
+#: ../src/interface.c:1757
+msgid "0"
+msgstr "0"
+
+#: ../src/interface.c:1759
+msgid "Offset"
+msgstr "Offset"
+
+#: ../src/interface.c:1770
+msgid ""
+"Adjust the offset (-8 to +8) until the display lines up with the actual wind "
+"vane direction"
+msgstr ""
+"Nastavuj offset (-8 až +8) dokud se na displeji správně nezobrazí směr, kam "
+"ukazuje ukazatel směru větru"
+
+#: ../src/interface.c:1774
+msgid "Reverse"
+msgstr "Otoč"
+
+#: ../src/interface.c:1777
+msgid "Select this option if your wind vane readout is reversed"
+msgstr "Použij v případě, že údaj o pozici ukazatele směru větru je opačný"
+
+#: ../src/interface.c:1779
+msgid "Wipe Vanes"
+msgstr "Vymaž ukazatele"
+
+#: ../src/interface.c:1783
+msgid "Wind vane"
+msgstr "Ukazatel směru větru"
+
+#: ../src/interface.c:1799
+msgid "Enter the serial device name here"
+msgstr "Zadej seriové číslo zařízení"
+
+#: ../src/interface.c:1800
+msgid "/dev/cua0"
+msgstr "/dev/cua0"
+
+#: ../src/interface.c:1806
+msgid "Click to browse to a serial device"
+msgstr "Prohledej seriová zařízení"
+
+#: ../src/interface.c:1808 ../src/setupd.c:1179
+msgid "Device"
+msgstr "Zařízení"
+
+#: ../src/interface.c:1915
+msgid "Information about this program"
+msgstr "Informace o tomto programu"
+
+#: ../src/interface.c:1916
+msgid "Program information"
+msgstr "Informace o programu"
+
+#: ../src/interface.c:1922
+msgid "Version"
+msgstr "Verze"
+
+#: ../src/interface.c:1930
+msgid "Author\n"
+msgstr "Autor\n"
+
+#: ../src/interface.c:1938
+msgid "Purpose"
+msgstr "Účel"
+
+#: ../src/interface.c:1946 ../src/auxwin_un.c:41
+msgid "Name"
+msgstr "Jméno"
+
+#: ../src/interface.c:1960
+msgid "<span size=\"x-large\" foreground=\"blue\">Oww</span>"
+msgstr "<span size=\"x-large\" foreground=\"blue\">Oww</span>"
+
+#: ../src/interface.c:1972
+msgid "<span foreground=\"red\">One-wire weather</span>"
+msgstr "<span foreground=\"red\">One-wire weather</span>"
+
+#: ../src/interface.c:1984
+msgid "<span foreground=\"brown\" size=\"large\">Dr. Simon J. Melhuish</span>"
+msgstr "<span foreground=\"brown\" size=\"large\">Dr. Simon J. Melhuish</span>"
+
+#: ../src/interface.c:1996
+msgid "0.0.1"
+msgstr "0.0.1"
+
+#: ../src/interface.c:2007
+msgid "http://oww.sourceforge.net/"
+msgstr "http://oww.sourceforge.net/"
+
+#: ../src/interface.c:2017
+msgid ""
+"<b>Developers</b>\n"
+"Maxim / Dallas \t\tPD\n"
+"Steinar Midtskogen \tlightning, &amp;c\n"
+"Matthew Harrell \t\tcwop\n"
+"and others...\n"
+"<b>Translators</b>\n"
+"Steinar Midtskogen \tnb_NO\n"
+"f5kbd \t\t\tfr\n"
+"Mikael Martinsson \tsv\n"
+"Petr\t\t\t\tcz"
+msgstr ""
+"<b>Developers</b>\n"
+"Maxim / Dallas \t\tPD\n"
+"Steinar Midtskogen \tlightning, &amp;c\n"
+"Matthew Harrell \t\tcwop\n"
+"and others...\n"
+"<b>Překlad</b>\n"
+"Steinar Midtskogen \tnb_NO\n"
+"f5kbd \t\t\tfr\n"
+"Mikael Martinsson \tsvPetr \t\t\tcz"
+
+#: ../src/interface.c:2023
+msgid ""
+"Helped\n"
+"by\n"
+msgstr ""
+"Dále \n"
+"pomáhali:\n"
+
+#: ../src/interface.c:2078
+msgid "Oww auxilliary window - full sensor readout"
+msgstr "Pomocné Oww okno - celkový aktuální stav senzoru"
+
+#: ../src/interface.c:2079
+msgid "Oww - Auxilliary"
+msgstr "Oww - pomocné"
+
+#: ../src/ad26.c:181 ../src/ad26.c:303
+msgid "1-s timeout reading voltage"
+msgstr "1-s prodleva čtení napětí"
+
+#: ../src/ad26.c:343
+#, c-format
+msgid "Too many retries reading %s current. Giving up."
+msgstr "Příliš mnoho pokusů přečíst %s proud. Vzdávám čtení."
+
+#: ../src/ad26.c:355
+#, c-format
+msgid "ad26_current_reading didn't write correctly, reading %s"
+msgstr "ad26_current_reading nebyl korektně zapsán, hodnota je %s"
+
+#: ../src/ad26.c:425 ../src/ad26.c:583
+#, c-format
+msgid "Access failed, reading %s"
+msgstr "Přístup neúspěšný, hodnota %s"
+
+#: ../src/ad26.c:434
+#, c-format
+msgid "ad26_current_reading failed, reading %s"
+msgstr "ad26_current_reading neúspěšný, hodnota %s"
+
+#: ../src/ad26.c:464
+#, c-format
+msgid "Too many retries reading %s. Giving up."
+msgstr "Příliš mnoho pokusů přečíst %s. Vzdávám čtení."
+
+#: ../src/ad26.c:476
+#, c-format
+msgid "Volt_AD didn't write correctly, reading %s"
+msgstr "Volt_AD nebylo korektni zapsáno, hodnota %s"
+
+#: ../src/ad26.c:592
+#, c-format
+msgid "Volt_AD failed, reading %s"
+msgstr "Volt_AD neúspěšný, hodnota %s"
+
+#: ../src/ad26.c:621
+msgid "1-s timeout converting temperature"
+msgstr "1-s timeout při převodu teploty"
+
+#. EOF
+#: ../src/applctn.c:262
+#, c-format
+msgid "Exiting interactive mode.\n"
+msgstr "Opouštím interaktivní mod.\n"
+
+#: ../src/applctn.c:645
+#, c-format
+msgid "Changing to daemon mode\n"
+msgstr "Přecházím do daemon modu\n"
+
+#: ../src/applctn.c:648
+#, c-format
+msgid "daemon failed\n"
+msgstr "deamon neúspěšný\n"
+
+#: ../src/applctn.c:675
+#, c-format
+msgid ""
+"Interactive mode conflicts with daemon mode.\n"
+"Exiting.\n"
+msgstr "Konflikt interaktivního modu s daemon modem.\n"
+
+#: ../src/applctn.c:685
+msgid "daemon mode for owwnogui only"
+msgstr "Daemon mod jen pro owwnogui"
+
+#: ../src/arne.c:402
+msgid "CRC error reading from WServer"
+msgstr "Chybná hodnota CRC od WServeru"
+
+#: ../src/arne.c:403
+#, c-format
+msgid "check = %d, vane_bearing = %d, vane_mode = %d, sum = %d"
+msgstr "check = %d, vane_bearing = %d, vane_mode = %d, sum = %d"
+
+# Network TCP socket error
+#: ../src/arne.c:444 ../src/oww_trx.c:622
+#, c-format
+msgid "Bad socket: %d"
+msgstr "Špatný TCP socket %d"
+
+#: ../src/auxwin.c:65
+msgid "Wind Speed"
+msgstr "Rychlost větru"
+
+#: ../src/auxwin.c:73
+msgid "Wind Gust"
+msgstr "Poryvy větru"
+
+#: ../src/auxwin.c:80
+msgid "Wind Dir."
+msgstr "Směr větru"
+
+#: ../src/auxwin.c:89
+msgid "Wind Chill"
+msgstr "Wind Chill"
+
+#: ../src/auxwin.c:100
+msgid "Heat Index"
+msgstr "Teplotní index"
+
+#: ../src/auxwin.c:122
+msgid "Rain Rate"
+msgstr "Srážky"
+
+#: ../src/auxwin.c:125
+msgid "mm/hour"
+msgstr "mm/hod."
+
+#: ../src/auxwin.c:125
+msgid "\"/hour"
+msgstr "\"/hod."
+
+# Relative humidity (%) of hygrometer
+#: ../src/auxwin.c:146
+msgid "RH "
+msgstr "Relativní vlhkost"
+
+# Temperature of hygrometer
+#: ../src/auxwin.c:150
+msgid "T rh "
+msgstr "Teplota hygrometru"
+
+# Hygrometer dew point temperature
+#: ../src/auxwin.c:156
+msgid "T dew "
+msgstr "Teplota rosného bodu hygrometru"
+
+# Barometer pressure value
+#: ../src/auxwin.c:172
+msgid "Barom "
+msgstr "Tlak v barometru"
+
+# Barometer temperature
+#: ../src/auxwin.c:180
+msgid "T b "
+msgstr "Teplota v barometru"
+
+# General-purpose counter
+#: ../src/auxwin.c:192
+msgid "GPC "
+msgstr "Obecný čítač"
+
+# Solar (Sun light) value
+#: ../src/auxwin.c:204
+msgid "Solar "
+msgstr "Sluneční svit"
+
+#: ../src/auxwin.c:216
+msgid "V adc "
+msgstr ""
+
+#: ../src/auxwin.c:222
+msgid "I adc "
+msgstr ""
+
+# Hygrometer dew point temperature
+#: ../src/auxwin.c:228
+#, fuzzy
+msgid "T adc "
+msgstr "Teplota rosného bodu hygrometru"
+
+#: ../src/auxwin_un.c:48
+msgid "Value"
+msgstr "Hodnota"
+
+#: ../src/auxwin_un.c:56
+msgid "Unit"
+msgstr "Jednotka"
+
+#: ../src/client.c:126
+#, c-format
+msgid "Unable to resolve host name \"%s\""
+msgstr "Nemohu najít host \"%s\""
+
+#: ../src/client.c:148
+#, c-format
+msgid "Unable to open socket for communication with \"%s\""
+msgstr "Nemohu otevřít socket pro komunikaci s \"%s\""
+
+#: ../src/client.c:158
+#, c-format
+msgid "Unable to connect to \"%s\""
+msgstr "Nemohu navázat spojení s \"%s\""
+
+#: ../src/convert.c:80
+msgid "km/h"
+msgstr "km/h"
+
+#: ../src/convert.c:98
+msgid "mB"
+msgstr "mB"
+
+#: ../src/convert.c:101
+msgid "\"Hg"
+msgstr "Hg"
+
+#: ../src/convert.c:110
+msgid "Bad unit type"
+msgstr "Špatná jednotka"
+
+#: ../src/convert.c:183 ../src/convert.c:189
+msgid "inches"
+msgstr "palce"
+
+#: ../src/cwop.c:247 ../src/cwop.c:279
+msgid "Cwop: Remote host error"
+msgstr "Cwop: Remote host error"
+
+#: ../src/cwop.c:349
+#, c-format
+msgid "Cwop: Host name error: %s"
+msgstr "Cwop: Host name error: %s"
+
+#: ../src/cwop.c:363
+#, c-format
+msgid "Cwop: Cannot create tcp socket - %s"
+msgstr "Cwop: Nemohu vytvorit tcp socket - %s"
+
+#: ../src/cwop.c:382
+#, c-format
+msgid "Cwop: Cannot connect to server %s - %s"
+msgstr "Cwop: Nemohu se připojit k serveru %s - %s"
+
+#: ../src/devices.c:560
+msgid "Thermometer slope"
+msgstr "Gradient teploměru"
+
+#: ../src/devices.c:563
+msgid "Thermometer offset ("
+msgstr "Offset teploměru ("
+
+#: ../src/devices.c:570
+msgid "Anemometer slope"
+msgstr "Gradient anemometru"
+
+#: ../src/devices.c:574
+msgid "Rain gauge slope (\"/tip)"
+msgstr "Gradient měřiče srážek (\"/tip)"
+
+# Scaling adjustment for hygrometer temperature
+#: ../src/devices.c:581
+msgid "Trh slope"
+msgstr "Nastavení stupnice teploty vlhkoměru"
+
+# Offset adjustment for hygrometer temperature
+#: ../src/devices.c:584
+msgid "Trh offset ("
+msgstr "Nastavení ofsetu teploty vlhkoměru"
+
+#: ../src/devices.c:587
+msgid "Hygrometer slope"
+msgstr "Gradient vlhkoměru"
+
+#: ../src/devices.c:590
+msgid "Hygrometer offset (%RH)"
+msgstr "Offset vlhkoměru (%RH)"
+
+#: ../src/devices.c:600
+msgid "Barometer slope (mBar / X)"
+msgstr "Gradient barometru (mBar / X)"
+
+#: ../src/devices.c:603
+msgid "Barometer offset (mBar)"
+msgstr "Offset barometru (mBar)"
+
+# Scaling adjustment for barometer temperature
+#: ../src/devices.c:606
+msgid "Tb slope"
+msgstr "Gradient pro teplotu barometru"
+
+# Offset adjustment for barometer temperature
+#: ../src/devices.c:609
+msgid "Tb offset ("
+msgstr "Nastavení ofsetu teploty barometru"
+
+# Scaling adjustment for general purpose counter
+#: ../src/devices.c:616
+msgid "GPC slope"
+msgstr "Gradient obecného čítače"
+
+# Scaling adjustment for solar (Sun) sensor
+#: ../src/devices.c:623
+msgid "Solar slope"
+msgstr "Gradient slunečního svitu"
+
+# Offset adjustment for solar (Sun) sensor
+#: ../src/devices.c:626
+msgid "Solar offset"
+msgstr "Nastavení ofsetu slunečního svitu"
+
+#: ../src/devices.c:630
+msgid "LCD type"
+msgstr "typ LCD"
+
+#. Check for special cases
+#: ../src/devices.c:1181 ../src/interactive.c:78 ../src/interactive.c:125
+#: ../src/setupd.c:887 ../src/setupd.c:953 ../src/setupd.c:971
+msgid "--None--"
+msgstr "--None--"
+
+#: ../src/devices.c:1274
+msgid "Coupler"
+msgstr "Coupler"
+
+#: ../src/devices.c:1277
+msgid "Thermometer"
+msgstr "Teploměr"
+
+#: ../src/devices.c:1280
+msgid "Switch"
+msgstr "Přepínač"
+
+#: ../src/devices.c:1283
+msgid "Counter"
+msgstr "Čítač"
+
+#: ../src/devices.c:1286
+msgid "ROM ID"
+msgstr "ROM ID"
+
+#: ../src/devices.c:1289
+msgid "A to D"
+msgstr "A/D převodník"
+
+#: ../src/devices.c:1292
+msgid "Smart Bat' Mon'"
+msgstr "Smart Bat' Monitor'"
+
+#: ../src/devices.c:1295
+msgid "8-bit IO"
+msgstr "8-bit IO"
+
+#: ../src/devices.c:1298
+msgid "Hygrochron"
+msgstr "Hygrochron"
+
+#: ../src/devices.c:1305
+msgid "MultiKey"
+msgstr "MultiKey"
+
+#: ../src/devices.c:1318
+msgid "Memory"
+msgstr "Paměť"
+
+#: ../src/devices.c:1321
+msgid "DS2405 Switch"
+msgstr "DS2405 Switch"
+
+#: ../src/devices.c:1324
+msgid "Mem/Clk"
+msgstr "Mem/Clk"
+
+#: ../src/devices.c:1327
+msgid "EEPROM"
+msgstr "EEPROM"
+
+#: ../src/devices.c:1330
+msgid "SHA"
+msgstr "SHA"
+
+#: ../src/devices.c:1333
+msgid "Monetary"
+msgstr "Monetary"
+
+#: ../src/devices.c:1336
+msgid "DS2436"
+msgstr "DS2436"
+
+#: ../src/devices.c:1339
+msgid "DS2432"
+msgstr "DS2432"
+
+#: ../src/devices.c:1342
+msgid "DS2437"
+msgstr "DS2437"
+
+#: ../src/devices.c:1345
+msgid "Thermochron"
+msgstr "Thermochron"
+
+#: ../src/devices.c:1348
+msgid "DS1822"
+msgstr "DS1822"
+
+#: ../src/devices.c:1351
+msgid "DS18B20"
+msgstr "DS18B20"
+
+#: ../src/devices.c:1354
+msgid "Serial"
+msgstr "Serial"
+
+#: ../src/devices.c:1357
+msgid "Multi"
+msgstr "Multi"
+
+#: ../src/devices.c:1360
+msgid "Time"
+msgstr "Čas"
+
+#: ../src/file.c:87
+#, c-format
+msgid "%s not found."
+msgstr "%s nebyl nalezen."
+
+#: ../src/file.c:93
+#, c-format
+msgid "Failed to create %s"
+msgstr "Nepodařilo se vytvořit %s"
+
+#. stat failed
+#: ../src/file.c:104
+#, c-format
+msgid "Unable to get directory information: %s"
+msgstr "Není moné získat informaci o adresáři: %s "
+
+#. dir_name is something other than a directory
+#: ../src/file.c:113
+#, c-format
+msgid "%s is not a directory"
+msgstr "%s není adresář"
+
+#. Directory does not give us write permission
+#. File does not give us write permission
+#: ../src/file.c:121 ../src/file.c:183
+#, c-format
+msgid "No write permission in %s"
+msgstr "Není povolení k zápisu do %s"
+
+#: ../src/file.c:141
+#, c-format
+msgid "File %s not found"
+msgstr "Soubor %s nebyl nalezen"
+
+#: ../src/file.c:149
+#, c-format
+msgid "Failed to create file %s"
+msgstr "Nepodařilo se vytvořit soubor %s"
+
+#. stat failed
+#: ../src/file.c:166
+#, c-format
+msgid "Unable to get file information: %s"
+msgstr "Nepodařilo se obdržet informaci o souboru: %s"
+
+#. file_name is something other than a directory
+#: ../src/file.c:175
+#, c-format
+msgid "%s is not a normal file"
+msgstr "%s není normální soubor"
+
+#. werr(WERR_DEBUG1, "Finished building list");
+#: ../src/interactive.c:167
+#, c-format
+msgid "Select device for assignment: "
+msgstr "Vyber zařízení pro přiřazení: "
+
+#: ../src/interactive.c:172 ../src/interactive.c:230
+#, c-format
+msgid "%d is outside of the valid range\n"
+msgstr "%d je mimo rozsah platných hodnot\n"
+
+#. printf(_("You selected device %d: %s %s\n"), search_entry+1, temp_string,
+#. (devices_search_list[search_entry].alloc < 0) ?
+#. "" : devices_list[devices_search_list[search_entry].alloc].menu_entry
+#. ) ;
+#: ../src/interactive.c:184
+#, c-format
+msgid "Choose assignment from:\n"
+msgstr "Vyber přiřazení z:\n"
+
+#: ../src/interactive.c:191
+#, c-format
+msgid "Assignment unchanged\n"
+msgstr "Přiřazení nezměněno\n"
+
+# The user called the cal command - now they must choose a device from a list, which will be selected for changes to calibration values
+#. werr(WERR_DEBUG1, "Finished building list");
+#: ../src/interactive.c:225
+#, c-format
+msgid "Select device for cal setting: "
+msgstr "Vyber zařízení pro nastavení kalibrace:"
+
+# Requests the user to choose from a list of calibration entries
+#: ../src/interactive.c:251
+#, c-format
+msgid "Choose cal entry from:\n"
+msgstr "Vyber vstup pro kalibraci:\n"
+
+#: ../src/interactive.c:263
+#, c-format
+msgid "No change\n"
+msgstr "Beze změny\n"
+
+#. else left pointing at null
+#. printf("line=\"%s\", delim=\"%s\"\n", line, delim);
+#: ../src/interactive.c:307
+msgid "assign"
+msgstr "přiřaď"
+
+# Interactive command name for changing calibration settings
+#: ../src/interactive.c:312
+msgid "cal"
+msgstr "kalibrace"
+
+#: ../src/interactive.c:317
+msgid "daemon"
+msgstr "daemon"
+
+#: ../src/interactive.c:321
+#, c-format
+msgid "Already running as a daemon\n"
+msgstr "Již spuštěno jako daemon\n"
+
+#: ../src/interactive.c:325
+#, c-format
+msgid "Run owwnogui to use daemon mode\n"
+msgstr "Spusť owwnogui v daemon modu\n"
+
+#: ../src/interactive.c:329
+msgid "quit"
+msgstr "ukonči"
+
+#: ../src/interactive.c:334
+msgid "search"
+msgstr "hledej"
+
+#: ../src/interactive.c:337
+#, c-format
+msgid "Searching...\n"
+msgstr "Hledám...\n"
+
+#: ../src/interactive.c:340 ../src/interactive.c:360 ../src/interactive.c:394
+msgid "setup"
+msgstr "nastavení"
+
+#: ../src/interactive.c:343 ../src/interactive.c:349 ../src/interactive.c:355
+#: ../src/interactive.c:389
+#, c-format
+msgid "Done\n"
+msgstr "Hotovo\n"
+
+#: ../src/interactive.c:346 ../src/interactive.c:370 ../src/interactive.c:396
+msgid "devices"
+msgstr "zařízení"
+
+#: ../src/interactive.c:352
+msgid "reset"
+msgstr "reset"
+
+#: ../src/interactive.c:358
+msgid "save"
+msgstr "ulož"
+
+#: ../src/interactive.c:363
+#, c-format
+msgid "Saved setup\n"
+msgstr "Uložené nastavení\n"
+
+# Save type for setupNG (setup file for owwnogui)
+#: ../src/interactive.c:365
+msgid "setupng"
+msgstr "setupng"
+
+# Informational message - setupNG file was saved
+#: ../src/interactive.c:368
+#, c-format
+msgid "Saved setupNG\n"
+msgstr "setupNG bylo uloženo\n"
+
+#: ../src/interactive.c:373
+#, c-format
+msgid "Saved devices\n"
+msgstr "Uložená zařízení\n"
+
+#: ../src/interactive.c:375
+msgid "stats"
+msgstr "statistiky"
+
+#: ../src/interactive.c:378
+#, c-format
+msgid "Saved stats\n"
+msgstr "Uložené statistiky\n"
+
+#: ../src/interactive.c:382
+#, c-format
+msgid "Unrecognized save option\n"
+msgstr "Nerozpoznaná volba uložení\n"
+
+#: ../src/interactive.c:386
+msgid "wipe"
+msgstr "vymazat"
+
+#: ../src/interactive.c:399
+#, c-format
+msgid ""
+"Available commands:\n"
+"\tassign\n"
+"\tcal\n"
+"\tdaemon\n"
+"\tdevices [devices line]\n"
+"\tquit\n"
+"\treset\n"
+"\tsave [setup | setupng | stats | devices]\n"
+"\tsearch\n"
+"\tsetup [setup line]\n"
+"\twipe\n"
+"\t? devices\n"
+"\t? setup\n"
+msgstr ""
+"Možné příkazy:\n"
+"\tassign\n"
+"\tcal\n"
+"\tdaemon\n"
+"\tdevices [devices line]\n"
+"\tquit\n"
+"\treset\n"
+"\tsave [setup | setupng | stats | devices]\n"
+"\tsearch\n"
+"\tsetup [setup line]\n"
+"\twipe\n"
+"\t? devices\n"
+"\t? setup\n"
+
+#: ../src/interactive.c:415
+#, c-format
+msgid "Unrecognized command: \"%s\"\n"
+msgstr "Nerozpoznaný příkaz:  \"%s\"\n"
+
+#: ../src/log.c:124
+#, c-format
+msgid "add_log_entry(\"%s\", \"%s\") - could not open file"
+msgstr "add_log_entry(\"%s\", \"%s\") - nemuže otevřít soubor"
+
+#: ../src/log.c:132
+#, c-format
+msgid "Error writing to \"%s\""
+msgstr "Chyba zápisu do \"%s\""
+
+#: ../src/log.c:255
+msgid "postlog command line did not parse correctly"
+msgstr "řádek \"postlog command\" nebyl správně rozpoznán"
+
+#: ../src/log.c:264
+msgid "Failed to run postlog command"
+msgstr "Neúspěšné spuštění postlog poříkazu"
+
+# Program error - trying to update the log when logging disabled
+#: ../src/log.c:274
+#, fuzzy
+msgid "Trying to write no log!"
+msgstr "Pokus o zapsání logu - logování není povoleno"
+
+#: ../src/log.c:397
+msgid "postupdate did not parse correctly"
+msgstr "postupdate nebyl správně rozpoznán"
+
+#: ../src/log.c:406
+msgid "Failed to run postupdate command"
+msgstr "Neúspěšné spuštění postupdate povelu"
+
+#: ../src/log.c:438
+msgid "Generation of log entry failed"
+msgstr "Neúspěšné vytvoření logovacího záznamu"
+
+#: ../src/log.c:441
+msgid "Zero-length log line"
+msgstr "Nulová délka logovacího záznamu"
+
+#: ../src/log.c:446
+msgid "Unable to update log. log_start_log_event failed"
+msgstr "Není možné updatovat log.  log_start_log_event neúspěšný"
+
+# Barometric Pressure
+# Gets drawn on main window - so keep it very short
+#: ../src/mainwin.c:760
+msgid "BP"
+msgstr "Barometrický tlak"
+
+# Part of rain rate units - [mm]/[inches] per hour
+#: ../src/mainwin.c:794
+#, c-format
+msgid "(%s/hr)"
+msgstr "(%s/h)"
+
+# oww or owwnogui was run with bad options - this is the start of the usage instructions
+#: ../src/mypopt.c:16
+#, c-format
+msgid ""
+"Usage: %s [options]\n"
+"\n"
+msgstr ""
+"Použití : %s [options]\n"
+"\n"
+
+#: ../src/mypopt.c:18
+#, c-format
+msgid "Options:\n"
+msgstr "Volby: \n"
+
+#: ../src/mypopt.c:67
+#, c-format
+msgid "\"-%c\" takes %d parameters\n"
+msgstr "\"-%c\" vyžaduje %d parametry\n"
+
+#: ../src/oww_trx.c:404
+msgid "The remote data source is not using Oww protocol!"
+msgstr "Vzdálený zdroj dat nepoužívá Oww protokol"
+
+#: ../src/parseout.c:1071
+#, c-format
+msgid "Silly suffix (%d) in parser string"
+msgstr "Nesprávná přípona (%d) v rozpoznávacím řetězci"
+
+#: ../src/parseout.c:1089
+#, c-format
+msgid "Suffix (%d) greater than maximum allowed (%d) for tag \"%s\""
+msgstr "Přípona (%d) je větší než maximum povolené (%d) pro tag \"%s\""
+
+#. Ran out of tags to try
+#: ../src/parseout.c:1124
+#, c-format
+msgid "Unknown tag: \"%s\""
+msgstr "Neznámý tag \"%s\""
+
+#: ../src/parseout.c:1192
+#, c-format
+msgid "Unmatched $ symbol in \"%s\""
+msgstr "Nerozpoznaný $ symbol v \"%s\""
+
+#: ../src/progstate.c:286
+msgid "Saving default setup"
+msgstr "Ukládám standardní hodnoty"
+
+#: ../src/progstate.c:361
+#, c-format
+msgid "Unable to connect to Oww server \"%s:%d\""
+msgstr "Připojení k Oww serveru \"%s:%d\" se nezdařilo"
+
+#: ../src/progstate.c:365 ../src/progstate.c:388
+#, c-format
+msgid "Will try again in %us"
+msgstr "Zkusím znovu za %us"
+
+#: ../src/progstate.c:384
+#, c-format
+msgid "Unable to connect to Arne server \"%s:%d\""
+msgstr "Připojení k Arne serveru \"%s:%d\" se nezdařilo"
+
+#: ../src/progstate.c:398
+msgid "Unexpected datasource type"
+msgstr "Neočekávaný typ zdrojových dat"
+
+#: ../src/progstate.c:448
+msgid "Remote host error"
+msgstr "Remote host error"
+
+#. Server is about o die
+#. Close the current connexion
+#: ../src/progstate.c:503
+msgid "Remote server dying"
+msgstr "Vzdálený server přestává fungovat"
+
+#: ../src/progstate.c:528
+msgid "Remote host connexion failed - trying again"
+msgstr "Připojení ke vzdálenému hostu se nezdařilo - zkouším znovu"
+
+#: ../src/progstate.c:539
+msgid "Remote host closed connexion"
+msgstr "Vzdálený host ukončil spojení"
+
+#: ../src/progstate.c:541
+#, c-format
+msgid "Reconnecting in %us"
+msgstr "Znovu spojím za %us"
+
+#: ../src/progstate.c:556
+msgid "Remote data source timed out - reconnecting"
+msgstr "Time out vzdáleného zdroje dat - připojuji znovu"
+
+#: ../src/progstate.c:604
+msgid "Check connexions and setup"
+msgstr "Vyzkoušej spojení a nastavení"
+
+#: ../src/progstate.c:634
+msgid "Problem with link or weather station"
+msgstr "Problém s linkou nebo s meteostanicí"
+
+#: ../src/progstate.c:641
+#, c-format
+msgid "RETRY:Will restart in %u seconds"
+msgstr "Restart za %us"
+
+#. Not the expected reply
+#: ../src/sendwx.c:541
+#, c-format
+msgid "URL fetch failed: %s"
+msgstr "URL fetch se nezdařil: %s"
+
+#: ../src/sendwx.c:960
+msgid "Dallas upload failed"
+msgstr "Dallas upload se nezdařil"
+
+#: ../src/sendwx.c:979
+msgid "WUnd upload failed"
+msgstr "WUnd upload se nezdařil"
+
+#: ../src/sendwx.c:998
+msgid "ham upload failed"
+msgstr "ham upload se nezdařil"
+
+#: ../src/sendwx.c:1028
+#, fuzzy
+msgid "WUnd upload (fast) failed"
+msgstr "WUnd upload se nezdařil"
+
+#: ../src/sendwx.c:1057
+msgid "Dallas list fetch failed"
+msgstr "Dallas list fetch se nezdařil"
+
+#: ../src/sendwx.c:1104
+msgid "Dallas data fetch failed"
+msgstr "Dallas date fetch se nezdařil"
+
+#: ../src/server.c:364
+#, c-format
+msgid "Unable to claim TCP port %d. Perhaps another task claimed it already?"
+msgstr "Nemohu získat TCP port  %d. Pravděpodobně je obsazen jinou úlohou."
+
+#: ../src/server.c:394
+#, c-format
+msgid "Unable to claim LOCAL port %s. Perhaps another task claimed it already?"
+msgstr "Nemohu získat LOCAL port %s. Pravděpodobně je obsazen jinou úlohou."
+
+#: ../src/setup.c:579
+msgid "stats write failed"
+msgstr "Nezdařilo se zapsat statistiku"
+
+#: ../src/setup.c:589
+msgid "No stats file found - Using defaults"
+msgstr "Nebyl nalezen soubor statistiky - bude použit standardní soubor."
+
+#: ../src/setup.c:605
+msgid "Setup write failed"
+msgstr "Nezdařilo se zapsat nastavení"
+
+#: ../src/setup.c:624
+msgid "No setup file found - Using defaults"
+msgstr "Nebyl nalezen setup file - bude použit standardní soubor."
+
+#: ../src/setup.c:635
+msgid "Could not save device list."
+msgstr "Nemohu uložit seznam zařízení"
+
+#: ../src/setup.c:650
+msgid "No devices file found. You must use the devices dialogue."
+msgstr "Nebyl nalezen soubor zařízení. Musíte použít dialog zařízení"
+
+#: ../src/setupd.c:468
+msgid "Stop"
+msgstr "Stop"
+
+#: ../src/setupd.c:624 ../src/setupd.c:632
+msgid "Choose debug file"
+msgstr "Vyber debug file"
+
+#: ../src/setupd.c:657
+msgid "Choose log directory"
+msgstr "Vyber log adresář"
+
+#: ../src/setupd.c:1170
+msgid "ID"
+msgstr "ID"
+
+#: ../src/setupd.c:1422
+msgid "Choose serial device"
+msgstr "Vyber seriové zařízení"
+
+#: ../src/setupp.c:329
+#, c-format
+msgid "Error reading setup / devices file - unknown tag: \"%s\""
+msgstr "Chyba při čtení nastavení / souboru zařízení - neznámý tag:  \"%s\""
+
+#: ../src/setupp.c:611
+#, c-format
+msgid "Error when saving setup to %s"
+msgstr "Chyba při ukládání nastavení do %s"
+
+#: ../src/setupp.c:630
+#, c-format
+msgid "Error when loading setup from %s"
+msgstr "Chyba při čtení nastavení z %s"
+
+# A bad barometer scaling value was given - set it to 1.0, the default barometer scaling for 0 altitude above sea level
+#: ../src/tai8570.c:153
+#, c-format
+msgid "Setting %s slope to default for sea level"
+msgstr "Nastavení %s gradientu na default pro hladinu moře."
+
+#: ../src/tai8570.c:184
+#, c-format
+msgid "%s is not a TAI8570 write device"
+msgstr "%s není TAI8570 zařízení určené pro zápis"
+
+#: ../src/tai8570.c:189
+#, c-format
+msgid "%s is not a TAI8570 read device"
+msgstr "%s není TAI8570 zařízení určené pro čtení"
+
+#: ../src/url_get_curl.c:347
+msgid "Oww was not compiled with libghttp."
+msgstr "Oww nebyl kompilován pomocí libghttp."
+
+#: ../src/weather.c:2214
+#, c-format
+msgid "Checking weather station: \"%s\" not found"
+msgstr "Prověřuji meteo stanici: \"%s\" nebyla nalezena"
+
+#: ../src/weather.c:2220
+msgid "Checking weather station: wind vane not found"
+msgstr "Prověřuji meteo stanici: \"%s\" ukazatel směru větru nalezen"
+
+#: ../src/weather.c:2701
+msgid "Could not access Vane Switch"
+msgstr "Spínač ukazatele směru větru není dostupný"
+
+#: ../src/werr_linux.c:297
+#, c-format
+msgid "Warning from %s [%s]"
+msgstr "Varování z  %s [%s]"
+
+#~ msgid "Select to enable Wunderground uploads"
+#~ msgstr "Umožni Wunderground uploady"
+
+#~ msgid "C)"
+#~ msgstr "C)"

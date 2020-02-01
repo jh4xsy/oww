@@ -1,0 +1,1373 @@
+0.86.2 New Feature
+
+Now compatible with the Hobbyboards soil moisture and leaf wetness sensors.
+
+New command (when running "owwnogui -i"):
+    
+    special
+
+This is a means of providing device-specific setup. Currently two devices will accept
+special commands - the soil moisture / leaf wetness sensor and the WSI603A weather instrument.
+
+For a soil moisture / leaf wetness sensor choose the device when presented with the list.
+You will then be asked to select a channel and the channel sensor type.
+
+For a WSI603A you are asked for the LED mode, level and threshold values (when required).
+This lets you turn off the LEDs from Oww.
+
+0.86.1 New Feature - Bug fix
+
+UV sensors now saved to / read from the devices file.
+
+0.86.0 New Feature - Read DS2760 (TAI8560) as a thermocouple
+
+A few versions back I added support for the TAI8560, but just as a general ADC.
+I have now added support for thermocouple readout.
+
+I have also renamed and altered the units for the ADC function.
+
+Owwl protocol now handles the new data types.
+
+The new thermocouple device (TCx in the devices file) takes two calibration values:
+
+	Thermocouple Type [0.0 - 7.0]
+	Thermocouple V-off (mV)
+
+The first value sets the thermocouple type. It should be set according to the type
+of your thermocouple and the table below:
+
+Type	Cal value
+=================
+B	0
+E	1
+J	2
+K	3
+N	4
+R	5
+S	6
+T	7
+
+Oww stores these as floating point values - don't worry.
+
+The offset Voltage should correspond to any offset intrinsic to the TAI8560.
+Mine has about 0.5 mV. To measure this, replace the thermocouple with a short
+length of copper wire and assign the device as an ADC. Set logging to, say 100s.
+Then you can get a good average value of Vsns to enter as the thermocouple offset,
+to use with the thermocouple reconnected.
+
+I have changed the mechanism for generating the GTK user interface. The glade file
+(which is xml) is now distributed with oww, and is read-in at start up to construct
+the GUI. If you like you can mess around with the file using glade3.
+
+
+
+
+0.85.1 Bug fix
+
+This release fixes the format for uploads to wunderground / ham weather / wow0.83.0 WSI603A Support
+
+This version brings support for the AAG WSI603A wind sensor.
+
+There is preliminary support for the Hobby Boards ADS wind sensor.
+
+Added solar data to wund upload
+
+0.85.0 New Feature - Reads Hobby Boards UVI sensor (UVI2-R1-A)
+
+Oww records the UVI (UV index) value logged by the sensor.
+This is drawn as a coloured box on the Oww main window,
+according to the WHO standard colouring. The index is written
+to the auxillary window.
+
+UVI values are transmitted through the owwl protocol.
+
+UVI values my be written to your logs using the new parser entry:
+    
+    $uvi1$
+    
+Of course if you have more than one sensor you can enter a different
+number.
+
+The sensor is factory-set to adjust readings to allow for the loss
+through the window of the Hobby Boards box. Oww ignores the
+"in case" flag, so if you are not using a window (somewhere it never 
+rains?) you should enter calibration values to adjust the scaling
+to allow for this.
+
+WSI603 T readings:
+    
+I found the AAG WSI603 was giving some bad T readings. Oww now uses
+an undocumented feature of the bit pattern read for DS2760 temperatures
+to spot these.
+
+0.84.0 New Feature - WOW Upload
+
+This version adds upload capability for the UK Met Office WOW format.
+Please see this page for registering your station:
+    
+http://wow.metoffice.gov.uk/home
+
+New setup/setupNG lines will look like this:
+    
+httpwow http://wow.metoffice.gov.uk/automaticreading
+httpwowuser [Your ID]
+httpwowpass [Your PIN]
+httpwowon 1
+
+This will upload to WOW on each httptime.
+
+I have also changed the number formatting for uploads.
+
+0.83.3 Bug Fix
+
+This release addresses a problem with USB and 32-bit architectures.
+The previous bug fix for time-keeping had the unfortunate side-effect
+of stopping USB operations waiting long enough to complete.
+
+There is still an issue with libusb on Optware, as a patch for digitemp
+has made it imcopatible with Oww. Please use libusb - 0.1.12-1
+
+
+0.83.2 Bug Fix
+
+This release addresses an issue with time-keeping.
+The centi-second counter was over-flowing 32-bit variables.
+64 bits should now be used on all architectures.
+
+There is still an issue with USB (DS2490) adaptors.
+
+
+0.83.1 Bug Fix
+
+This release fixes a bug with low-level 1-wire device handling, that could have been messing up almost anything. With some systems it was Ok, others it was a show-stopper! But upgrade to this version.
+ 
+
+0.83.0 WSI603A Support
+
+This version brings support for the AAG WSI603A wind sensor.
+
+There is preliminary support for the Hobby Boards ADS wind sensor.
+
+Added solar data to wund upload
+
+
+0.82.2 – Bug fixes.
+
+This has a couple of bug fixes, including sending the correct user name and password for Ham Weather uploads. Statistics reset is a bit more sensible for 1-shot operation now.
+
+0.82.1 – Bug fixes.
+
+The main changes affect cwop, swapping two of the rain statistics.
+
+A change to the statistics reset scheme should help 1-shot operation.
+
+I've fed the latest changes into the RISC OS version, but note that I don't recommend using the WUnderground fast update on RISC OS, as there is a memory leak using the http fetcher module.
+
+0.82.0 – Bug fixes and new features.
+
+There are changes for USB 1-wire adapters, new parser output for daily rainfall, support for the DS2760, rapid updates to wunderground.
+
+More details may be found on the News page.
+
+0.81.9 – Bug fix
+
+This (Linux) version fixes a bug in Web uploading.
+
+Version 0.81.8
+
+Bug fix release
+
+RISC OS:
+
+Fixed problem with module area memory consumption, caused by http uploads.
+
+Linux et al.:
+
+Web upload has changed from the ghttp library to libcurl. This is much more
+reliable, especially when you have a flakey network link.
+
+Changes to USB for openslug problem.
+
+Setup files moved to $sysconfdir/oww. Typically this is /usr/local/etc/oww for
+the default ./configure call, or /etc/oww if you call "./configure --prefix=/".
+You must move your existing manually.
+
+Added specs file, for creation of RPMs.
+
+
+All:
+
+Ignore extraneous blanks in setup files.
+
+Removes Unix sockets on exit.
+
+Hygrochron with stopped clock no longer fatal (but it still won't try to read
+it).
+
+CWOP - Fix for eastings/northings less than 1 deg west/south.
+
+New translation:
+
+Many thanks to Petr for giving us the Czech translation.
+
+RISC OS source release:
+
+With this release I've inlcuded a zip of the source and Makefile for the RISC OS
+version.
+
+
+Version 0.81.7
+
+Bug fix release:
+
+This corrects a problem with libusb 0.1.10a.
+
+Oww should now work with 64-bit systems.
+
+
+Version 0.81.6
+
+Added support for DS1923 hygrochron.
+
+Note that since it is, in principal, possible to destroy the hygrochron from software, I have added to the disclaimer in the README file as follows:
+
+In particular I make no guarantee that the software will not cause damage to your 1-wire devices. For example, users should note that according to the data sheet of the DS1923 "hygrochron", it is in principal possible to put the device into a locked-up state by incorrect software commands, effectively destroying it. Whilst I aim not to introduce any such faults, I cannot give any guarantee that this, or similar problems, will not occur.
+
+I have also fixed a potentially serious bug (Unix version only) to do with timing, that may have had consequences for the reliability of readout from some sensor classes.
+
+Plotting
+
+I have added a page about making plots with rrdtool. There is a new package on Sourceforge containing scripts for this.
+
+Version 0.81.5
+
+Bug fix release:
+
+Error write level setup
+Parser (multi-word commands)
+BP unit setup order
+Stale solar data from remote server
+UseTrh availability
+Timing changes to facilitate use with USB-serial adaptors and Eclo 1-wire USB adaptor
+Slug NSLU2 Linux
+
+The NSLU2 Linux project has produced improved Flash ROM images for the Linksys NSLU2 (< �60 from Amazon). This Linux-based device is now able to run a whole range of applications, downloaded from a big on-line feed. I've now got Oww cross-compiling, so it is on that feed.
+
+Once you have obtained your "Slug" (pet name for the NSLU2), your first step is to go "unslung". Be sure to follow the instructions very carefully, or your Slug may become a "brick"!
+
+Once you are logged in to your new toy as root, you may install extra packages using theipkg command. To get Oww (owwnogui actually) all you need do is:
+
+ipkg install oww
+
+You can read more about the Slug on my hardware page.
+
+Version 0.81.4
+
+Changes / additions to interactive mode:
+
+Added assign, cal, reset (rain), save stats, and wipe (vane IDs).
+
+Various bug fixes - see ChangeLog
+
+Version 0.81.3
+
+Extra rain reset options added. Besides manual or daily rain reset, you may now choose weekly or monthly. This is set in the setup dialogue, or by the "raindaily" line in your setup file:
+
+	0 - manual reset
+	1 - daily reset
+	2 - weekly reset
+	3 - monthly reset
+
+You may set the day/date for weekly/monthly resets with the "rainday"/"raindate" setup entries, respectively. You may also adjust the hour of the reset with "rainhour".
+
+Two new translations have been added:
+
+	French - courtesy of f5kbd
+	Swedish - thanks to Mikael Martinsson
+
+There were lots of internal changes. I've actually reduced the size of the oww executable by a few percent.
+
+A "mozilla" option has been added for Map pages. Firefox picks this up too, if you have it running.
+
+Owwnogui now reports the source of both its setup and devices files.
+
+A few other bugs were fixed.
+
+
+Version 0.81.2
+
+Added support for LCD displays.
+
+Later type wind vane now re-tried on error.
+
+Logging of data from a remote Oww server should now work, as should daemon mode.
+
+Changed default update interval to 10s.
+
+Added some new units: m/s, knots, kPa 
+
+Powered thermometers are now read more quickly.
+
+GPC "events" (an increment in count between "gust" updates) are now counted. See the parser
+documentation.
+
+Internationalization support was updated, with a translation to Norwegian bokm�l.
+
+Many thanks to Steinar Midtskogen for these last two items.
+
+
+Version 0.81.1
+
+Unix - Fixed bug in error reporting. This was causing various
+extraneous errors to be produced.
+
+RISC OS - Fixed solar thermiic broadcast scaling (now value/10)
+
+
+Version 0.81.0
+
+Replaced code derived from Dalsemi v.2 OWPD (mlan)
+with code derived from Dalsemi v.3 OWPD (ownet).
+
+This means that (on Linux systems - still having troulbe on
+BSD - this is very unlikely ever to be supported on RISC OS) 
+Oww can now use the DS9490 USB 1-wire adaptor. To select 
+this enter "USB" in the device field of the "devices" dialogue.
+N.B. do not suffix it with e.g. /dev - it's just "USB".
+
+DS2438 may now be set as a Thermometer.
+
+Numbers of devices (max values) may be set at build time
+(see ./configure --help)
+
+[RISCOS users - ask me to build a !RunImage with the settings you
+need, or I can provide the source.]
+
+Added devices setup option "autoalloc", which sets whether or not
+auto-allocation of devices found on the 1-wire net is enabled.
+"autoalloc 1" is the dafault (enabled). If you have devices on
+hub branches, make sure the branch devices are saved in the devices
+file, as Oww will not explore the branches with autoalloc 0.
+
+Added units to solar values (W/m^2) - but it's up to the user to
+arrange the calibration! Also set fixed (0) precision.
+
+Gtk version now has a main window display for the primary solar sensor.
+
+Added setup option "smax" to set the maximum level for the solar
+main window display.
+
+Fixed gust readings. Note that the unit for gusttime (in the setup file)
+is centi-seconds. So the 3-second default is 300. Oww imposes a lower limit
+of 50 cs, as shorter times will cause problems with quantization errors.
+
+Fixed setup dialogue problem with toggle buttons.
+(Initial setup settings were double-toggling)
+
+RISC OS - Thermiic broadcast - removed wind direction, and scaled solar
+readings down by a factor of 10. The order is now (up to a maximum of 
+8 channels in total):
+
+  anem speed (always)
+  rain (if present)
+  rain rate (if present)
+  Each temperature
+  Each Trh and RH
+  Each BP
+  Each solar
+
+
+
+2004-05-12
+
+Merged in barometer updates from Gtk1.2 branch.
+Better error checking, sanity checks.
+WS restart reloads device allocations from devices file.
+
+
+Version 0.80.1
+
+[Unix]
+
+Fix for makeinstalldirs problem.
+
+Down-graded my local gettext installation to 0.11.5, which now creates a working
+PO Makefile! If you build from the tarball all should now be Ok. If you build
+from CVS and run autogen.sh, your local gettext might mess up, leading to the
+makeinstalldirs problem (copy or link the mkinstalldirs script into the
+directory containing the oww distribution).
+
+
+Version 0.80.0
+
+[Unix]
+
+This is the first Unix release of Oww based on Gtk+ 2. Also, it is no longer
+using libglade. If you have a recent distribution it will most likely include
+Gtk+ 2. If you are using Gnome 2 you will certainly have it. You can make
+sure by running:
+
+  pkg-config gtk+-2.0 --modversion
+
+
+
+Version 0.71.1
+
+Fixed rainrate log output
+
+
+Version 0.71.0-1 [Linux]
+
+Repaired interactive mode for owwnogui.
+
+
+Version 0.71.0
+
+Added support for DS2438-based solar sensors (i.e. current monitor).
+
+Added support for Citizen Weather Observer Program (CWOP).
+See notes at http://oww.sourceforge.net/cwop.html
+Thanks to Matthew Harrell for contributing CWOP code and documentation.
+
+Minor update to rain reset function.
+
+Minor update to logging - should be more regular.
+
+
+Version 0.70.1
+
+Changed messages from errors to warnings for TAI-8570.
+
+Updated Web site URL.
+
+
+Version 0.70.0
+
+This version brings support for the AAG TAI-8570 barometer. These may be
+mixed with DS2438-based barometers if required, up to a total of 8.
+
+Note that the TAI-8570 contains two DS2406 1-wire switch devices. These are
+used to bit-bang the 3-wire serial port of the pressure sensor AAG have used
+One is used to send command sequences, and the other to read back the
+results. Because bit-banging is not very fast, you may experience reduced
+responsiveness from Oww whilst it reads the barometer.
+
+It is important that the correct assignment is made for each device. For the
+first barometer, the device names are "Barometer 1" and "TAI8570 writer 1".
+Oww may not get the assignment right by itself, so you should check the label
+on the back of the barometer, which gives the IDs. Note, however, that AAG
+list them in the opposite byte order to Oww.
+
+The pressure sensor is factory-calibrated. Calibration values are read out on
+start-up. This means that the four barometer calibration values stored with
+the devices setup are redundant for the TAI-8570, with the exception of the
+barometer slope. This is still used, so that station pressure can be rescaled
+to equivalent sea-level pressure. At sea level, set the slope to 1. At higher
+altitudes you will need to set it slightly higher than 1. 
+
+There is no excact formula for calculating this factor, because all the
+models have to make assumptions about how pressure and temperature vary with
+altitude. However, an often-quoted fit to empirical data is the following
+power law:
+
+P0 = P * (1 - h/44329m)^-5.255876
+
+or
+
+P0 = P * (1 - h/145442 ft)^-5.255876
+
+So, for my location in Caerphilly, Wales, at 150 m, my correction factor is:
+
+(1 - 150/44329)^-5.255876 = 0.9966 ^ -5.255876 = 1.01797
+
+Bug fixes -
+
+A few of these, including GPC delta logging.
+
+
+Version 0.68.14 / 0.69.0
+
+I made some changes to DS2438 (RH / BP) readout, that might help reliability
+on (slower) RISC OS machines.
+
+Changes to error / warning message system:
+
+  Error reporting now controlled by three setup variables:
+    debugfile    - the file name for error logging
+    debuglevel   - the level of messages sent to the debug file
+    messagelevel - the level of messages displayed on-screen
+
+  The levels used in debuglevel and messagelevel are as follows:
+    0 - None
+    1 - Fatal errors only
+    2 - All errors
+    3 - Errors and warnings
+    4 - Debug level 0 (some debug messages)
+    5 - Debug level 1 (lots of debug messages)
+    6 - Debug level 2 (not used)
+    7 - Debug level 3 (not used)
+    
+  These options may also be set from a new section in the setup dialogue.
+  
+  [RISC OS] Errors (as opposed to warnings) alert the user with a standard
+  wimp error box. This halts the program, pending user action. For unattended
+  operation, you might like to switch off all messages, and set a debug file.
+
+Please ignore any references to TAI-8570 devices. This is a work in progress.
+
+
+Version 0.68.13
+
+Dodgy temperature readings from DS2438 (humidity and BP) will invalidate the
+reading and restart after one retry. A short delay between DS2438 operations
+was added to improve reliability.
+
+Anemometer readings are now taken between updates (the default is every 3
+seconds), so that meaningful "gust" values may be recorded when the update
+interval is long (either because you wanted it long, or because you have very
+many thermometers). The interval is controled by the "gusttime" setup entry
+(given in centi-seconds).
+
+A small mistake that would upset BSD builds was located and fixed.
+
+
+Version 0.68.12
+
+[RISC OS only] Added barometers to ThermIIC broadcast. N.B. there is still
+only room for 8 readings, so if you have, for example, 2 thermometers and a
+hygrometer, no barometer data will fit.
+
+
+Version 0.68.11
+
+Station restarts were still causing a reset of log statistics. Now they 
+shouldn't. Really!
+
+
+Version 0.68.10
+
+New (faster) DS2480 parameters weren't working very well on my "real world" 
+setup.Rather than just go back to the original values, I've added two new 
+entries in thedevices file. These are:
+
+  ds2480samp - Data sample offset: 3-10us (integer) [default 10]
+  ds2480write - Write 1 low time: 5-15us (integer) [default 12]
+
+The current Dallas example source uses values of 8 and 12, respectively, 
+which you might like to try.
+
+Station restarts were causing a reset of log statistics. Now they shouldn't.
+
+
+Version 0.68.9
+
+[Linux] Minor changes to serial port functions - catching up with Dallas 
+changes
+Minor changes to DS2480 functions - catching up with Dallas changes
+
+Limited range of heat index / humidex functions
+
+
+
+Version 0.68.8
+
+Fixed bug in windchill (new WCT) calculation.
+
+Introduced heat index / humidex.
+
+Revised dew point calculation 
+(different constants for T < 0 since vapour pressure over ice is lower than 
+over water)
+Log time snap (e.g. 300-s interval with snap -> 00:00, 00:05..., not 00:01, 
+00:06...)
+Setup gui elements for log time snap, WC type and HI type.
+
+
+Version 0.68.7
+
+[Linux] Fixed http upload memory leak.
+
+Fixed logging of NULL log lines (doesn't write them, doesn't crash!)
+
+More debug information on Comm failures
+
+
+Version 0.68.6
+
+Fixed various potential buffer over-runs.
+
+Added choice of wind chill formulae.
+
+  This is specified by "wctype" in the setup file:
+    1 - Steadman - as used by UK Met Office and elsewhere
+    2 - NWS 1992b - the USA / Canada "Old" wind chill
+    3 - New WCT - the new USA / Canada standard
+    
+Added barometer temperature sensing. New parseout tokens: tb, tbc, and tbf.
+Actually this probably isn't very useful! In an enclosed box with two voltage
+regulators, the temperature comes up to the high 20s, even up in my cold
+loft.
+
+Changed default calibration values to suit barometer delivered with normal
+calibration settings:
+
+i.e. 1.25 V => 950 mB, 8.25 V => 1050 mB.
+(This gives a slope of 14.29 V/mB and offset 932 mB.)
+
+Logging from remote server now works.
+
+Serving data from remote sources to Oww clients now works.
+
+Reconnect timing to remote servers now more sensible.
+
+Confusion over which sensors you have, switching between local and remote,
+fixed.
+
+Fixed Tmin / Tmax problem (Arne output)
+
+
+Long http data were being curtailed. This broke long Dallas station listings, 
+so I removed it.I've been trying to make device reading generally more 
+robust, especially fordevices behind a "hub".
+
+Ocassionally temperature readings have been corrupted, causing "nan" (not a
+number) to appear in logs / upload URLs. These should now be trapped, and
+output debug level 0 warnings.
+
+UNIX / Cygwin - Added "uninstall" target
+
+UNIX / Cygwin - Procedure for building owwnogui alone changed:
+
+  ./configure --disable-gui
+  make
+  
+i.e. you no longer have to cd to src and execute "make owwnogui"
+
+On Cygwin / BSD you will still need --disable-seriallock
+
+UNIX / Cygwin - Improved search for libghttp:
+
+  /usr, /usr/local, and /opt/gnome are now checked for libghttp
+  configure will complain if it doesn't find it!
+  You may also use:
+    --with-libghttp=DIR to override the search with your known location 
+(DIR), or    --without-libghttp to disable the search
+
+
+Version 0.68.5
+
+[RISC OS] Vane ring colouring setup is now rrggbb rather than bbggrr.
+
+Fixed bug in server, mainly affecting unix sockets (invalid argument to 
+accept())
+
+Version 0.68.4b
+
+Whilst Wunderground was having some trouble, it was returning very long
+response messages. These hit a buffer limit on the warning message system,
+causing Oww to crash.
+
+[RISC OS] Buffer size quadrupled.
+
+[Linux] vsprintf replaced with vnsprintf function, to avoid over-run.
+
+
+Version 0.68.4a
+
+Added setup variable "rainbackreset" (defaults to '1' - on). With this on, in
+the event that the rain gauge reads less than the previous reset value (i.e.
+the rain gauge has gone backwards!) it will be reset again, straight away.
+This might be usefull if the rain gauge has no battery backup.
+
+
+Version 0.68.4
+
+Setup / Devices lines may now be arbitrarily long. This is to allow
+arbitrarily long lines for certain setup entries:
+
+	txtform
+	logform
+	postupdate
+	postlog
+	httpprecom
+	httppostcom
+
+Dodgy reading from DS2438 (reset during read) will now result in retries.
+
+Another error message was down-graded to a warning.
+
+
+Version 0.68.3
+
+0.68.2 didn't see the light of day, because I thought of a better way to do
+the wind vane ADC. There is always at least one channel at maximum voltage,
+so we search for the biggest reading from the four channels, and use this to
+normalize the readings to a range of 0 to 1. This way variation of the supply
+voltage should have no effect. Then, to save time looping round a lookup
+table I have a mad-looking tree of if-else clauses, that examines all
+possible combinations. This way there are at most 8 comparisons to make.
+
+Everything else is as for 0.68.2
+
+
+
+Version 0.68.2
+
+Version 3 wind vane code now looks for the closest match in its table of
+allowed values. The table is progressively tuned by actual readings. This may
+improve operation.
+
+Thermometers may now be DS1820, DS18S20, DS18B20 or DS1822 parts.
+
+[RISC OS] Changed some AltRes icons for better fit.
+
+Various error messages down-graded to warnings.
+
+Introduced "errorlog" setup entry. This can declare a file name for logging
+errors. When "debugfile" is used, all error messages go there. But when
+"debugfile" is not set, errors and warnings are logged to "errorlog".
+
+
+Version 0.68.1a
+
+[RISC OS] Auxilliary window should now display with the desktop font so long
+as you have a wimp version that supports it (Window Manager >= 3.22).
+
+Down-graded "http upload timeout" to a debug only message.
+
+
+Version 0.68.1
+
+Added setup line for vane dispersion ring palette:
+
+  ringcol colour_0 colour_1 ... colour_15
+  
+This defines the 16 colours used, from 0 readings at a given direction, to 15
+readings. The colours are in hexadecimal form, RRGGBB. For example, ffffff
+for white, 0 for black, 880000 for a dark red, &c.
+
+The default Dallas upload URL was updated to use their new host IP of
+205.153.100.122
+
+The URL for maps is now read from a setup string - mapurl
+This define C printf-style format string, and must include two "%f" entries.
+The first of these is replaced with the station latitude, and the second the
+station longitude. The default entry points to mapquest.
+
+There was a bug in the data reading code that could have caused crashes for
+people with a barometer but without any GPCs. This has been fixed.
+
+The RISC OS aux window has been completely re-worked. Hopefully the new
+version will not suck up memory. This has meant abandoning the scrolllist
+toolbox gadget, and falling back on VDU 5 graphics. This weekend I could have
+been back in the '80s!
+
+
+Version 0.68.0
+
+Added auxilliary window. This gives a full readout of all devices.
+
+[Linux - added nice little icons for the X windows.]
+
+[RISC OS - display unit changes now update display immediately.]
+
+
+Version 0.67.13a
+
+[Linux - Commented-out development code that was causing trouble with 
+applctn.c]
+
+Version 0.67.13
+
+Added vane ring around vane compass rose boss.
+
+This gives a grey-scale reading for each vane direction of how many of the
+last 15 readings came from that direction. Thus the general direction of the
+vane appears darker. A steady vane position will effect a black segment in
+the ring. If the vane is moving about the segments will form a wider grey
+band.
+
+
+Version 0.67.12a
+
+Linux bug fix. Oww should now build again without libhttp (without Web upload
+/ download support of course).
+
+
+Version 0.67.12
+
+Added missing "GPC slope" calibration menu entry.
+
+Added $barunit$ to parser.
+
+Fixed bug with driver menu on RISC OS.
+
+
+Version 0.67.11
+
+This time I really did fix release of txtserve port!
+
+Did some tidying up to forgo compiler warnings.
+
+
+Version 0.67.10
+
+Setup dialogue rain reset enabled when only GPCs available.
+
+Fixed release of txtserve port.
+
+
+Version 0.67.9 (Not released)
+
+Fixed swapped labels on RH sensor calibration.
+
+Added text server.
+
+This is yet another server function, activated by a non-zero value of
+txttcpport (tcp/ip) or a non-null string for txtname (unix socket - not RISC
+OS) in your setup file. You may then make a connexion to the listening
+socket, e.g. telnet to txttcpport (default 8891) on the server and you will
+receive each data update in a textual form. The format of the line is set by
+a new parser format string - txtform. You can change this just as you would
+the log format string. Just disconnect the session when you're done.
+
+Client / server connexions now get an immediate update on initial connexion.
+
+
+Version 0.67.8 (Not released)
+
+Added provision for up to 8 general purpose counters.
+
+These work much the same way as a rain gauge, except they lack some of the
+stats functions. You can allocate a counter as a "GP [general purpose]
+counter" from the devices dialogue. You can set a calibration value to scale
+the counts to whatever is meaningful. There is no on-screen output at
+present. Data may be output to log files, &c, using the following parser
+tokens:
+
+  gpc          calibrated count value (since "rain" reset)
+  gpcdelta     change in calibrated count since last update
+  gpcmono      monotonic count (integer) - no reset
+  gpcrate      calibrated counts per hour
+
+You must follow the token with the counter number (1-8). For example, you 
+could add the following to your logform definition in setup:
+$gpc1$, $gpcdelta1$, $gpcrate1$, $gpcmono1$
+
+Added a token to parser for MySQL times (you could build the time format 
+yourself, but this makes it easier):
+  mysqltime
+
+
+Version 0.67.7
+
+Added client for Dallas weather servlet. To use this, first click "List" in
+the setup window. This will request a list of stations from the Dallas
+server. Once the list is returned you may choose a station from the popup
+menu, select "Dallas" as the source, and click "update".
+
+The title of the main window now reflects the source of the readings.
+
+A "Map" menu entry has been added. This will request a MapBlast page showing
+the station's location. 
+
+[RISC OS]
+
+You should have a browser running for this to work. A URL request is
+broadcast, which a browser should receive and open the URL
+
+[Linux]
+
+On Unix platforms you have a choice (in the setup menu) of several
+browsers. Note that if you choose "Netscape" there should be some flavour of
+Netscape running, as it just issues a "netscape -remote" request to a
+running copy.
+
+
+Version 0.67.6
+
+Added client for Arne's format (telnet mode). The entry in the setup dialogue
+is now active. Please note that this protocol does not transfer all the data.
+For Oww -> Oww connexions it is better to use the Oww protocol.
+
+Fixed some bugs (state machine) in Unix socket code.
+
+Revised tidying up on closing client / server connexions.
+
+
+Version 0.67.5
+
+[Unix
+
+Added server for LOCAL (aka "UNIX") connexions. This uses the same protocol
+(the same code mostly) as for TCP/IP connexions, but the data flow is kept
+off the network. So, you may turn off the network port if you are concerned
+about security, i.e. have this setup line:
+
+owwtcpport 0
+
+The default setup line for the LOCAL port is:
+
+owwlocalname /tmp/oww_trx_un
+
+So to connect to a local server set the data source as oww and the address as
+"/tmp/oww_trx_un". Any time the client code reads a '/' at the begining of
+the host name it connects with a LOCAL socket instead of TCP/IP.
+
+Sadly this option is not available with RISC OS
+]
+
+Bugfixes in:
+  command line option parsing
+  devices fine loading
+  [Unix - minor error in oww server session startup] 
+
+
+Version 0.67.4
+
+Added user interface for calibration values, in the devices dialogue.
+
+Where no units are given for slope values, they are dimensionless scaling
+factors, e.g. for wind speed.
+
+Offset (y intercept) values always have a unit.
+
+
+Version 0.67.3
+
+Barometric pressure now displayed on the main window (had to move some things
+around). Added setup option for mBar or inches of mercury.
+
+Devices file now holds slope and offset values for some sensors -
+thermometers, RH, raing gauge and barometers.
+
+Units for barometers are mBar per Volt (slope) and mBar (offset).
+
+New parser commands are:
+
+  bar, barinhg, and barmbar
+  
+e.g. $barmbar1$
+
+
+Version 0.67.3pr1
+
+Added rudimentary support for barometers (thanks GNC). Note that this is not
+really tested - I haven't got a barometer!
+
+Changed multiplication factors in oww_trx protocol to increase resolution.
+
+
+Version 0.67.2
+
+[Linux] Added daemon mode. Owwnogui can now detach itself from its parent
+process and become a "daemon" process. This way it will keep going when you
+close your terminal. In this mode error reports will be sent to the system
+log (syslogd) and the console.
+
+Added long versions of command line arguments:
+
+Usage: owwnogui [options]
+
+Options:
+  -s | --setup      setup_file
+  -S | --stats      stats_file
+  -D | --devices    devices_file
+  -d | --daemon     
+
+In one-shot mode (i.e. interval 0) owwnogui will wait for http exchange to
+complete before exiting. Set httptime 0 for this to work.
+
+
+Version 0.67.1
+
+Changed command line option passing. Now using simple parser (shame popt
+hasn't been ported to RISC OS!).
+
+Usage: OwwNoGui [-s setup_file] [-S stats_file] [-D devices_file]
+
+Changed behaviour after repeated 85C temperature errors. Oww will now execute
+a restart, causing a reset of all bus devices.
+
+Fixed a bug in Oww data exchange (T < 0C [32F] were coming out crazy).
+
+[Linux / BSD / Cygwin] New build options.
+
+My locking function for the serial port appears to fail on BSD and Cygwin
+(anyone know how I should do it?). So, to turn it off you can use:
+
+  ./configure --disable-seriallock
+
+Users may like to experiment with how many goes at T conversion Oww tries, on
+85C failure condition. You can set this with:
+
+  ./configure --enable-temptries=N where N is the number of tries to make
+
+
+Version 0.67.0
+
+Added Oww client / server data protocol.
+
+If setup variable owwtcpport is set non-zero Oww will listen on this port
+(subject to restrictions on port numbers if you are running without super
+user privileges on Linux) for connexion requests from clients. Then, each
+time weather data are read from the weather station hardware, data will be
+sent to each client.
+
+For a client to use this protocol it must have "Oww" selected as its data
+source, rather than "Local". In the setup file this corresponds to
+"datasource 2" rather than "datasource 1". You must specify the host name and
+port number also.
+
+Note that when running as a client, Oww's update interval is determined by
+the server.
+
+Adding client support for Arne Henriksen's format and Dallas Web download is
+on the "to do" list.
+
+Note that if you are using separate server and clients on one machine you
+will need to run each with a different setup file. Typically, on Linux at
+least, you would run owwnogui as the server. Therefore, owwnogui now looks
+for a different setup file (SetupNG on RISC OS, PACKAGE_DATA_DIR/setupNG or
+./.oww_setupNG on Linux). If this file is not found, owwnogui reverts to
+the standard setup file name. To simplify the setup process, the Setup
+dialogue now has a "SaveNG" action button, to save the current setup to this
+location. Having saved the setup for owwnogui, you can then go back to your
+client setup, and save that with the normal "Save" button. Note that owwnogui
+won't pick this up if it is already running - you will have to start it
+again.
+
+Host name lookup is performed by the gethostbyname function, which blocks
+(halts execution) whilst it performs the lookup. Therefore, unless you have a
+local dns, you should add host names to your "hosts" file, or use numeric IPs
+if possible; otherwise you might notice pauses in execution.
+
+
+Now including time.h in wstypes.h and process.c - this is to allow building
+on FreeBSD.
+
+
+
+Version 0.66.2 (not released)
+
+[RISC OS] Fixed problem with local time (for Dallas upload, &c). It seems the
+Linux code didn't work the same under RO. Now calling a SWI directly.
+
+WUnd upload - now sends whichever RH is the primary RH (i.e. the first one
+assigned, the same as the main window reading).
+
+Three new parser commands added, for maximum wind speed:
+
+  wspmax, wspmaxmph, and wspmaxkph
+
+
+Version 0.66.1
+
+Improved error handling on failure of socket() calls (e.g. no TCP/IP stack
+configured on RISC OS), so that each socket generates the error only once.
+
+
+Version 0.66.0
+
+Added support for couplers (hub).
+
+Currently only couplers located on the trunk will be found. Note that Oww
+will now perform a search at startup. This is to identify the branch
+locations of all devices.
+
+[RISC OS] Stopped continuous errors caused by missing Internet modules on
+systems with no TCP/IP installation.
+
+[Linux] Added option to configure:
+
+  ./configure --disable-gui
+  cd src
+  make owwnogui
+  
+This will skip the gtk / gdk part of configure, and build owwnogui only.
+Beware that anything that causes Oww to re-bootstrap (run autoconf and or
+automake) will lead to a search for gtk macros. But with these lines and a
+fresh Oww distribution, you should be able to build owwnogui without gtk, &c.
+
+Trapping of 85 deg C thermometer errors. Oww will make three attempts to read
+the temperature.
+
+[RISC OS] Fixed recurring TCP/IP port claim error. However, please still
+ensure your internet (TCP/IP) stack gets loaded before Oww or set *port
+setup entries to 0.
+
+
+Version 0.65.8
+
+[RISC OS] Fixed bugs in setupd. Wund values over-written by Ham values.
+Miscalculation of lat/long values.
+
+
+Version 0.65.7
+
+Wed 30th May 2001
+
+Fixed identification to Dallas servlet for DS2450 wind vanes.
+
+
+Version 0.65.6
+
+Added reversed wind vane option.
+[Linux] Added note about missing m4 macros. See README file.
+[Linux] Fixed CPU usage in owwnogui.
+
+Version 0.65.4
+
+Moved serial device selection from the setup window to the devices window.
+Also moved the corresponding entries from the setup file to the devices file.
+
+
+Version 0.65.3
+
+Added support for ############## ??????????? ##############
+Fixed problem in state null event handler (linux only) that caused the state
+machine to be called ~20,0000 times too often!
+
+
+Version 0.65.2
+
+Tue 27th March 2001
+
+[Experimental. Please rport problems.]
+Oww can now run without a full weather station, e.g. if you want to use it
+with just thermometers or humidity sensors.
+
+Mon 26th March 2001
+
+Following a recommendation from Dallas, I added a check to Volt_Reading() in
+ad26.c, in case DS2438 has reset itself.
+
+
+
+Version 0.65.0
+Sun 25th February 2001
+
+Added support for up to eight humidity sensors. RH, dew point and temperature
+values from the first sensor are shown in the main window. Other values
+available through the parser. Parser tokens are:
+  $rh1$   to $rh8$   - relative humidities
+  $trh1$  to $trh8$  - temperature of humidity sensor
+  $trhc1$ to $trhc8$ - temperature of humidity sensor in Celius
+  $trhf1$ to $trhf8$ - temperature of humidity sensor in Fahrenheit
+  $dp1$   to $dp8$   - dew point
+  $dpc1$  to $dpc8$  - dew point in Celius
+  $dpf1$  to $dpf8$  - dew point in Fahrenheit
+
+Times sent to the Dallas servlet are now local values rather than UT.
+
+Internal rearrangement of serial port functions to accomodate Win32 version
+by Sylvan Bulter.
+
+New setup entry - "popup" - controls automatic popup/hiding of messages
+window. [Linux] Set this to '0' if your X window manager stops the program
+whilst waiting for manual window positioning.
+
+Environment variables set only in RISC OS version.
+
+
+
+Version 0.64.1
+Tue 23rd January 2001
+
+Bug fix - stats file was being updated constantly under some circumstances.
+Added TCP server. This listens on a port specified by "arnetcpport" in the
+setup file.
+Renamed UDP port entry to "arneudpport"
+
+
+Version 0.64.0
+Mon 22nd January 2001
+
+Completed UDP broadcast (Aren Henriksen's format).
+Rain gauge offset now stored in separate file (stats), along with min/max
+temperature and max wind speed.
+Eight rain gauge offsets are stored - one for each day over the week up to
+today, and one for the 1st of the month.
+To specify a non-standard stats file, pass its name as the third parameter
+when running oww, i.e. oww setupfile devicesfile statsfile
+
+Sun 21st January 2001
+
+Added upload to www.hamweather.com
+See new entries in HTTP section of setup dialogue
+
+
+Version 0.63.2
+Fri 12th January 2001
+
+Added wind chill to parser:
+  $wchill$, $wchillc$, $wchillf$
+
+Version 0.63.1
+Fri 12th January 2001
+
+Added support for > 1 DS1820 / DS18S20 temperature sensor
+At present no graphical representation of extra thermometers
+Just output to data streams via the new parser
+i.e. now we have:
+  $t1$  to $t8$
+  $tc1$ to $tc8$
+  $tf1$ to $tf8$
+
+
+Version 0.63.0
+Mon 08th January 2001
+
+New output parser
+  Generates log lines
+    You may change the order, format, and content of log entries
+    Edit "logform" in setup.
+  Generates command lines
+    Edit these setup entries:
+      postupdate  (command line to run after every update)
+      postlog     (command line to run after writing a log line)
+      httpprecom  (command line to run before Web upload) 
+      httppostcom (command line to run after Web upload)
+      
+  See http://www.simon.melhuish.net/projects/oww/parser.html for more info.
+
+************************************
+* N.B. Setup entries have changed. *
+************************************
+
+Please save out a fresh setup file, and re-enter any local modifications.
+
+[Linux] Change to configuration script. Should help prevent problems with 
+fiding libghttp.
+Oww will now compile without it (but without Web uploads).
+
+
+Version 0.62.3 (not released)
+
+Thu 04th January 2001
+
+[Linux]
+Changes to configure.in to provide more checks for libghttp
+Should now link OK without libghttp (but without http features!).
+
+
+Wed 03rd January 2001
+
+Oww was uploading to both WUnd and Dallas when one was switched off - fixed.
+
+Changed expected WUnd reply to "success".
+
+[Linux]
+owwnogui is now built by the standard Makefile (i.e. just type "make"), 
+and will be installed by "make install".
+
+
+Thu 21st December 2000
+
+Version 0.62.1
+
+Update for Linux version. I'd missed out a line from Makefile.am (top level)
+that is required for creation of the installation directory for the glade
+file, jpegs, setup and devices file. Big oops!
+
+
+Tue 19th December 2000
+
+Version 0.62.0
+
+New version for both Linux and RISC OS.
+
+New features
+
+  Improved "Devices" dialogue.
+    "Search" operation generates a list of devices.
+    User may select a devices from the list, and alter its allocation;
+    e.g. change counter from "Raingauge" to "Anemometer" or
+    Wind vane ID 0 to 1.
+    
+
+Fri 08th December 2000
+
+Version 0.61.0
+
+New version for both Linux and RISC OS.
+
+New features:
+
+  Web upload, to:
+    Dallas Semiconductor servlet
+    The Weather Underground - Personal Weather Station Project
+  
+  Added httpprecom to setup, to execute a command before http upload
+  
+  Rainfall rate (displayed only - not logged at present)
+  
+  Various bug fixes
+  
+
+Wed 15th November 2000
+
+[Linux only]
+
+Changes to configure.in:
+
+  Replaced code to check for libglade and gdk-pixbuf with:
+    AM_PATH_GDK_PIXBUF(0.9.0,,AC_MSG_ERROR(gdk-pixbuf 0.9.0 or higher is 
+required))
+    AM_PATH_LIBGLADE(,AC_MSG_ERROR(Cannot find libglade: Is it installed?))
+
+  In my installation the m4 macro files for these were in
+  /usr/local/share/aclocal and I had make links from /usr/share/aclocal
+  for a straight aclocal to work. But this is only as issue if you try
+  to re-generate aclocal.m4, e.g. by running autogen
+
+
+Fri 03rd November 2000
+
+Changed logvar behaviour.
+
+logvar is now updated only when a log entry is written.
+updatevar (new) is updated after every update.
+
+Two new setup entries:
+
+  postupdate - Takes the name of a program to run [i.e. system(postupdate)] 
+after
+               every update.
+  postlog - As postupdate but operates after a log entry is added.
+
+These should permit scripts to add weather data to a round robin database, 
+for example.
+
+
+Fri 27th October 2000
+
+Version 0.60.2
+
+Linux and RISC OS:
+
+convert.c - had my C to F conversion all wrong. Duh!
+
+
+Tue 24th October 2000
+
+Version 0.60.1
+
+Linux:
+
+Fixed problem with choices_linux.c, which causes initial saving of setup / 
+devices (as root) to fail.
+
+Changed default names in cwd to .oww_setup and .oww_devices
+
+
+Fri 13th October 2000
+
+Version 0.60
+
+This is the first version to be distributed for Linux as well as RISC OS.
+
+
+Version 0.50
+
+RISC OS only version.

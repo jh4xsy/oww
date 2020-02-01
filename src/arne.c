@@ -290,7 +290,7 @@ arne_tx(wsstruct *wd)
   if (!setup_arne_udp_port && !server_arne.port) return 0 ;
 
   sprintf(buffer,
-    "%2.1f %2.1f %2.1f %2.1f %2.1f %2.1f %d %d %3.3f %3.3f %3.3f %3.3f\r\n",
+    "%2.1f %2.1f %2.1f %2.1f %2.1f %2.1f %d %d %3.3f %3.3f %3.3f %3.3f %2.1f 0.0 0.0 %4.4f 0.0 0.0 0.0\r\n",
     weather_primary_T(NULL),
     wd->Tmax /*max_tempC*/,
     wd->Tmin /*min_tempC*/,
@@ -306,7 +306,10 @@ arne_tx(wsstruct *wd)
                          0.0F,
     (wd->rain >= 0.0F) ? 0.01F * (float)
                                  (wd->rain_count - wd->rain_offset[7]) :
-                         0.0F);
+                         0.0F,
+    wd->RH[0],  /* Humidity in % */
+    wd->barom[0]/33.864 /* Barometer in inHg */
+                         );
 
 
   /* Now broadcast the latest values */

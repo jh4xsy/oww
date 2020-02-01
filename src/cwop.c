@@ -221,7 +221,7 @@ getCwopWx (char *buf, statsmean * wx)
     strcat (buf, tempBuf);
   }
 
-  strcat (buf, "\r\n");
+  strcat (buf, "lOww_0.86.5\r\n");
 
   if (saved_locale != NULL)
   {
